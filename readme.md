@@ -3,6 +3,14 @@ Tachyons-Uber is an uber-sized version of the original Tachyons that simplifies 
 
 Keep in mind that because of this (and because this versions also includes some modules the original one doesn't) the file size of `tachyons.css` will probably significantly bigger. The idea is that you remove everything you don't need from the setup maps on `_variables.scss` to make it lighter without any hassle. Before using the final CSS on production you should try to stripe everything unused using `UnCSS`.
 
+## Differences with the original Tachyons
+This version includes a few extra modules the original version doesn't. Some of them have been written by me, other by other developers. Here's the list of them:
+- tachyons-svg: https://github.com/lowmess/tachyons-svg
+- tachyons-columns: https://github.com/lowmess/tachyons-columns
+- tachyons-background-overlays: https://github.com/lowmess/tachyons-background-overlays
+
+Besides this, I've also removed/added some other things. I'l try to write about them in this section. Like the `_flexbox.scss` which isn't part of the system as of now until I decide how to split in different parts.
+
 ## Using Gulp
 ### Default Task
 - `gulp`
