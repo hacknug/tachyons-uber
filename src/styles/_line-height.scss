@@ -1,0 +1,23 @@
+/*
+
+   LINE HEIGHT / LEADING
+   Docs: http://tachyons.io/docs/typography/line-height
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+@each $name, $value in $line-heights {
+  .lh-#{$name} { line-height: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $line-heights {
+      .lh-#{$name}-#{$suffix} { line-height: $value; }
+    }
+  }
+}

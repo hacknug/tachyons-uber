@@ -1,0 +1,18 @@
+/*
+
+    OPACITY
+    Docs: http://tachyons.io/docs/themes/opacity/
+
+*/
+
+@each $name, $value in $opacities {
+  .#{$name} { opacity: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $opacities {
+      .#{$name}-#{$suffix} { opacity: $value; }
+    }
+  }
+}

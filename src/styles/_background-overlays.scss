@@ -1,0 +1,39 @@
+/*
+
+  BACKGROUND OVERLAYS
+
+  Add an overlay to background images.
+
+  Base:
+    bg-darken
+    bg-lighten
+
+  Modifiers:
+    -25 = 25% opacity
+    -50 = 50% opacity
+    -75 = 75% opacity
+
+  Media Query Extensions:
+    -ns = not-small
+    -m  = medium
+    -l  = large
+
+*/
+
+@each $group, $values in $bg-overlays {
+  @each $name, $value in $values {
+    .bg-#{$group}-#{$name} { box-shadow: inset 0 0 0 9999px $value; }
+  }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+
+    @each $group, $values in $bg-overlays {
+      @each $name, $value in $values {
+        .bg-#{$group}-#{$name} { box-shadow: inset 0 0 0 9999px $value; }
+      }
+    }
+
+  }
+}

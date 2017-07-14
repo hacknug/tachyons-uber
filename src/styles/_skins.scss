@@ -1,0 +1,38 @@
+/*
+
+   SKINS
+   Docs: http://tachyons.io/docs/themes/skins/
+
+   Classes for setting foreground and background colors on elements.
+   If you haven't declared a border color, but set border on an element, it will
+   be set to the current text color.
+
+*/
+
+/* Text colors */
+
+@each $name, $value in $colors {
+  .#{$name} { color: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $colors {
+      .#{$name}-#{$suffix} { color: $value; }
+    }
+  }
+}
+
+/* Background colors */
+
+@each $name, $value in $colors {
+  .bg-#{$name} { background-color: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $colors {
+      .bg-#{$name}-#{$suffix} { background-color: $value; }
+    }
+  }
+}

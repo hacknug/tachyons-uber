@@ -1,0 +1,26 @@
+/*
+
+   CLEARFIX
+   http://tachyons.io/docs/layout/clearfix/
+
+*/
+
+/* Nicolas Gallaghers Clearfix solution
+   Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.cf:before,
+.cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+.cf {       *zoom: 1; }
+
+@each $name, $value in $clears {
+  .c#{$name} { clear: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $clears {
+      .c#{$name}-#{$suffix} { clear: $value; }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+/*
+
+   BORDER RADIUS
+   Docs: http://tachyons.io/docs/themes/border-radius/
+
+   Base:
+     br   = border-radius
+
+   Modifiers:
+     0    = 0/none
+     1    = 1st step in scale
+     2    = 2nd step in scale
+     3    = 3rd step in scale
+     4    = 4th step in scale
+
+   Literal values:
+     -100 = 100%
+     -pill = 9999px
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+@each $name, $value in $border-radius {
+  .br#{$name} { border-radius: $value; }
+}
+
+.br--top {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.br--right {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.br--bottom {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.br--left {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $border-radius {
+      .br#{$name}-#{$suffix} { border-radius: $value; }
+    }
+    .br--top-#{$suffix} { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+    .br--right-#{$suffix} { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+    .br--bottom-#{$suffix} { border-top-left-radius: 0; border-top-right-radius: 0; }
+    .br--left-#{$suffix} { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+  }
+}

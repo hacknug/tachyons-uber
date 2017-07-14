@@ -1,0 +1,23 @@
+/*
+
+  BOX-SHADOW
+  Docs: http://tachyons.io/docs/themes/box-shadow/
+
+  Media Query Extensions:
+   -ns = not-small
+   -m  = medium
+   -l  = large
+
+ */
+
+@each $name, $value in $box-shadows {
+ .shadow-#{$name} { box-shadow: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+ @media #{$value} {
+   @each $name, $value in $box-shadows {
+     .shadow-#{$name}-#{$suffix} { box-shadow: $value; }
+   }
+ }
+}

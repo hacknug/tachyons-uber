@@ -1,0 +1,24 @@
+/*
+
+   TEXT DECORATION
+   Docs: http://tachyons.io/docs/typography/text-decoration/
+
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+@each $name, $value in $text-decorations {
+  .#{$name} { text-decoration: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $text-decorations {
+      .#{$name}-#{$suffix} { text-decoration: $value; }
+    }
+  }
+}

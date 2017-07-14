@@ -1,0 +1,25 @@
+/*
+
+   FONT STYLE
+   Docs: http://tachyons.io/docs/typography/font-style/
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+.i { font-style: italic; }
+@each $name, $value in $font-styles {
+  .fs-#{$name} { font-style: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    .i-#{$suffix} { font-style: italic; }
+    @each $name, $value in $font-styles {
+      .fs-#{$name}-#{$suffix} { font-style: $value; }
+    }
+  }
+}

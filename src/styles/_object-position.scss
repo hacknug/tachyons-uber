@@ -1,0 +1,17 @@
+/*
+
+   OBJECT POSITION
+
+*/
+
+@each $name, $value in $object-positions {
+  .op-#{$name} { object-position: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $object-positions {
+      .op-#{$name}-#{$suffix} { object-position: $value; }
+    }
+  }
+}

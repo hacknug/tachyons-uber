@@ -1,0 +1,23 @@
+/*
+
+   LETTER SPACING
+   Docs: http://tachyons.io/docs/typography/tracking/
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+@each $name, $value in $letter-spacings {
+  .#{$name} { letter-spacing: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $letter-spacings {
+      .#{$name}-#{$suffix} { letter-spacing: $value; }
+    }
+  }
+}

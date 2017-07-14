@@ -1,0 +1,55 @@
+/*
+
+   TYPOGRAPHY
+   http://tachyons.io/docs/typography/measure/
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+@each $name, $value in $measures {
+  .#{$name} { max-width: $value; }
+}
+
+/* Book paragraph style - paragraphs are indented with no vertical spacing. */
+.indent {
+  text-indent: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+/* Combine this class with a width to truncate text (or just leave as is to truncate at width of containing element. */
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $measures {
+      .#{$name}-#{$suffix} { max-width: $value; }
+    }
+    .indent-#{$suffix} {
+      text-indent: 1em;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .small-caps-#{$suffix} {
+      font-variant: small-caps;
+    }
+    .truncate-#{$suffix} {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

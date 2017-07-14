@@ -1,0 +1,79 @@
+/*
+   SPACING
+   Docs: http://tachyons.io/docs/layout/spacing/
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Base:
+     p = padding
+     m = margin
+
+   Modifiers:
+     a = all
+     h = horizontal
+     v = vertical
+     t = top
+     r = right
+     b = bottom
+     l = left
+
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+     a = auto (only for margin base)
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+/* Paddings */
+
+@each $name, $properties in $paddings {
+  @each $step, $value in $spacings {
+    .p#{$name}#{$step} {
+      @each $property in $properties { #{$property}: $value; }
+    }
+  }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $properties in $paddings {
+      @each $step, $value in $spacings {
+        .p#{$name}#{$step}-#{$suffix} {
+          @each $property in $properties { #{$property}: $value; }
+        }
+      }
+    }
+  }
+}
+
+/* Margins */
+
+@each $name, $properties in $margins {
+  @each $step, $value in $spacings {
+    .m#{$name}#{$step} {
+      @each $property in $properties { #{$property}: $value; }
+    }
+  }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $properties in $margins {
+      @each $step, $value in $spacings {
+        .m#{$name}#{$step}-#{$suffix} {
+          @each $property in $properties { #{$property}: $value; }
+        }
+      }
+    }
+  }
+}

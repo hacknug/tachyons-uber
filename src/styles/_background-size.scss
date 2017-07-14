@@ -1,0 +1,28 @@
+/*
+
+   BACKGROUND SIZE
+   Docs: http://tachyons.io/docs/themes/background-size/
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+/*
+  Often used in combination with background image set as an inline style
+  on an html element.
+*/
+
+@each $name, $value in $bg-sizes {
+  .#{$name} { background-size: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $bg-sizes {
+      .#{$name}-#{$suffix} { background-size: $value; }
+    }
+  }
+}

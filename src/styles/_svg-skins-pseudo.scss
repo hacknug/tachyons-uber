@@ -1,0 +1,72 @@
+/*
+
+   SVG SKINS
+
+   Base:
+     fill = fill color
+     stroke = stroke color
+     sw = stroke-width
+
+   Modifiers:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+*/
+
+/* Fill colors */
+
+@each $name, $value in $colors {
+  .hover-fill-#{$name}:hover,
+  .hover-fill-#{$name}:focus { fill: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $colors {
+      .hover-fill-#{$name}-#{$suffix}:hover,
+      .hover-fill-#{$name}-#{$suffix}:focus { fill: $value; }
+    }
+  }
+}
+
+/* Stroke colors */
+
+@each $name, $value in $colors {
+  .hover-stroke-#{$name}:hover,
+  .hover-stroke-#{$name}:focus { stroke: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $colors {
+      .hover-stroke-#{$name}-#{$suffix}:hover,
+      .hover-stroke-#{$name}-#{$suffix}:focus { stroke: $value; }
+    }
+  }
+}
+
+/* Stroke widths */
+
+@each $name, $value in $spacings {
+  .hover-sw#{$name}:hover,
+  .hover-sw#{$name}:focus { stroke-width: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $spacings {
+      .hover-sw#{$name}-#{$suffix}:hover,
+      .hover-sw#{$name}-#{$suffix}:focus { stroke-width: $value; }
+    }
+  }
+}

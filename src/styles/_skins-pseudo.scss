@@ -1,0 +1,40 @@
+/*
+
+   SKINS:PSEUDO
+
+   Customize the color of an element when
+   it is focused or hovered over.
+
+ */
+
+ /* Text colors */
+
+ @each $name, $value in $colors {
+   .hover-#{$name}:hover,
+   .hover-#{$name}:focus { color: $value; }
+ }
+
+ @each $suffix, $value in $breakpoints {
+   @media #{$value} {
+     @each $name, $value in $colors {
+       .hover-#{$name}-#{$suffix}:hover,
+       .hover-#{$name}-#{$suffix}:focus { color: $value; }
+     }
+   }
+ }
+
+ /* Background colors */
+
+ @each $name, $value in $colors {
+   .hover-bg-#{$name}:hover,
+   .hover-bg-#{$name}:focus { background-color: $value; }
+ }
+
+ @each $suffix, $value in $breakpoints {
+   @media #{$value} {
+     @each $name, $value in $colors {
+       .hover-bg-#{$name}-#{$suffix}:hover,
+       .hover-bg-#{$name}-#{$suffix}:focus { background-color: $value; }
+     }
+   }
+ }

@@ -1,0 +1,26 @@
+/*
+
+    OVERFLOW
+
+    Media Query Extensions:
+      -ns = not-small
+      -m  = medium
+      -l  = large
+
+ */
+
+@each $name, $value in $overflows {
+  .overflow-#{$name} { overflow: $value; }
+  .overflow-x-#{$name} { overflow-x: $value; }
+  .overflow-y-#{$name} { overflow-y: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $overflows {
+      .overflow-#{$name}-#{$suffix} { overflow: $value; }
+      .overflow-x-#{$name}-#{$suffix} { overflow-x: $value; }
+      .overflow-y-#{$name}-#{$suffix} { overflow-y: $value; }
+    }
+  }
+}

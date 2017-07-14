@@ -1,0 +1,20 @@
+/*
+
+  MODULE NAME
+
+  Use this scaffolding to create or extend your own modules with tachyons
+  style architecture.
+
+*/
+
+@each $name, $value in $map-name {
+  .preffix-#{$name} { property: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $map-name {
+      .preffix-#{$name}-#{$suffix} { property: $value; }
+    }
+  }
+}

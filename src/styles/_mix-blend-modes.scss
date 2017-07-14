@@ -1,0 +1,22 @@
+/*
+
+  MIX BLEND MODES
+
+  Media Query Extensions:
+   -ns = not-small
+   -m  = medium
+   -l  = large
+
+ */
+
+ @each $name, $value in $mix-blend-modes {
+   .mbm-#{$name} { mix-blend-mode: $value; }
+ }
+
+ @each $suffix, $value in $breakpoints {
+   @media #{$value} {
+     @each $name, $value in $mix-blend-modes {
+       .mbm-#{$name}-#{$suffix} { mix-blend-mode: $value; }
+     }
+   }
+ }

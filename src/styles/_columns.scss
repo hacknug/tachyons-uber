@@ -1,0 +1,43 @@
+/*
+
+   COLUMNS
+
+   A six step powers of two scale ranging from 0 to 4rem.
+   Namespaces are composable and thus highly grockable - check the legend below
+
+   Base:
+     cc = column-count
+     cg = column-gap
+
+   Modifiers:
+     -0 = none
+     -1 = 1st step in spacing scale
+     -2 = 2nd step in spacing scale
+     -3 = 3rd step in spacing scale
+     -4 = 4th step in spacing scale
+     -5 = 5th step in spacing scale
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+@each $name, $value in $column-counts {
+  .cc#{$name} { column-count: $value; }
+}
+@each $name, $value in $column-gaps {
+  .cg#{$name} { column-gap: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $column-counts {
+      .cc#{$name}-#{$suffix} { column-count: $value; }
+    }
+    @each $name, $value in $column-gaps {
+      .cg#{$name}-#{$suffix} { column-gap: $value; }
+    }
+  }
+}

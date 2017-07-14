@@ -1,0 +1,34 @@
+/*
+
+   BORDER STYLES
+   Docs: http://tachyons.io/docs/themes/borders/
+
+   Depends on base border module in _borders.css
+
+   Base:
+     b = border-style
+
+   Modifiers:
+     --none   = none
+     --dotted = dotted
+     --dashed = dashed
+     --solid  = solid
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+ */
+
+@each $name, $value in $border-styles {
+ .b--#{$name} { border-style: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+ @media #{$value} {
+   @each $name, $value in $border-styles {
+     .b--#{$name}-#{$suffix} { border-style: $value; }
+   }
+ }
+}
