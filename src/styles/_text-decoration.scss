@@ -11,6 +11,10 @@
 
 */
 
+/* Variables */
+@import '_variables';
+
+
 @each $name, $value in $text-decorations {
   .#{$name} { text-decoration: $value; }
 }

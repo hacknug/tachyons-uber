@@ -7,12 +7,13 @@
      -m  = medium
      -l  = large
 
+   Often used in combination with background image set as an inline style
+   on an html element.
 */
 
-/*
-  Often used in combination with background image set as an inline style
-  on an html element.
-*/
+/* Variables */
+@import '_variables';
+
 
 @each $name, $value in $bg-repeats {
   .bg-repeat-#{$name} { background-repeat: $value; }

@@ -40,6 +40,10 @@
 
 */
 
+/* Variables */
+@import '_variables';
+
+
 @each $name, $value in $widths {
   .#{$name} { width: $value; }
   .min-#{$name} { min-width: $value; }

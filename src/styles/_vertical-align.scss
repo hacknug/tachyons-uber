@@ -9,6 +9,10 @@
 
 */
 
+/* Variables */
+@import '_variables';
+
+
 @each $name, $value in $vertical-aligns {
   .v-#{$name} { vertical-align: $value; }
 }

@@ -25,6 +25,10 @@
 
 */
 
+/* Variables */
+@import '_variables';
+
+
 .normal { font-weight: normal; }
 .b      { font-weight: bold; }
 @each $name, $value in $font-weights {

@@ -9,6 +9,10 @@
 
 */
 
+/* Variables */
+@import '_variables';
+
+
 @each $name, $value in $outlines {
   .#{$name} { outline: $value; }
 }

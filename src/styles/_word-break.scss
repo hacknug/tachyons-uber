@@ -12,6 +12,10 @@
 
 */
 
+/* Variables */
+@import '_variables';
+
+
 @each $name, $value in $word-breaks {
   .word-#{$name} { word-break: $value; }
 }

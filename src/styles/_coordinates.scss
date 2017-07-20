@@ -25,6 +25,10 @@
 
 */
 
+/* Variables */
+@import '_variables';
+
+
 @each $name, $value in $coordinates {
   .top-#{$name} { top: $value; }
   .right-#{$name} { right: $value; }

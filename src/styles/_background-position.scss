@@ -19,6 +19,10 @@
 
  */
 
+ /* Variables */
+ @import '_variables';
+ 
+
  @each $name, $value in $bg-positions {
    .bg-#{$name} {
      background-repeat: no-repeat;

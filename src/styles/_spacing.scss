@@ -34,8 +34,11 @@
 
 */
 
-/* Paddings */
+/* Variables */
+@import '_variables';
 
+
+/* Paddings */
 @each $name, $properties in $paddings {
   @each $step, $value in $spacings {
     .p#{$name}#{$step} {
@@ -57,7 +60,6 @@
 }
 
 /* Margins */
-
 @each $name, $properties in $margins {
   @each $step, $value in $spacings {
     .m#{$name}#{$step} {

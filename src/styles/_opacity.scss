@@ -5,6 +5,10 @@
 
 */
 
+/* Variables */
+@import '_variables';
+
+
 @each $name, $value in $opacities {
   .#{$name} { opacity: $value; }
 }

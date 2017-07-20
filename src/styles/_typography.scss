@@ -10,6 +10,10 @@
 
 */
 
+/* Variables */
+@import '_variables';
+
+
 @each $name, $value in $measures {
   .#{$name} { max-width: $value; }
 }
@@ -26,7 +30,6 @@
 }
 
 /* Combine this class with a width to truncate text (or just leave as is to truncate at width of containing element. */
-
 .truncate {
   white-space: nowrap;
   overflow: hidden;

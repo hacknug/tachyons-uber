@@ -21,6 +21,10 @@
      -l  = large
 */
 
+/* Variables */
+@import '_variables';
+
+
 @each $name, $value in $font-sizes {
   .f#{$name} { font-size: $value; }
 }

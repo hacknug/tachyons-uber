@@ -21,6 +21,10 @@
 
 */
 
+/* Variables */
+@import '_variables';
+
+
 @each $name, $value in $border-widths {
   .bw#{$name} { border-width: $value; }
 }

@@ -23,8 +23,11 @@
      -l  = large
 */
 
-/* Fill colors */
+/* Variables */
+@import '_variables';
 
+
+/* Fill colors */
 @each $name, $value in $colors {
   .fill-#{$name} { fill: $value; }
 }
@@ -38,7 +41,6 @@
 }
 
 /* Stroke colors */
-
 @each $name, $value in $colors {
   .stroke-#{$name} { stroke: $value; }
 }
@@ -52,7 +54,6 @@
 }
 
 /* Stroke widths */
-
 @each $name, $value in $spacings {
   .sw#{$name} { stroke-width: $value; }
 }

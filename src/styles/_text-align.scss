@@ -18,6 +18,10 @@
 
 */
 
+/* Variables */
+@import '_variables';
+
+
 @each $name, $value in $text-aligns {
   .t#{$name} { text-align: $value; }
 }

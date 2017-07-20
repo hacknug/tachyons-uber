@@ -4,6 +4,10 @@
 
 */
 
+/* Variables */
+@import '_variables';
+
+
 @each $name, $value in $image-renderings {
   .ir-#{$name} { image-rendering: $value; }
 }

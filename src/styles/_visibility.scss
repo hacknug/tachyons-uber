@@ -7,13 +7,13 @@
      -m  = medium
      -l  = large
 
+   Text that is hidden but accessible
+   Ref: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 */
 
+/* Variables */
+@import '_variables';
 
-/*
-    Text that is hidden but accessible
-    Ref: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-*/
 
 .clip {
   position: fixed !important;

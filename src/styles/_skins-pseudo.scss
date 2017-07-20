@@ -7,8 +7,11 @@
 
  */
 
- /* Text colors */
+ /* Variables */
+ @import '_variables';
 
+
+ /* Text colors */
  @each $name, $value in $colors {
    .hover-#{$name}:hover,
    .hover-#{$name}:focus { color: $value; }
@@ -24,7 +27,6 @@
  }
 
  /* Background colors */
-
  @each $name, $value in $colors {
    .hover-bg-#{$name}:hover,
    .hover-bg-#{$name}:focus { background-color: $value; }

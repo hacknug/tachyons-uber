@@ -3,10 +3,14 @@
    CLEARFIX
    http://tachyons.io/docs/layout/clearfix/
 
+   Nicolas Gallaghers Clearfix solution
+   Ref: http://nicolasgallagher.com/micro-clearfix-hack/
+
 */
 
-/* Nicolas Gallaghers Clearfix solution
-   Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* Variables */
+@import '_variables';
+
 
 .cf:before,
 .cf:after { content: " "; display: table; }

@@ -19,6 +19,10 @@
 
 */
 
+/* Variables */
+@import '_variables';
+
+
 @each $name, $value in $text-transforms {
   .tt#{$name} { text-transform: $value; }
 }

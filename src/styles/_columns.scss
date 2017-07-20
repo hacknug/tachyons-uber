@@ -24,6 +24,10 @@
 
 */
 
+/* Variables */
+@import '_variables';
+
+
 @each $name, $value in $column-counts {
   .cc#{$name} { column-count: $value; }
 }

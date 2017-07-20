@@ -7,7 +7,11 @@
       -m  = medium
       -l  = large
 
- */
+*/
+
+/* Variables */
+@import '_variables';
+
 
 @each $name, $value in $overflows {
   .overflow-#{$name} { overflow: $value; }
