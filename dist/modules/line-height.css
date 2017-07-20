@@ -1,0 +1,67 @@
+/*
+
+   LINE HEIGHT / LEADING
+   Docs: http://tachyons.io/docs/typography/line-height
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+/* Variables */
+/*
+
+    VARIABLES
+
+*/
+.lh-inherit {
+  line-height: inherit; }
+
+.lh-initial {
+  line-height: initial; }
+
+.lh-solid {
+  line-height: 1; }
+
+.lh-title {
+  line-height: 1.175; }
+
+.lh-copy {
+  line-height: 1.35; }
+
+@media screen and (min-width: 30em) {
+  .lh-inherit-ns {
+    line-height: inherit; }
+  .lh-initial-ns {
+    line-height: initial; }
+  .lh-solid-ns {
+    line-height: 1; }
+  .lh-title-ns {
+    line-height: 1.175; }
+  .lh-copy-ns {
+    line-height: 1.35; } }
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .lh-inherit-m {
+    line-height: inherit; }
+  .lh-initial-m {
+    line-height: initial; }
+  .lh-solid-m {
+    line-height: 1; }
+  .lh-title-m {
+    line-height: 1.175; }
+  .lh-copy-m {
+    line-height: 1.35; } }
+
+@media screen and (min-width: 60em) {
+  .lh-inherit-l {
+    line-height: inherit; }
+  .lh-initial-l {
+    line-height: initial; }
+  .lh-solid-l {
+    line-height: 1; }
+  .lh-title-l {
+    line-height: 1.175; }
+  .lh-copy-l {
+    line-height: 1.35; } }

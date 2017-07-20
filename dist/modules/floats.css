@@ -1,0 +1,63 @@
+/*
+
+   FLOATS
+   http://tachyons.io/docs/layout/floats/
+
+   1. Floated elements are automatically rendered as block level elements.
+      Setting floats to display inline will fix the double margin bug in
+      ie6. You know... just in case.
+
+   2. Don't forget to clearfix your floats with .cf
+
+   Base:
+     f = float
+
+   Modifiers:
+     l = left
+     r = right
+     n = none
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+/* Variables */
+/*
+
+    VARIABLES
+
+*/
+.fr {
+  float: right; }
+
+.fl {
+  float: left; }
+
+.fn {
+  float: none; }
+
+@media screen and (min-width: 30em) {
+  .fr-ns {
+    float: right; }
+  .fl-ns {
+    float: left; }
+  .fn-ns {
+    float: none; } }
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .fr-m {
+    float: right; }
+  .fl-m {
+    float: left; }
+  .fn-m {
+    float: none; } }
+
+@media screen and (min-width: 60em) {
+  .fr-l {
+    float: right; }
+  .fl-l {
+    float: left; }
+  .fn-l {
+    float: none; } }

@@ -1,0 +1,1935 @@
+/*
+
+   SVG SKINS
+
+   Base:
+     fill = fill color
+     stroke = stroke color
+     sw = stroke-width
+
+   Modifiers:
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+*/
+/* Variables */
+/*
+
+    VARIABLES
+
+*/
+/* Fill colors */
+.hover-fill-inherit:hover,
+.hover-fill-inherit:focus {
+  fill: inherit; }
+
+.hover-fill-initial:hover,
+.hover-fill-initial:focus {
+  fill: initial; }
+
+.hover-fill-current:hover,
+.hover-fill-current:focus {
+  fill: currentColor; }
+
+.hover-fill-transparent:hover,
+.hover-fill-transparent:focus {
+  fill: transparent; }
+
+.hover-fill-black:hover,
+.hover-fill-black:focus {
+  fill: #000; }
+
+.hover-fill-near-black:hover,
+.hover-fill-near-black:focus {
+  fill: #111; }
+
+.hover-fill-dark-gray:hover,
+.hover-fill-dark-gray:focus {
+  fill: #333; }
+
+.hover-fill-mid-gray:hover,
+.hover-fill-mid-gray:focus {
+  fill: #555; }
+
+.hover-fill-gray:hover,
+.hover-fill-gray:focus {
+  fill: #777; }
+
+.hover-fill-silver:hover,
+.hover-fill-silver:focus {
+  fill: #999; }
+
+.hover-fill-light-silver:hover,
+.hover-fill-light-silver:focus {
+  fill: #aaa; }
+
+.hover-fill-moon-gray:hover,
+.hover-fill-moon-gray:focus {
+  fill: #ccc; }
+
+.hover-fill-light-gray:hover,
+.hover-fill-light-gray:focus {
+  fill: #eee; }
+
+.hover-fill-near-white:hover,
+.hover-fill-near-white:focus {
+  fill: #f4f4f4; }
+
+.hover-fill-white:hover,
+.hover-fill-white:focus {
+  fill: #fff; }
+
+.hover-fill-black-90:hover,
+.hover-fill-black-90:focus {
+  fill: rgba(0, 0, 0, 0.9); }
+
+.hover-fill-black-80:hover,
+.hover-fill-black-80:focus {
+  fill: rgba(0, 0, 0, 0.8); }
+
+.hover-fill-black-75:hover,
+.hover-fill-black-75:focus {
+  fill: rgba(0, 0, 0, 0.75); }
+
+.hover-fill-black-70:hover,
+.hover-fill-black-70:focus {
+  fill: rgba(0, 0, 0, 0.7); }
+
+.hover-fill-black-60:hover,
+.hover-fill-black-60:focus {
+  fill: rgba(0, 0, 0, 0.6); }
+
+.hover-fill-black-50:hover,
+.hover-fill-black-50:focus {
+  fill: rgba(0, 0, 0, 0.5); }
+
+.hover-fill-black-40:hover,
+.hover-fill-black-40:focus {
+  fill: rgba(0, 0, 0, 0.4); }
+
+.hover-fill-black-30:hover,
+.hover-fill-black-30:focus {
+  fill: rgba(0, 0, 0, 0.3); }
+
+.hover-fill-black-25:hover,
+.hover-fill-black-25:focus {
+  fill: rgba(0, 0, 0, 0.25); }
+
+.hover-fill-black-20:hover,
+.hover-fill-black-20:focus {
+  fill: rgba(0, 0, 0, 0.2); }
+
+.hover-fill-black-10:hover,
+.hover-fill-black-10:focus {
+  fill: rgba(0, 0, 0, 0.1); }
+
+.hover-fill-black-05:hover,
+.hover-fill-black-05:focus {
+  fill: rgba(0, 0, 0, 0.05); }
+
+.hover-fill-black-025:hover,
+.hover-fill-black-025:focus {
+  fill: rgba(0, 0, 0, 0.025); }
+
+.hover-fill-black-0125:hover,
+.hover-fill-black-0125:focus {
+  fill: rgba(0, 0, 0, 0.0125); }
+
+.hover-fill-white-90:hover,
+.hover-fill-white-90:focus {
+  fill: rgba(255, 255, 255, 0.9); }
+
+.hover-fill-white-80:hover,
+.hover-fill-white-80:focus {
+  fill: rgba(255, 255, 255, 0.8); }
+
+.hover-fill-white-75:hover,
+.hover-fill-white-75:focus {
+  fill: rgba(255, 255, 255, 0.75); }
+
+.hover-fill-white-70:hover,
+.hover-fill-white-70:focus {
+  fill: rgba(255, 255, 255, 0.7); }
+
+.hover-fill-white-60:hover,
+.hover-fill-white-60:focus {
+  fill: rgba(255, 255, 255, 0.6); }
+
+.hover-fill-white-50:hover,
+.hover-fill-white-50:focus {
+  fill: rgba(255, 255, 255, 0.5); }
+
+.hover-fill-white-40:hover,
+.hover-fill-white-40:focus {
+  fill: rgba(255, 255, 255, 0.4); }
+
+.hover-fill-white-30:hover,
+.hover-fill-white-30:focus {
+  fill: rgba(255, 255, 255, 0.3); }
+
+.hover-fill-white-25:hover,
+.hover-fill-white-25:focus {
+  fill: rgba(255, 255, 255, 0.25); }
+
+.hover-fill-white-20:hover,
+.hover-fill-white-20:focus {
+  fill: rgba(255, 255, 255, 0.2); }
+
+.hover-fill-white-10:hover,
+.hover-fill-white-10:focus {
+  fill: rgba(255, 255, 255, 0.1); }
+
+.hover-fill-white-05:hover,
+.hover-fill-white-05:focus {
+  fill: rgba(255, 255, 255, 0.05); }
+
+.hover-fill-white-025:hover,
+.hover-fill-white-025:focus {
+  fill: rgba(255, 255, 255, 0.025); }
+
+.hover-fill-white-0125:hover,
+.hover-fill-white-0125:focus {
+  fill: rgba(255, 255, 255, 0.0125); }
+
+.hover-fill-dark-red:hover,
+.hover-fill-dark-red:focus {
+  fill: #e7040f; }
+
+.hover-fill-red:hover,
+.hover-fill-red:focus {
+  fill: #ff4136; }
+
+.hover-fill-light-red:hover,
+.hover-fill-light-red:focus {
+  fill: #ff725c; }
+
+.hover-fill-orange:hover,
+.hover-fill-orange:focus {
+  fill: #ff6300; }
+
+.hover-fill-gold:hover,
+.hover-fill-gold:focus {
+  fill: #ffb700; }
+
+.hover-fill-yellow:hover,
+.hover-fill-yellow:focus {
+  fill: #ffd700; }
+
+.hover-fill-light-yellow:hover,
+.hover-fill-light-yellow:focus {
+  fill: #fbf1a9; }
+
+.hover-fill-purple:hover,
+.hover-fill-purple:focus {
+  fill: #5e2ca5; }
+
+.hover-fill-light-purple:hover,
+.hover-fill-light-purple:focus {
+  fill: #a463f2; }
+
+.hover-fill-dark-pink:hover,
+.hover-fill-dark-pink:focus {
+  fill: #d5008f; }
+
+.hover-fill-hot-pink:hover,
+.hover-fill-hot-pink:focus {
+  fill: #ff41b4; }
+
+.hover-fill-pink:hover,
+.hover-fill-pink:focus {
+  fill: #ff80cc; }
+
+.hover-fill-light-pink:hover,
+.hover-fill-light-pink:focus {
+  fill: #ffa3d7; }
+
+.hover-fill-dark-green:hover,
+.hover-fill-dark-green:focus {
+  fill: #137752; }
+
+.hover-fill-green:hover,
+.hover-fill-green:focus {
+  fill: #19a974; }
+
+.hover-fill-light-green:hover,
+.hover-fill-light-green:focus {
+  fill: #9eebcf; }
+
+.hover-fill-navy:hover,
+.hover-fill-navy:focus {
+  fill: #001b44; }
+
+.hover-fill-dark-blue:hover,
+.hover-fill-dark-blue:focus {
+  fill: #00449e; }
+
+.hover-fill-blue:hover,
+.hover-fill-blue:focus {
+  fill: #357edd; }
+
+.hover-fill-light-blue:hover,
+.hover-fill-light-blue:focus {
+  fill: #96ccff; }
+
+.hover-fill-lightest-blue:hover,
+.hover-fill-lightest-blue:focus {
+  fill: #cdecff; }
+
+.hover-fill-washed-blue:hover,
+.hover-fill-washed-blue:focus {
+  fill: #f6fffe; }
+
+.hover-fill-washed-green:hover,
+.hover-fill-washed-green:focus {
+  fill: #e8fdf5; }
+
+.hover-fill-washed-yellow:hover,
+.hover-fill-washed-yellow:focus {
+  fill: #fffceb; }
+
+.hover-fill-washed-red:hover,
+.hover-fill-washed-red:focus {
+  fill: #ffdfdf; }
+
+@media screen and (min-width: 30em) {
+  .hover-fill-inherit-ns:hover,
+  .hover-fill-inherit-ns:focus {
+    fill: inherit; }
+  .hover-fill-initial-ns:hover,
+  .hover-fill-initial-ns:focus {
+    fill: initial; }
+  .hover-fill-current-ns:hover,
+  .hover-fill-current-ns:focus {
+    fill: currentColor; }
+  .hover-fill-transparent-ns:hover,
+  .hover-fill-transparent-ns:focus {
+    fill: transparent; }
+  .hover-fill-black-ns:hover,
+  .hover-fill-black-ns:focus {
+    fill: #000; }
+  .hover-fill-near-black-ns:hover,
+  .hover-fill-near-black-ns:focus {
+    fill: #111; }
+  .hover-fill-dark-gray-ns:hover,
+  .hover-fill-dark-gray-ns:focus {
+    fill: #333; }
+  .hover-fill-mid-gray-ns:hover,
+  .hover-fill-mid-gray-ns:focus {
+    fill: #555; }
+  .hover-fill-gray-ns:hover,
+  .hover-fill-gray-ns:focus {
+    fill: #777; }
+  .hover-fill-silver-ns:hover,
+  .hover-fill-silver-ns:focus {
+    fill: #999; }
+  .hover-fill-light-silver-ns:hover,
+  .hover-fill-light-silver-ns:focus {
+    fill: #aaa; }
+  .hover-fill-moon-gray-ns:hover,
+  .hover-fill-moon-gray-ns:focus {
+    fill: #ccc; }
+  .hover-fill-light-gray-ns:hover,
+  .hover-fill-light-gray-ns:focus {
+    fill: #eee; }
+  .hover-fill-near-white-ns:hover,
+  .hover-fill-near-white-ns:focus {
+    fill: #f4f4f4; }
+  .hover-fill-white-ns:hover,
+  .hover-fill-white-ns:focus {
+    fill: #fff; }
+  .hover-fill-black-90-ns:hover,
+  .hover-fill-black-90-ns:focus {
+    fill: rgba(0, 0, 0, 0.9); }
+  .hover-fill-black-80-ns:hover,
+  .hover-fill-black-80-ns:focus {
+    fill: rgba(0, 0, 0, 0.8); }
+  .hover-fill-black-75-ns:hover,
+  .hover-fill-black-75-ns:focus {
+    fill: rgba(0, 0, 0, 0.75); }
+  .hover-fill-black-70-ns:hover,
+  .hover-fill-black-70-ns:focus {
+    fill: rgba(0, 0, 0, 0.7); }
+  .hover-fill-black-60-ns:hover,
+  .hover-fill-black-60-ns:focus {
+    fill: rgba(0, 0, 0, 0.6); }
+  .hover-fill-black-50-ns:hover,
+  .hover-fill-black-50-ns:focus {
+    fill: rgba(0, 0, 0, 0.5); }
+  .hover-fill-black-40-ns:hover,
+  .hover-fill-black-40-ns:focus {
+    fill: rgba(0, 0, 0, 0.4); }
+  .hover-fill-black-30-ns:hover,
+  .hover-fill-black-30-ns:focus {
+    fill: rgba(0, 0, 0, 0.3); }
+  .hover-fill-black-25-ns:hover,
+  .hover-fill-black-25-ns:focus {
+    fill: rgba(0, 0, 0, 0.25); }
+  .hover-fill-black-20-ns:hover,
+  .hover-fill-black-20-ns:focus {
+    fill: rgba(0, 0, 0, 0.2); }
+  .hover-fill-black-10-ns:hover,
+  .hover-fill-black-10-ns:focus {
+    fill: rgba(0, 0, 0, 0.1); }
+  .hover-fill-black-05-ns:hover,
+  .hover-fill-black-05-ns:focus {
+    fill: rgba(0, 0, 0, 0.05); }
+  .hover-fill-black-025-ns:hover,
+  .hover-fill-black-025-ns:focus {
+    fill: rgba(0, 0, 0, 0.025); }
+  .hover-fill-black-0125-ns:hover,
+  .hover-fill-black-0125-ns:focus {
+    fill: rgba(0, 0, 0, 0.0125); }
+  .hover-fill-white-90-ns:hover,
+  .hover-fill-white-90-ns:focus {
+    fill: rgba(255, 255, 255, 0.9); }
+  .hover-fill-white-80-ns:hover,
+  .hover-fill-white-80-ns:focus {
+    fill: rgba(255, 255, 255, 0.8); }
+  .hover-fill-white-75-ns:hover,
+  .hover-fill-white-75-ns:focus {
+    fill: rgba(255, 255, 255, 0.75); }
+  .hover-fill-white-70-ns:hover,
+  .hover-fill-white-70-ns:focus {
+    fill: rgba(255, 255, 255, 0.7); }
+  .hover-fill-white-60-ns:hover,
+  .hover-fill-white-60-ns:focus {
+    fill: rgba(255, 255, 255, 0.6); }
+  .hover-fill-white-50-ns:hover,
+  .hover-fill-white-50-ns:focus {
+    fill: rgba(255, 255, 255, 0.5); }
+  .hover-fill-white-40-ns:hover,
+  .hover-fill-white-40-ns:focus {
+    fill: rgba(255, 255, 255, 0.4); }
+  .hover-fill-white-30-ns:hover,
+  .hover-fill-white-30-ns:focus {
+    fill: rgba(255, 255, 255, 0.3); }
+  .hover-fill-white-25-ns:hover,
+  .hover-fill-white-25-ns:focus {
+    fill: rgba(255, 255, 255, 0.25); }
+  .hover-fill-white-20-ns:hover,
+  .hover-fill-white-20-ns:focus {
+    fill: rgba(255, 255, 255, 0.2); }
+  .hover-fill-white-10-ns:hover,
+  .hover-fill-white-10-ns:focus {
+    fill: rgba(255, 255, 255, 0.1); }
+  .hover-fill-white-05-ns:hover,
+  .hover-fill-white-05-ns:focus {
+    fill: rgba(255, 255, 255, 0.05); }
+  .hover-fill-white-025-ns:hover,
+  .hover-fill-white-025-ns:focus {
+    fill: rgba(255, 255, 255, 0.025); }
+  .hover-fill-white-0125-ns:hover,
+  .hover-fill-white-0125-ns:focus {
+    fill: rgba(255, 255, 255, 0.0125); }
+  .hover-fill-dark-red-ns:hover,
+  .hover-fill-dark-red-ns:focus {
+    fill: #e7040f; }
+  .hover-fill-red-ns:hover,
+  .hover-fill-red-ns:focus {
+    fill: #ff4136; }
+  .hover-fill-light-red-ns:hover,
+  .hover-fill-light-red-ns:focus {
+    fill: #ff725c; }
+  .hover-fill-orange-ns:hover,
+  .hover-fill-orange-ns:focus {
+    fill: #ff6300; }
+  .hover-fill-gold-ns:hover,
+  .hover-fill-gold-ns:focus {
+    fill: #ffb700; }
+  .hover-fill-yellow-ns:hover,
+  .hover-fill-yellow-ns:focus {
+    fill: #ffd700; }
+  .hover-fill-light-yellow-ns:hover,
+  .hover-fill-light-yellow-ns:focus {
+    fill: #fbf1a9; }
+  .hover-fill-purple-ns:hover,
+  .hover-fill-purple-ns:focus {
+    fill: #5e2ca5; }
+  .hover-fill-light-purple-ns:hover,
+  .hover-fill-light-purple-ns:focus {
+    fill: #a463f2; }
+  .hover-fill-dark-pink-ns:hover,
+  .hover-fill-dark-pink-ns:focus {
+    fill: #d5008f; }
+  .hover-fill-hot-pink-ns:hover,
+  .hover-fill-hot-pink-ns:focus {
+    fill: #ff41b4; }
+  .hover-fill-pink-ns:hover,
+  .hover-fill-pink-ns:focus {
+    fill: #ff80cc; }
+  .hover-fill-light-pink-ns:hover,
+  .hover-fill-light-pink-ns:focus {
+    fill: #ffa3d7; }
+  .hover-fill-dark-green-ns:hover,
+  .hover-fill-dark-green-ns:focus {
+    fill: #137752; }
+  .hover-fill-green-ns:hover,
+  .hover-fill-green-ns:focus {
+    fill: #19a974; }
+  .hover-fill-light-green-ns:hover,
+  .hover-fill-light-green-ns:focus {
+    fill: #9eebcf; }
+  .hover-fill-navy-ns:hover,
+  .hover-fill-navy-ns:focus {
+    fill: #001b44; }
+  .hover-fill-dark-blue-ns:hover,
+  .hover-fill-dark-blue-ns:focus {
+    fill: #00449e; }
+  .hover-fill-blue-ns:hover,
+  .hover-fill-blue-ns:focus {
+    fill: #357edd; }
+  .hover-fill-light-blue-ns:hover,
+  .hover-fill-light-blue-ns:focus {
+    fill: #96ccff; }
+  .hover-fill-lightest-blue-ns:hover,
+  .hover-fill-lightest-blue-ns:focus {
+    fill: #cdecff; }
+  .hover-fill-washed-blue-ns:hover,
+  .hover-fill-washed-blue-ns:focus {
+    fill: #f6fffe; }
+  .hover-fill-washed-green-ns:hover,
+  .hover-fill-washed-green-ns:focus {
+    fill: #e8fdf5; }
+  .hover-fill-washed-yellow-ns:hover,
+  .hover-fill-washed-yellow-ns:focus {
+    fill: #fffceb; }
+  .hover-fill-washed-red-ns:hover,
+  .hover-fill-washed-red-ns:focus {
+    fill: #ffdfdf; } }
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .hover-fill-inherit-m:hover,
+  .hover-fill-inherit-m:focus {
+    fill: inherit; }
+  .hover-fill-initial-m:hover,
+  .hover-fill-initial-m:focus {
+    fill: initial; }
+  .hover-fill-current-m:hover,
+  .hover-fill-current-m:focus {
+    fill: currentColor; }
+  .hover-fill-transparent-m:hover,
+  .hover-fill-transparent-m:focus {
+    fill: transparent; }
+  .hover-fill-black-m:hover,
+  .hover-fill-black-m:focus {
+    fill: #000; }
+  .hover-fill-near-black-m:hover,
+  .hover-fill-near-black-m:focus {
+    fill: #111; }
+  .hover-fill-dark-gray-m:hover,
+  .hover-fill-dark-gray-m:focus {
+    fill: #333; }
+  .hover-fill-mid-gray-m:hover,
+  .hover-fill-mid-gray-m:focus {
+    fill: #555; }
+  .hover-fill-gray-m:hover,
+  .hover-fill-gray-m:focus {
+    fill: #777; }
+  .hover-fill-silver-m:hover,
+  .hover-fill-silver-m:focus {
+    fill: #999; }
+  .hover-fill-light-silver-m:hover,
+  .hover-fill-light-silver-m:focus {
+    fill: #aaa; }
+  .hover-fill-moon-gray-m:hover,
+  .hover-fill-moon-gray-m:focus {
+    fill: #ccc; }
+  .hover-fill-light-gray-m:hover,
+  .hover-fill-light-gray-m:focus {
+    fill: #eee; }
+  .hover-fill-near-white-m:hover,
+  .hover-fill-near-white-m:focus {
+    fill: #f4f4f4; }
+  .hover-fill-white-m:hover,
+  .hover-fill-white-m:focus {
+    fill: #fff; }
+  .hover-fill-black-90-m:hover,
+  .hover-fill-black-90-m:focus {
+    fill: rgba(0, 0, 0, 0.9); }
+  .hover-fill-black-80-m:hover,
+  .hover-fill-black-80-m:focus {
+    fill: rgba(0, 0, 0, 0.8); }
+  .hover-fill-black-75-m:hover,
+  .hover-fill-black-75-m:focus {
+    fill: rgba(0, 0, 0, 0.75); }
+  .hover-fill-black-70-m:hover,
+  .hover-fill-black-70-m:focus {
+    fill: rgba(0, 0, 0, 0.7); }
+  .hover-fill-black-60-m:hover,
+  .hover-fill-black-60-m:focus {
+    fill: rgba(0, 0, 0, 0.6); }
+  .hover-fill-black-50-m:hover,
+  .hover-fill-black-50-m:focus {
+    fill: rgba(0, 0, 0, 0.5); }
+  .hover-fill-black-40-m:hover,
+  .hover-fill-black-40-m:focus {
+    fill: rgba(0, 0, 0, 0.4); }
+  .hover-fill-black-30-m:hover,
+  .hover-fill-black-30-m:focus {
+    fill: rgba(0, 0, 0, 0.3); }
+  .hover-fill-black-25-m:hover,
+  .hover-fill-black-25-m:focus {
+    fill: rgba(0, 0, 0, 0.25); }
+  .hover-fill-black-20-m:hover,
+  .hover-fill-black-20-m:focus {
+    fill: rgba(0, 0, 0, 0.2); }
+  .hover-fill-black-10-m:hover,
+  .hover-fill-black-10-m:focus {
+    fill: rgba(0, 0, 0, 0.1); }
+  .hover-fill-black-05-m:hover,
+  .hover-fill-black-05-m:focus {
+    fill: rgba(0, 0, 0, 0.05); }
+  .hover-fill-black-025-m:hover,
+  .hover-fill-black-025-m:focus {
+    fill: rgba(0, 0, 0, 0.025); }
+  .hover-fill-black-0125-m:hover,
+  .hover-fill-black-0125-m:focus {
+    fill: rgba(0, 0, 0, 0.0125); }
+  .hover-fill-white-90-m:hover,
+  .hover-fill-white-90-m:focus {
+    fill: rgba(255, 255, 255, 0.9); }
+  .hover-fill-white-80-m:hover,
+  .hover-fill-white-80-m:focus {
+    fill: rgba(255, 255, 255, 0.8); }
+  .hover-fill-white-75-m:hover,
+  .hover-fill-white-75-m:focus {
+    fill: rgba(255, 255, 255, 0.75); }
+  .hover-fill-white-70-m:hover,
+  .hover-fill-white-70-m:focus {
+    fill: rgba(255, 255, 255, 0.7); }
+  .hover-fill-white-60-m:hover,
+  .hover-fill-white-60-m:focus {
+    fill: rgba(255, 255, 255, 0.6); }
+  .hover-fill-white-50-m:hover,
+  .hover-fill-white-50-m:focus {
+    fill: rgba(255, 255, 255, 0.5); }
+  .hover-fill-white-40-m:hover,
+  .hover-fill-white-40-m:focus {
+    fill: rgba(255, 255, 255, 0.4); }
+  .hover-fill-white-30-m:hover,
+  .hover-fill-white-30-m:focus {
+    fill: rgba(255, 255, 255, 0.3); }
+  .hover-fill-white-25-m:hover,
+  .hover-fill-white-25-m:focus {
+    fill: rgba(255, 255, 255, 0.25); }
+  .hover-fill-white-20-m:hover,
+  .hover-fill-white-20-m:focus {
+    fill: rgba(255, 255, 255, 0.2); }
+  .hover-fill-white-10-m:hover,
+  .hover-fill-white-10-m:focus {
+    fill: rgba(255, 255, 255, 0.1); }
+  .hover-fill-white-05-m:hover,
+  .hover-fill-white-05-m:focus {
+    fill: rgba(255, 255, 255, 0.05); }
+  .hover-fill-white-025-m:hover,
+  .hover-fill-white-025-m:focus {
+    fill: rgba(255, 255, 255, 0.025); }
+  .hover-fill-white-0125-m:hover,
+  .hover-fill-white-0125-m:focus {
+    fill: rgba(255, 255, 255, 0.0125); }
+  .hover-fill-dark-red-m:hover,
+  .hover-fill-dark-red-m:focus {
+    fill: #e7040f; }
+  .hover-fill-red-m:hover,
+  .hover-fill-red-m:focus {
+    fill: #ff4136; }
+  .hover-fill-light-red-m:hover,
+  .hover-fill-light-red-m:focus {
+    fill: #ff725c; }
+  .hover-fill-orange-m:hover,
+  .hover-fill-orange-m:focus {
+    fill: #ff6300; }
+  .hover-fill-gold-m:hover,
+  .hover-fill-gold-m:focus {
+    fill: #ffb700; }
+  .hover-fill-yellow-m:hover,
+  .hover-fill-yellow-m:focus {
+    fill: #ffd700; }
+  .hover-fill-light-yellow-m:hover,
+  .hover-fill-light-yellow-m:focus {
+    fill: #fbf1a9; }
+  .hover-fill-purple-m:hover,
+  .hover-fill-purple-m:focus {
+    fill: #5e2ca5; }
+  .hover-fill-light-purple-m:hover,
+  .hover-fill-light-purple-m:focus {
+    fill: #a463f2; }
+  .hover-fill-dark-pink-m:hover,
+  .hover-fill-dark-pink-m:focus {
+    fill: #d5008f; }
+  .hover-fill-hot-pink-m:hover,
+  .hover-fill-hot-pink-m:focus {
+    fill: #ff41b4; }
+  .hover-fill-pink-m:hover,
+  .hover-fill-pink-m:focus {
+    fill: #ff80cc; }
+  .hover-fill-light-pink-m:hover,
+  .hover-fill-light-pink-m:focus {
+    fill: #ffa3d7; }
+  .hover-fill-dark-green-m:hover,
+  .hover-fill-dark-green-m:focus {
+    fill: #137752; }
+  .hover-fill-green-m:hover,
+  .hover-fill-green-m:focus {
+    fill: #19a974; }
+  .hover-fill-light-green-m:hover,
+  .hover-fill-light-green-m:focus {
+    fill: #9eebcf; }
+  .hover-fill-navy-m:hover,
+  .hover-fill-navy-m:focus {
+    fill: #001b44; }
+  .hover-fill-dark-blue-m:hover,
+  .hover-fill-dark-blue-m:focus {
+    fill: #00449e; }
+  .hover-fill-blue-m:hover,
+  .hover-fill-blue-m:focus {
+    fill: #357edd; }
+  .hover-fill-light-blue-m:hover,
+  .hover-fill-light-blue-m:focus {
+    fill: #96ccff; }
+  .hover-fill-lightest-blue-m:hover,
+  .hover-fill-lightest-blue-m:focus {
+    fill: #cdecff; }
+  .hover-fill-washed-blue-m:hover,
+  .hover-fill-washed-blue-m:focus {
+    fill: #f6fffe; }
+  .hover-fill-washed-green-m:hover,
+  .hover-fill-washed-green-m:focus {
+    fill: #e8fdf5; }
+  .hover-fill-washed-yellow-m:hover,
+  .hover-fill-washed-yellow-m:focus {
+    fill: #fffceb; }
+  .hover-fill-washed-red-m:hover,
+  .hover-fill-washed-red-m:focus {
+    fill: #ffdfdf; } }
+
+@media screen and (min-width: 60em) {
+  .hover-fill-inherit-l:hover,
+  .hover-fill-inherit-l:focus {
+    fill: inherit; }
+  .hover-fill-initial-l:hover,
+  .hover-fill-initial-l:focus {
+    fill: initial; }
+  .hover-fill-current-l:hover,
+  .hover-fill-current-l:focus {
+    fill: currentColor; }
+  .hover-fill-transparent-l:hover,
+  .hover-fill-transparent-l:focus {
+    fill: transparent; }
+  .hover-fill-black-l:hover,
+  .hover-fill-black-l:focus {
+    fill: #000; }
+  .hover-fill-near-black-l:hover,
+  .hover-fill-near-black-l:focus {
+    fill: #111; }
+  .hover-fill-dark-gray-l:hover,
+  .hover-fill-dark-gray-l:focus {
+    fill: #333; }
+  .hover-fill-mid-gray-l:hover,
+  .hover-fill-mid-gray-l:focus {
+    fill: #555; }
+  .hover-fill-gray-l:hover,
+  .hover-fill-gray-l:focus {
+    fill: #777; }
+  .hover-fill-silver-l:hover,
+  .hover-fill-silver-l:focus {
+    fill: #999; }
+  .hover-fill-light-silver-l:hover,
+  .hover-fill-light-silver-l:focus {
+    fill: #aaa; }
+  .hover-fill-moon-gray-l:hover,
+  .hover-fill-moon-gray-l:focus {
+    fill: #ccc; }
+  .hover-fill-light-gray-l:hover,
+  .hover-fill-light-gray-l:focus {
+    fill: #eee; }
+  .hover-fill-near-white-l:hover,
+  .hover-fill-near-white-l:focus {
+    fill: #f4f4f4; }
+  .hover-fill-white-l:hover,
+  .hover-fill-white-l:focus {
+    fill: #fff; }
+  .hover-fill-black-90-l:hover,
+  .hover-fill-black-90-l:focus {
+    fill: rgba(0, 0, 0, 0.9); }
+  .hover-fill-black-80-l:hover,
+  .hover-fill-black-80-l:focus {
+    fill: rgba(0, 0, 0, 0.8); }
+  .hover-fill-black-75-l:hover,
+  .hover-fill-black-75-l:focus {
+    fill: rgba(0, 0, 0, 0.75); }
+  .hover-fill-black-70-l:hover,
+  .hover-fill-black-70-l:focus {
+    fill: rgba(0, 0, 0, 0.7); }
+  .hover-fill-black-60-l:hover,
+  .hover-fill-black-60-l:focus {
+    fill: rgba(0, 0, 0, 0.6); }
+  .hover-fill-black-50-l:hover,
+  .hover-fill-black-50-l:focus {
+    fill: rgba(0, 0, 0, 0.5); }
+  .hover-fill-black-40-l:hover,
+  .hover-fill-black-40-l:focus {
+    fill: rgba(0, 0, 0, 0.4); }
+  .hover-fill-black-30-l:hover,
+  .hover-fill-black-30-l:focus {
+    fill: rgba(0, 0, 0, 0.3); }
+  .hover-fill-black-25-l:hover,
+  .hover-fill-black-25-l:focus {
+    fill: rgba(0, 0, 0, 0.25); }
+  .hover-fill-black-20-l:hover,
+  .hover-fill-black-20-l:focus {
+    fill: rgba(0, 0, 0, 0.2); }
+  .hover-fill-black-10-l:hover,
+  .hover-fill-black-10-l:focus {
+    fill: rgba(0, 0, 0, 0.1); }
+  .hover-fill-black-05-l:hover,
+  .hover-fill-black-05-l:focus {
+    fill: rgba(0, 0, 0, 0.05); }
+  .hover-fill-black-025-l:hover,
+  .hover-fill-black-025-l:focus {
+    fill: rgba(0, 0, 0, 0.025); }
+  .hover-fill-black-0125-l:hover,
+  .hover-fill-black-0125-l:focus {
+    fill: rgba(0, 0, 0, 0.0125); }
+  .hover-fill-white-90-l:hover,
+  .hover-fill-white-90-l:focus {
+    fill: rgba(255, 255, 255, 0.9); }
+  .hover-fill-white-80-l:hover,
+  .hover-fill-white-80-l:focus {
+    fill: rgba(255, 255, 255, 0.8); }
+  .hover-fill-white-75-l:hover,
+  .hover-fill-white-75-l:focus {
+    fill: rgba(255, 255, 255, 0.75); }
+  .hover-fill-white-70-l:hover,
+  .hover-fill-white-70-l:focus {
+    fill: rgba(255, 255, 255, 0.7); }
+  .hover-fill-white-60-l:hover,
+  .hover-fill-white-60-l:focus {
+    fill: rgba(255, 255, 255, 0.6); }
+  .hover-fill-white-50-l:hover,
+  .hover-fill-white-50-l:focus {
+    fill: rgba(255, 255, 255, 0.5); }
+  .hover-fill-white-40-l:hover,
+  .hover-fill-white-40-l:focus {
+    fill: rgba(255, 255, 255, 0.4); }
+  .hover-fill-white-30-l:hover,
+  .hover-fill-white-30-l:focus {
+    fill: rgba(255, 255, 255, 0.3); }
+  .hover-fill-white-25-l:hover,
+  .hover-fill-white-25-l:focus {
+    fill: rgba(255, 255, 255, 0.25); }
+  .hover-fill-white-20-l:hover,
+  .hover-fill-white-20-l:focus {
+    fill: rgba(255, 255, 255, 0.2); }
+  .hover-fill-white-10-l:hover,
+  .hover-fill-white-10-l:focus {
+    fill: rgba(255, 255, 255, 0.1); }
+  .hover-fill-white-05-l:hover,
+  .hover-fill-white-05-l:focus {
+    fill: rgba(255, 255, 255, 0.05); }
+  .hover-fill-white-025-l:hover,
+  .hover-fill-white-025-l:focus {
+    fill: rgba(255, 255, 255, 0.025); }
+  .hover-fill-white-0125-l:hover,
+  .hover-fill-white-0125-l:focus {
+    fill: rgba(255, 255, 255, 0.0125); }
+  .hover-fill-dark-red-l:hover,
+  .hover-fill-dark-red-l:focus {
+    fill: #e7040f; }
+  .hover-fill-red-l:hover,
+  .hover-fill-red-l:focus {
+    fill: #ff4136; }
+  .hover-fill-light-red-l:hover,
+  .hover-fill-light-red-l:focus {
+    fill: #ff725c; }
+  .hover-fill-orange-l:hover,
+  .hover-fill-orange-l:focus {
+    fill: #ff6300; }
+  .hover-fill-gold-l:hover,
+  .hover-fill-gold-l:focus {
+    fill: #ffb700; }
+  .hover-fill-yellow-l:hover,
+  .hover-fill-yellow-l:focus {
+    fill: #ffd700; }
+  .hover-fill-light-yellow-l:hover,
+  .hover-fill-light-yellow-l:focus {
+    fill: #fbf1a9; }
+  .hover-fill-purple-l:hover,
+  .hover-fill-purple-l:focus {
+    fill: #5e2ca5; }
+  .hover-fill-light-purple-l:hover,
+  .hover-fill-light-purple-l:focus {
+    fill: #a463f2; }
+  .hover-fill-dark-pink-l:hover,
+  .hover-fill-dark-pink-l:focus {
+    fill: #d5008f; }
+  .hover-fill-hot-pink-l:hover,
+  .hover-fill-hot-pink-l:focus {
+    fill: #ff41b4; }
+  .hover-fill-pink-l:hover,
+  .hover-fill-pink-l:focus {
+    fill: #ff80cc; }
+  .hover-fill-light-pink-l:hover,
+  .hover-fill-light-pink-l:focus {
+    fill: #ffa3d7; }
+  .hover-fill-dark-green-l:hover,
+  .hover-fill-dark-green-l:focus {
+    fill: #137752; }
+  .hover-fill-green-l:hover,
+  .hover-fill-green-l:focus {
+    fill: #19a974; }
+  .hover-fill-light-green-l:hover,
+  .hover-fill-light-green-l:focus {
+    fill: #9eebcf; }
+  .hover-fill-navy-l:hover,
+  .hover-fill-navy-l:focus {
+    fill: #001b44; }
+  .hover-fill-dark-blue-l:hover,
+  .hover-fill-dark-blue-l:focus {
+    fill: #00449e; }
+  .hover-fill-blue-l:hover,
+  .hover-fill-blue-l:focus {
+    fill: #357edd; }
+  .hover-fill-light-blue-l:hover,
+  .hover-fill-light-blue-l:focus {
+    fill: #96ccff; }
+  .hover-fill-lightest-blue-l:hover,
+  .hover-fill-lightest-blue-l:focus {
+    fill: #cdecff; }
+  .hover-fill-washed-blue-l:hover,
+  .hover-fill-washed-blue-l:focus {
+    fill: #f6fffe; }
+  .hover-fill-washed-green-l:hover,
+  .hover-fill-washed-green-l:focus {
+    fill: #e8fdf5; }
+  .hover-fill-washed-yellow-l:hover,
+  .hover-fill-washed-yellow-l:focus {
+    fill: #fffceb; }
+  .hover-fill-washed-red-l:hover,
+  .hover-fill-washed-red-l:focus {
+    fill: #ffdfdf; } }
+
+/* Stroke colors */
+.hover-stroke-inherit:hover,
+.hover-stroke-inherit:focus {
+  stroke: inherit; }
+
+.hover-stroke-initial:hover,
+.hover-stroke-initial:focus {
+  stroke: initial; }
+
+.hover-stroke-current:hover,
+.hover-stroke-current:focus {
+  stroke: currentColor; }
+
+.hover-stroke-transparent:hover,
+.hover-stroke-transparent:focus {
+  stroke: transparent; }
+
+.hover-stroke-black:hover,
+.hover-stroke-black:focus {
+  stroke: #000; }
+
+.hover-stroke-near-black:hover,
+.hover-stroke-near-black:focus {
+  stroke: #111; }
+
+.hover-stroke-dark-gray:hover,
+.hover-stroke-dark-gray:focus {
+  stroke: #333; }
+
+.hover-stroke-mid-gray:hover,
+.hover-stroke-mid-gray:focus {
+  stroke: #555; }
+
+.hover-stroke-gray:hover,
+.hover-stroke-gray:focus {
+  stroke: #777; }
+
+.hover-stroke-silver:hover,
+.hover-stroke-silver:focus {
+  stroke: #999; }
+
+.hover-stroke-light-silver:hover,
+.hover-stroke-light-silver:focus {
+  stroke: #aaa; }
+
+.hover-stroke-moon-gray:hover,
+.hover-stroke-moon-gray:focus {
+  stroke: #ccc; }
+
+.hover-stroke-light-gray:hover,
+.hover-stroke-light-gray:focus {
+  stroke: #eee; }
+
+.hover-stroke-near-white:hover,
+.hover-stroke-near-white:focus {
+  stroke: #f4f4f4; }
+
+.hover-stroke-white:hover,
+.hover-stroke-white:focus {
+  stroke: #fff; }
+
+.hover-stroke-black-90:hover,
+.hover-stroke-black-90:focus {
+  stroke: rgba(0, 0, 0, 0.9); }
+
+.hover-stroke-black-80:hover,
+.hover-stroke-black-80:focus {
+  stroke: rgba(0, 0, 0, 0.8); }
+
+.hover-stroke-black-75:hover,
+.hover-stroke-black-75:focus {
+  stroke: rgba(0, 0, 0, 0.75); }
+
+.hover-stroke-black-70:hover,
+.hover-stroke-black-70:focus {
+  stroke: rgba(0, 0, 0, 0.7); }
+
+.hover-stroke-black-60:hover,
+.hover-stroke-black-60:focus {
+  stroke: rgba(0, 0, 0, 0.6); }
+
+.hover-stroke-black-50:hover,
+.hover-stroke-black-50:focus {
+  stroke: rgba(0, 0, 0, 0.5); }
+
+.hover-stroke-black-40:hover,
+.hover-stroke-black-40:focus {
+  stroke: rgba(0, 0, 0, 0.4); }
+
+.hover-stroke-black-30:hover,
+.hover-stroke-black-30:focus {
+  stroke: rgba(0, 0, 0, 0.3); }
+
+.hover-stroke-black-25:hover,
+.hover-stroke-black-25:focus {
+  stroke: rgba(0, 0, 0, 0.25); }
+
+.hover-stroke-black-20:hover,
+.hover-stroke-black-20:focus {
+  stroke: rgba(0, 0, 0, 0.2); }
+
+.hover-stroke-black-10:hover,
+.hover-stroke-black-10:focus {
+  stroke: rgba(0, 0, 0, 0.1); }
+
+.hover-stroke-black-05:hover,
+.hover-stroke-black-05:focus {
+  stroke: rgba(0, 0, 0, 0.05); }
+
+.hover-stroke-black-025:hover,
+.hover-stroke-black-025:focus {
+  stroke: rgba(0, 0, 0, 0.025); }
+
+.hover-stroke-black-0125:hover,
+.hover-stroke-black-0125:focus {
+  stroke: rgba(0, 0, 0, 0.0125); }
+
+.hover-stroke-white-90:hover,
+.hover-stroke-white-90:focus {
+  stroke: rgba(255, 255, 255, 0.9); }
+
+.hover-stroke-white-80:hover,
+.hover-stroke-white-80:focus {
+  stroke: rgba(255, 255, 255, 0.8); }
+
+.hover-stroke-white-75:hover,
+.hover-stroke-white-75:focus {
+  stroke: rgba(255, 255, 255, 0.75); }
+
+.hover-stroke-white-70:hover,
+.hover-stroke-white-70:focus {
+  stroke: rgba(255, 255, 255, 0.7); }
+
+.hover-stroke-white-60:hover,
+.hover-stroke-white-60:focus {
+  stroke: rgba(255, 255, 255, 0.6); }
+
+.hover-stroke-white-50:hover,
+.hover-stroke-white-50:focus {
+  stroke: rgba(255, 255, 255, 0.5); }
+
+.hover-stroke-white-40:hover,
+.hover-stroke-white-40:focus {
+  stroke: rgba(255, 255, 255, 0.4); }
+
+.hover-stroke-white-30:hover,
+.hover-stroke-white-30:focus {
+  stroke: rgba(255, 255, 255, 0.3); }
+
+.hover-stroke-white-25:hover,
+.hover-stroke-white-25:focus {
+  stroke: rgba(255, 255, 255, 0.25); }
+
+.hover-stroke-white-20:hover,
+.hover-stroke-white-20:focus {
+  stroke: rgba(255, 255, 255, 0.2); }
+
+.hover-stroke-white-10:hover,
+.hover-stroke-white-10:focus {
+  stroke: rgba(255, 255, 255, 0.1); }
+
+.hover-stroke-white-05:hover,
+.hover-stroke-white-05:focus {
+  stroke: rgba(255, 255, 255, 0.05); }
+
+.hover-stroke-white-025:hover,
+.hover-stroke-white-025:focus {
+  stroke: rgba(255, 255, 255, 0.025); }
+
+.hover-stroke-white-0125:hover,
+.hover-stroke-white-0125:focus {
+  stroke: rgba(255, 255, 255, 0.0125); }
+
+.hover-stroke-dark-red:hover,
+.hover-stroke-dark-red:focus {
+  stroke: #e7040f; }
+
+.hover-stroke-red:hover,
+.hover-stroke-red:focus {
+  stroke: #ff4136; }
+
+.hover-stroke-light-red:hover,
+.hover-stroke-light-red:focus {
+  stroke: #ff725c; }
+
+.hover-stroke-orange:hover,
+.hover-stroke-orange:focus {
+  stroke: #ff6300; }
+
+.hover-stroke-gold:hover,
+.hover-stroke-gold:focus {
+  stroke: #ffb700; }
+
+.hover-stroke-yellow:hover,
+.hover-stroke-yellow:focus {
+  stroke: #ffd700; }
+
+.hover-stroke-light-yellow:hover,
+.hover-stroke-light-yellow:focus {
+  stroke: #fbf1a9; }
+
+.hover-stroke-purple:hover,
+.hover-stroke-purple:focus {
+  stroke: #5e2ca5; }
+
+.hover-stroke-light-purple:hover,
+.hover-stroke-light-purple:focus {
+  stroke: #a463f2; }
+
+.hover-stroke-dark-pink:hover,
+.hover-stroke-dark-pink:focus {
+  stroke: #d5008f; }
+
+.hover-stroke-hot-pink:hover,
+.hover-stroke-hot-pink:focus {
+  stroke: #ff41b4; }
+
+.hover-stroke-pink:hover,
+.hover-stroke-pink:focus {
+  stroke: #ff80cc; }
+
+.hover-stroke-light-pink:hover,
+.hover-stroke-light-pink:focus {
+  stroke: #ffa3d7; }
+
+.hover-stroke-dark-green:hover,
+.hover-stroke-dark-green:focus {
+  stroke: #137752; }
+
+.hover-stroke-green:hover,
+.hover-stroke-green:focus {
+  stroke: #19a974; }
+
+.hover-stroke-light-green:hover,
+.hover-stroke-light-green:focus {
+  stroke: #9eebcf; }
+
+.hover-stroke-navy:hover,
+.hover-stroke-navy:focus {
+  stroke: #001b44; }
+
+.hover-stroke-dark-blue:hover,
+.hover-stroke-dark-blue:focus {
+  stroke: #00449e; }
+
+.hover-stroke-blue:hover,
+.hover-stroke-blue:focus {
+  stroke: #357edd; }
+
+.hover-stroke-light-blue:hover,
+.hover-stroke-light-blue:focus {
+  stroke: #96ccff; }
+
+.hover-stroke-lightest-blue:hover,
+.hover-stroke-lightest-blue:focus {
+  stroke: #cdecff; }
+
+.hover-stroke-washed-blue:hover,
+.hover-stroke-washed-blue:focus {
+  stroke: #f6fffe; }
+
+.hover-stroke-washed-green:hover,
+.hover-stroke-washed-green:focus {
+  stroke: #e8fdf5; }
+
+.hover-stroke-washed-yellow:hover,
+.hover-stroke-washed-yellow:focus {
+  stroke: #fffceb; }
+
+.hover-stroke-washed-red:hover,
+.hover-stroke-washed-red:focus {
+  stroke: #ffdfdf; }
+
+@media screen and (min-width: 30em) {
+  .hover-stroke-inherit-ns:hover,
+  .hover-stroke-inherit-ns:focus {
+    stroke: inherit; }
+  .hover-stroke-initial-ns:hover,
+  .hover-stroke-initial-ns:focus {
+    stroke: initial; }
+  .hover-stroke-current-ns:hover,
+  .hover-stroke-current-ns:focus {
+    stroke: currentColor; }
+  .hover-stroke-transparent-ns:hover,
+  .hover-stroke-transparent-ns:focus {
+    stroke: transparent; }
+  .hover-stroke-black-ns:hover,
+  .hover-stroke-black-ns:focus {
+    stroke: #000; }
+  .hover-stroke-near-black-ns:hover,
+  .hover-stroke-near-black-ns:focus {
+    stroke: #111; }
+  .hover-stroke-dark-gray-ns:hover,
+  .hover-stroke-dark-gray-ns:focus {
+    stroke: #333; }
+  .hover-stroke-mid-gray-ns:hover,
+  .hover-stroke-mid-gray-ns:focus {
+    stroke: #555; }
+  .hover-stroke-gray-ns:hover,
+  .hover-stroke-gray-ns:focus {
+    stroke: #777; }
+  .hover-stroke-silver-ns:hover,
+  .hover-stroke-silver-ns:focus {
+    stroke: #999; }
+  .hover-stroke-light-silver-ns:hover,
+  .hover-stroke-light-silver-ns:focus {
+    stroke: #aaa; }
+  .hover-stroke-moon-gray-ns:hover,
+  .hover-stroke-moon-gray-ns:focus {
+    stroke: #ccc; }
+  .hover-stroke-light-gray-ns:hover,
+  .hover-stroke-light-gray-ns:focus {
+    stroke: #eee; }
+  .hover-stroke-near-white-ns:hover,
+  .hover-stroke-near-white-ns:focus {
+    stroke: #f4f4f4; }
+  .hover-stroke-white-ns:hover,
+  .hover-stroke-white-ns:focus {
+    stroke: #fff; }
+  .hover-stroke-black-90-ns:hover,
+  .hover-stroke-black-90-ns:focus {
+    stroke: rgba(0, 0, 0, 0.9); }
+  .hover-stroke-black-80-ns:hover,
+  .hover-stroke-black-80-ns:focus {
+    stroke: rgba(0, 0, 0, 0.8); }
+  .hover-stroke-black-75-ns:hover,
+  .hover-stroke-black-75-ns:focus {
+    stroke: rgba(0, 0, 0, 0.75); }
+  .hover-stroke-black-70-ns:hover,
+  .hover-stroke-black-70-ns:focus {
+    stroke: rgba(0, 0, 0, 0.7); }
+  .hover-stroke-black-60-ns:hover,
+  .hover-stroke-black-60-ns:focus {
+    stroke: rgba(0, 0, 0, 0.6); }
+  .hover-stroke-black-50-ns:hover,
+  .hover-stroke-black-50-ns:focus {
+    stroke: rgba(0, 0, 0, 0.5); }
+  .hover-stroke-black-40-ns:hover,
+  .hover-stroke-black-40-ns:focus {
+    stroke: rgba(0, 0, 0, 0.4); }
+  .hover-stroke-black-30-ns:hover,
+  .hover-stroke-black-30-ns:focus {
+    stroke: rgba(0, 0, 0, 0.3); }
+  .hover-stroke-black-25-ns:hover,
+  .hover-stroke-black-25-ns:focus {
+    stroke: rgba(0, 0, 0, 0.25); }
+  .hover-stroke-black-20-ns:hover,
+  .hover-stroke-black-20-ns:focus {
+    stroke: rgba(0, 0, 0, 0.2); }
+  .hover-stroke-black-10-ns:hover,
+  .hover-stroke-black-10-ns:focus {
+    stroke: rgba(0, 0, 0, 0.1); }
+  .hover-stroke-black-05-ns:hover,
+  .hover-stroke-black-05-ns:focus {
+    stroke: rgba(0, 0, 0, 0.05); }
+  .hover-stroke-black-025-ns:hover,
+  .hover-stroke-black-025-ns:focus {
+    stroke: rgba(0, 0, 0, 0.025); }
+  .hover-stroke-black-0125-ns:hover,
+  .hover-stroke-black-0125-ns:focus {
+    stroke: rgba(0, 0, 0, 0.0125); }
+  .hover-stroke-white-90-ns:hover,
+  .hover-stroke-white-90-ns:focus {
+    stroke: rgba(255, 255, 255, 0.9); }
+  .hover-stroke-white-80-ns:hover,
+  .hover-stroke-white-80-ns:focus {
+    stroke: rgba(255, 255, 255, 0.8); }
+  .hover-stroke-white-75-ns:hover,
+  .hover-stroke-white-75-ns:focus {
+    stroke: rgba(255, 255, 255, 0.75); }
+  .hover-stroke-white-70-ns:hover,
+  .hover-stroke-white-70-ns:focus {
+    stroke: rgba(255, 255, 255, 0.7); }
+  .hover-stroke-white-60-ns:hover,
+  .hover-stroke-white-60-ns:focus {
+    stroke: rgba(255, 255, 255, 0.6); }
+  .hover-stroke-white-50-ns:hover,
+  .hover-stroke-white-50-ns:focus {
+    stroke: rgba(255, 255, 255, 0.5); }
+  .hover-stroke-white-40-ns:hover,
+  .hover-stroke-white-40-ns:focus {
+    stroke: rgba(255, 255, 255, 0.4); }
+  .hover-stroke-white-30-ns:hover,
+  .hover-stroke-white-30-ns:focus {
+    stroke: rgba(255, 255, 255, 0.3); }
+  .hover-stroke-white-25-ns:hover,
+  .hover-stroke-white-25-ns:focus {
+    stroke: rgba(255, 255, 255, 0.25); }
+  .hover-stroke-white-20-ns:hover,
+  .hover-stroke-white-20-ns:focus {
+    stroke: rgba(255, 255, 255, 0.2); }
+  .hover-stroke-white-10-ns:hover,
+  .hover-stroke-white-10-ns:focus {
+    stroke: rgba(255, 255, 255, 0.1); }
+  .hover-stroke-white-05-ns:hover,
+  .hover-stroke-white-05-ns:focus {
+    stroke: rgba(255, 255, 255, 0.05); }
+  .hover-stroke-white-025-ns:hover,
+  .hover-stroke-white-025-ns:focus {
+    stroke: rgba(255, 255, 255, 0.025); }
+  .hover-stroke-white-0125-ns:hover,
+  .hover-stroke-white-0125-ns:focus {
+    stroke: rgba(255, 255, 255, 0.0125); }
+  .hover-stroke-dark-red-ns:hover,
+  .hover-stroke-dark-red-ns:focus {
+    stroke: #e7040f; }
+  .hover-stroke-red-ns:hover,
+  .hover-stroke-red-ns:focus {
+    stroke: #ff4136; }
+  .hover-stroke-light-red-ns:hover,
+  .hover-stroke-light-red-ns:focus {
+    stroke: #ff725c; }
+  .hover-stroke-orange-ns:hover,
+  .hover-stroke-orange-ns:focus {
+    stroke: #ff6300; }
+  .hover-stroke-gold-ns:hover,
+  .hover-stroke-gold-ns:focus {
+    stroke: #ffb700; }
+  .hover-stroke-yellow-ns:hover,
+  .hover-stroke-yellow-ns:focus {
+    stroke: #ffd700; }
+  .hover-stroke-light-yellow-ns:hover,
+  .hover-stroke-light-yellow-ns:focus {
+    stroke: #fbf1a9; }
+  .hover-stroke-purple-ns:hover,
+  .hover-stroke-purple-ns:focus {
+    stroke: #5e2ca5; }
+  .hover-stroke-light-purple-ns:hover,
+  .hover-stroke-light-purple-ns:focus {
+    stroke: #a463f2; }
+  .hover-stroke-dark-pink-ns:hover,
+  .hover-stroke-dark-pink-ns:focus {
+    stroke: #d5008f; }
+  .hover-stroke-hot-pink-ns:hover,
+  .hover-stroke-hot-pink-ns:focus {
+    stroke: #ff41b4; }
+  .hover-stroke-pink-ns:hover,
+  .hover-stroke-pink-ns:focus {
+    stroke: #ff80cc; }
+  .hover-stroke-light-pink-ns:hover,
+  .hover-stroke-light-pink-ns:focus {
+    stroke: #ffa3d7; }
+  .hover-stroke-dark-green-ns:hover,
+  .hover-stroke-dark-green-ns:focus {
+    stroke: #137752; }
+  .hover-stroke-green-ns:hover,
+  .hover-stroke-green-ns:focus {
+    stroke: #19a974; }
+  .hover-stroke-light-green-ns:hover,
+  .hover-stroke-light-green-ns:focus {
+    stroke: #9eebcf; }
+  .hover-stroke-navy-ns:hover,
+  .hover-stroke-navy-ns:focus {
+    stroke: #001b44; }
+  .hover-stroke-dark-blue-ns:hover,
+  .hover-stroke-dark-blue-ns:focus {
+    stroke: #00449e; }
+  .hover-stroke-blue-ns:hover,
+  .hover-stroke-blue-ns:focus {
+    stroke: #357edd; }
+  .hover-stroke-light-blue-ns:hover,
+  .hover-stroke-light-blue-ns:focus {
+    stroke: #96ccff; }
+  .hover-stroke-lightest-blue-ns:hover,
+  .hover-stroke-lightest-blue-ns:focus {
+    stroke: #cdecff; }
+  .hover-stroke-washed-blue-ns:hover,
+  .hover-stroke-washed-blue-ns:focus {
+    stroke: #f6fffe; }
+  .hover-stroke-washed-green-ns:hover,
+  .hover-stroke-washed-green-ns:focus {
+    stroke: #e8fdf5; }
+  .hover-stroke-washed-yellow-ns:hover,
+  .hover-stroke-washed-yellow-ns:focus {
+    stroke: #fffceb; }
+  .hover-stroke-washed-red-ns:hover,
+  .hover-stroke-washed-red-ns:focus {
+    stroke: #ffdfdf; } }
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .hover-stroke-inherit-m:hover,
+  .hover-stroke-inherit-m:focus {
+    stroke: inherit; }
+  .hover-stroke-initial-m:hover,
+  .hover-stroke-initial-m:focus {
+    stroke: initial; }
+  .hover-stroke-current-m:hover,
+  .hover-stroke-current-m:focus {
+    stroke: currentColor; }
+  .hover-stroke-transparent-m:hover,
+  .hover-stroke-transparent-m:focus {
+    stroke: transparent; }
+  .hover-stroke-black-m:hover,
+  .hover-stroke-black-m:focus {
+    stroke: #000; }
+  .hover-stroke-near-black-m:hover,
+  .hover-stroke-near-black-m:focus {
+    stroke: #111; }
+  .hover-stroke-dark-gray-m:hover,
+  .hover-stroke-dark-gray-m:focus {
+    stroke: #333; }
+  .hover-stroke-mid-gray-m:hover,
+  .hover-stroke-mid-gray-m:focus {
+    stroke: #555; }
+  .hover-stroke-gray-m:hover,
+  .hover-stroke-gray-m:focus {
+    stroke: #777; }
+  .hover-stroke-silver-m:hover,
+  .hover-stroke-silver-m:focus {
+    stroke: #999; }
+  .hover-stroke-light-silver-m:hover,
+  .hover-stroke-light-silver-m:focus {
+    stroke: #aaa; }
+  .hover-stroke-moon-gray-m:hover,
+  .hover-stroke-moon-gray-m:focus {
+    stroke: #ccc; }
+  .hover-stroke-light-gray-m:hover,
+  .hover-stroke-light-gray-m:focus {
+    stroke: #eee; }
+  .hover-stroke-near-white-m:hover,
+  .hover-stroke-near-white-m:focus {
+    stroke: #f4f4f4; }
+  .hover-stroke-white-m:hover,
+  .hover-stroke-white-m:focus {
+    stroke: #fff; }
+  .hover-stroke-black-90-m:hover,
+  .hover-stroke-black-90-m:focus {
+    stroke: rgba(0, 0, 0, 0.9); }
+  .hover-stroke-black-80-m:hover,
+  .hover-stroke-black-80-m:focus {
+    stroke: rgba(0, 0, 0, 0.8); }
+  .hover-stroke-black-75-m:hover,
+  .hover-stroke-black-75-m:focus {
+    stroke: rgba(0, 0, 0, 0.75); }
+  .hover-stroke-black-70-m:hover,
+  .hover-stroke-black-70-m:focus {
+    stroke: rgba(0, 0, 0, 0.7); }
+  .hover-stroke-black-60-m:hover,
+  .hover-stroke-black-60-m:focus {
+    stroke: rgba(0, 0, 0, 0.6); }
+  .hover-stroke-black-50-m:hover,
+  .hover-stroke-black-50-m:focus {
+    stroke: rgba(0, 0, 0, 0.5); }
+  .hover-stroke-black-40-m:hover,
+  .hover-stroke-black-40-m:focus {
+    stroke: rgba(0, 0, 0, 0.4); }
+  .hover-stroke-black-30-m:hover,
+  .hover-stroke-black-30-m:focus {
+    stroke: rgba(0, 0, 0, 0.3); }
+  .hover-stroke-black-25-m:hover,
+  .hover-stroke-black-25-m:focus {
+    stroke: rgba(0, 0, 0, 0.25); }
+  .hover-stroke-black-20-m:hover,
+  .hover-stroke-black-20-m:focus {
+    stroke: rgba(0, 0, 0, 0.2); }
+  .hover-stroke-black-10-m:hover,
+  .hover-stroke-black-10-m:focus {
+    stroke: rgba(0, 0, 0, 0.1); }
+  .hover-stroke-black-05-m:hover,
+  .hover-stroke-black-05-m:focus {
+    stroke: rgba(0, 0, 0, 0.05); }
+  .hover-stroke-black-025-m:hover,
+  .hover-stroke-black-025-m:focus {
+    stroke: rgba(0, 0, 0, 0.025); }
+  .hover-stroke-black-0125-m:hover,
+  .hover-stroke-black-0125-m:focus {
+    stroke: rgba(0, 0, 0, 0.0125); }
+  .hover-stroke-white-90-m:hover,
+  .hover-stroke-white-90-m:focus {
+    stroke: rgba(255, 255, 255, 0.9); }
+  .hover-stroke-white-80-m:hover,
+  .hover-stroke-white-80-m:focus {
+    stroke: rgba(255, 255, 255, 0.8); }
+  .hover-stroke-white-75-m:hover,
+  .hover-stroke-white-75-m:focus {
+    stroke: rgba(255, 255, 255, 0.75); }
+  .hover-stroke-white-70-m:hover,
+  .hover-stroke-white-70-m:focus {
+    stroke: rgba(255, 255, 255, 0.7); }
+  .hover-stroke-white-60-m:hover,
+  .hover-stroke-white-60-m:focus {
+    stroke: rgba(255, 255, 255, 0.6); }
+  .hover-stroke-white-50-m:hover,
+  .hover-stroke-white-50-m:focus {
+    stroke: rgba(255, 255, 255, 0.5); }
+  .hover-stroke-white-40-m:hover,
+  .hover-stroke-white-40-m:focus {
+    stroke: rgba(255, 255, 255, 0.4); }
+  .hover-stroke-white-30-m:hover,
+  .hover-stroke-white-30-m:focus {
+    stroke: rgba(255, 255, 255, 0.3); }
+  .hover-stroke-white-25-m:hover,
+  .hover-stroke-white-25-m:focus {
+    stroke: rgba(255, 255, 255, 0.25); }
+  .hover-stroke-white-20-m:hover,
+  .hover-stroke-white-20-m:focus {
+    stroke: rgba(255, 255, 255, 0.2); }
+  .hover-stroke-white-10-m:hover,
+  .hover-stroke-white-10-m:focus {
+    stroke: rgba(255, 255, 255, 0.1); }
+  .hover-stroke-white-05-m:hover,
+  .hover-stroke-white-05-m:focus {
+    stroke: rgba(255, 255, 255, 0.05); }
+  .hover-stroke-white-025-m:hover,
+  .hover-stroke-white-025-m:focus {
+    stroke: rgba(255, 255, 255, 0.025); }
+  .hover-stroke-white-0125-m:hover,
+  .hover-stroke-white-0125-m:focus {
+    stroke: rgba(255, 255, 255, 0.0125); }
+  .hover-stroke-dark-red-m:hover,
+  .hover-stroke-dark-red-m:focus {
+    stroke: #e7040f; }
+  .hover-stroke-red-m:hover,
+  .hover-stroke-red-m:focus {
+    stroke: #ff4136; }
+  .hover-stroke-light-red-m:hover,
+  .hover-stroke-light-red-m:focus {
+    stroke: #ff725c; }
+  .hover-stroke-orange-m:hover,
+  .hover-stroke-orange-m:focus {
+    stroke: #ff6300; }
+  .hover-stroke-gold-m:hover,
+  .hover-stroke-gold-m:focus {
+    stroke: #ffb700; }
+  .hover-stroke-yellow-m:hover,
+  .hover-stroke-yellow-m:focus {
+    stroke: #ffd700; }
+  .hover-stroke-light-yellow-m:hover,
+  .hover-stroke-light-yellow-m:focus {
+    stroke: #fbf1a9; }
+  .hover-stroke-purple-m:hover,
+  .hover-stroke-purple-m:focus {
+    stroke: #5e2ca5; }
+  .hover-stroke-light-purple-m:hover,
+  .hover-stroke-light-purple-m:focus {
+    stroke: #a463f2; }
+  .hover-stroke-dark-pink-m:hover,
+  .hover-stroke-dark-pink-m:focus {
+    stroke: #d5008f; }
+  .hover-stroke-hot-pink-m:hover,
+  .hover-stroke-hot-pink-m:focus {
+    stroke: #ff41b4; }
+  .hover-stroke-pink-m:hover,
+  .hover-stroke-pink-m:focus {
+    stroke: #ff80cc; }
+  .hover-stroke-light-pink-m:hover,
+  .hover-stroke-light-pink-m:focus {
+    stroke: #ffa3d7; }
+  .hover-stroke-dark-green-m:hover,
+  .hover-stroke-dark-green-m:focus {
+    stroke: #137752; }
+  .hover-stroke-green-m:hover,
+  .hover-stroke-green-m:focus {
+    stroke: #19a974; }
+  .hover-stroke-light-green-m:hover,
+  .hover-stroke-light-green-m:focus {
+    stroke: #9eebcf; }
+  .hover-stroke-navy-m:hover,
+  .hover-stroke-navy-m:focus {
+    stroke: #001b44; }
+  .hover-stroke-dark-blue-m:hover,
+  .hover-stroke-dark-blue-m:focus {
+    stroke: #00449e; }
+  .hover-stroke-blue-m:hover,
+  .hover-stroke-blue-m:focus {
+    stroke: #357edd; }
+  .hover-stroke-light-blue-m:hover,
+  .hover-stroke-light-blue-m:focus {
+    stroke: #96ccff; }
+  .hover-stroke-lightest-blue-m:hover,
+  .hover-stroke-lightest-blue-m:focus {
+    stroke: #cdecff; }
+  .hover-stroke-washed-blue-m:hover,
+  .hover-stroke-washed-blue-m:focus {
+    stroke: #f6fffe; }
+  .hover-stroke-washed-green-m:hover,
+  .hover-stroke-washed-green-m:focus {
+    stroke: #e8fdf5; }
+  .hover-stroke-washed-yellow-m:hover,
+  .hover-stroke-washed-yellow-m:focus {
+    stroke: #fffceb; }
+  .hover-stroke-washed-red-m:hover,
+  .hover-stroke-washed-red-m:focus {
+    stroke: #ffdfdf; } }
+
+@media screen and (min-width: 60em) {
+  .hover-stroke-inherit-l:hover,
+  .hover-stroke-inherit-l:focus {
+    stroke: inherit; }
+  .hover-stroke-initial-l:hover,
+  .hover-stroke-initial-l:focus {
+    stroke: initial; }
+  .hover-stroke-current-l:hover,
+  .hover-stroke-current-l:focus {
+    stroke: currentColor; }
+  .hover-stroke-transparent-l:hover,
+  .hover-stroke-transparent-l:focus {
+    stroke: transparent; }
+  .hover-stroke-black-l:hover,
+  .hover-stroke-black-l:focus {
+    stroke: #000; }
+  .hover-stroke-near-black-l:hover,
+  .hover-stroke-near-black-l:focus {
+    stroke: #111; }
+  .hover-stroke-dark-gray-l:hover,
+  .hover-stroke-dark-gray-l:focus {
+    stroke: #333; }
+  .hover-stroke-mid-gray-l:hover,
+  .hover-stroke-mid-gray-l:focus {
+    stroke: #555; }
+  .hover-stroke-gray-l:hover,
+  .hover-stroke-gray-l:focus {
+    stroke: #777; }
+  .hover-stroke-silver-l:hover,
+  .hover-stroke-silver-l:focus {
+    stroke: #999; }
+  .hover-stroke-light-silver-l:hover,
+  .hover-stroke-light-silver-l:focus {
+    stroke: #aaa; }
+  .hover-stroke-moon-gray-l:hover,
+  .hover-stroke-moon-gray-l:focus {
+    stroke: #ccc; }
+  .hover-stroke-light-gray-l:hover,
+  .hover-stroke-light-gray-l:focus {
+    stroke: #eee; }
+  .hover-stroke-near-white-l:hover,
+  .hover-stroke-near-white-l:focus {
+    stroke: #f4f4f4; }
+  .hover-stroke-white-l:hover,
+  .hover-stroke-white-l:focus {
+    stroke: #fff; }
+  .hover-stroke-black-90-l:hover,
+  .hover-stroke-black-90-l:focus {
+    stroke: rgba(0, 0, 0, 0.9); }
+  .hover-stroke-black-80-l:hover,
+  .hover-stroke-black-80-l:focus {
+    stroke: rgba(0, 0, 0, 0.8); }
+  .hover-stroke-black-75-l:hover,
+  .hover-stroke-black-75-l:focus {
+    stroke: rgba(0, 0, 0, 0.75); }
+  .hover-stroke-black-70-l:hover,
+  .hover-stroke-black-70-l:focus {
+    stroke: rgba(0, 0, 0, 0.7); }
+  .hover-stroke-black-60-l:hover,
+  .hover-stroke-black-60-l:focus {
+    stroke: rgba(0, 0, 0, 0.6); }
+  .hover-stroke-black-50-l:hover,
+  .hover-stroke-black-50-l:focus {
+    stroke: rgba(0, 0, 0, 0.5); }
+  .hover-stroke-black-40-l:hover,
+  .hover-stroke-black-40-l:focus {
+    stroke: rgba(0, 0, 0, 0.4); }
+  .hover-stroke-black-30-l:hover,
+  .hover-stroke-black-30-l:focus {
+    stroke: rgba(0, 0, 0, 0.3); }
+  .hover-stroke-black-25-l:hover,
+  .hover-stroke-black-25-l:focus {
+    stroke: rgba(0, 0, 0, 0.25); }
+  .hover-stroke-black-20-l:hover,
+  .hover-stroke-black-20-l:focus {
+    stroke: rgba(0, 0, 0, 0.2); }
+  .hover-stroke-black-10-l:hover,
+  .hover-stroke-black-10-l:focus {
+    stroke: rgba(0, 0, 0, 0.1); }
+  .hover-stroke-black-05-l:hover,
+  .hover-stroke-black-05-l:focus {
+    stroke: rgba(0, 0, 0, 0.05); }
+  .hover-stroke-black-025-l:hover,
+  .hover-stroke-black-025-l:focus {
+    stroke: rgba(0, 0, 0, 0.025); }
+  .hover-stroke-black-0125-l:hover,
+  .hover-stroke-black-0125-l:focus {
+    stroke: rgba(0, 0, 0, 0.0125); }
+  .hover-stroke-white-90-l:hover,
+  .hover-stroke-white-90-l:focus {
+    stroke: rgba(255, 255, 255, 0.9); }
+  .hover-stroke-white-80-l:hover,
+  .hover-stroke-white-80-l:focus {
+    stroke: rgba(255, 255, 255, 0.8); }
+  .hover-stroke-white-75-l:hover,
+  .hover-stroke-white-75-l:focus {
+    stroke: rgba(255, 255, 255, 0.75); }
+  .hover-stroke-white-70-l:hover,
+  .hover-stroke-white-70-l:focus {
+    stroke: rgba(255, 255, 255, 0.7); }
+  .hover-stroke-white-60-l:hover,
+  .hover-stroke-white-60-l:focus {
+    stroke: rgba(255, 255, 255, 0.6); }
+  .hover-stroke-white-50-l:hover,
+  .hover-stroke-white-50-l:focus {
+    stroke: rgba(255, 255, 255, 0.5); }
+  .hover-stroke-white-40-l:hover,
+  .hover-stroke-white-40-l:focus {
+    stroke: rgba(255, 255, 255, 0.4); }
+  .hover-stroke-white-30-l:hover,
+  .hover-stroke-white-30-l:focus {
+    stroke: rgba(255, 255, 255, 0.3); }
+  .hover-stroke-white-25-l:hover,
+  .hover-stroke-white-25-l:focus {
+    stroke: rgba(255, 255, 255, 0.25); }
+  .hover-stroke-white-20-l:hover,
+  .hover-stroke-white-20-l:focus {
+    stroke: rgba(255, 255, 255, 0.2); }
+  .hover-stroke-white-10-l:hover,
+  .hover-stroke-white-10-l:focus {
+    stroke: rgba(255, 255, 255, 0.1); }
+  .hover-stroke-white-05-l:hover,
+  .hover-stroke-white-05-l:focus {
+    stroke: rgba(255, 255, 255, 0.05); }
+  .hover-stroke-white-025-l:hover,
+  .hover-stroke-white-025-l:focus {
+    stroke: rgba(255, 255, 255, 0.025); }
+  .hover-stroke-white-0125-l:hover,
+  .hover-stroke-white-0125-l:focus {
+    stroke: rgba(255, 255, 255, 0.0125); }
+  .hover-stroke-dark-red-l:hover,
+  .hover-stroke-dark-red-l:focus {
+    stroke: #e7040f; }
+  .hover-stroke-red-l:hover,
+  .hover-stroke-red-l:focus {
+    stroke: #ff4136; }
+  .hover-stroke-light-red-l:hover,
+  .hover-stroke-light-red-l:focus {
+    stroke: #ff725c; }
+  .hover-stroke-orange-l:hover,
+  .hover-stroke-orange-l:focus {
+    stroke: #ff6300; }
+  .hover-stroke-gold-l:hover,
+  .hover-stroke-gold-l:focus {
+    stroke: #ffb700; }
+  .hover-stroke-yellow-l:hover,
+  .hover-stroke-yellow-l:focus {
+    stroke: #ffd700; }
+  .hover-stroke-light-yellow-l:hover,
+  .hover-stroke-light-yellow-l:focus {
+    stroke: #fbf1a9; }
+  .hover-stroke-purple-l:hover,
+  .hover-stroke-purple-l:focus {
+    stroke: #5e2ca5; }
+  .hover-stroke-light-purple-l:hover,
+  .hover-stroke-light-purple-l:focus {
+    stroke: #a463f2; }
+  .hover-stroke-dark-pink-l:hover,
+  .hover-stroke-dark-pink-l:focus {
+    stroke: #d5008f; }
+  .hover-stroke-hot-pink-l:hover,
+  .hover-stroke-hot-pink-l:focus {
+    stroke: #ff41b4; }
+  .hover-stroke-pink-l:hover,
+  .hover-stroke-pink-l:focus {
+    stroke: #ff80cc; }
+  .hover-stroke-light-pink-l:hover,
+  .hover-stroke-light-pink-l:focus {
+    stroke: #ffa3d7; }
+  .hover-stroke-dark-green-l:hover,
+  .hover-stroke-dark-green-l:focus {
+    stroke: #137752; }
+  .hover-stroke-green-l:hover,
+  .hover-stroke-green-l:focus {
+    stroke: #19a974; }
+  .hover-stroke-light-green-l:hover,
+  .hover-stroke-light-green-l:focus {
+    stroke: #9eebcf; }
+  .hover-stroke-navy-l:hover,
+  .hover-stroke-navy-l:focus {
+    stroke: #001b44; }
+  .hover-stroke-dark-blue-l:hover,
+  .hover-stroke-dark-blue-l:focus {
+    stroke: #00449e; }
+  .hover-stroke-blue-l:hover,
+  .hover-stroke-blue-l:focus {
+    stroke: #357edd; }
+  .hover-stroke-light-blue-l:hover,
+  .hover-stroke-light-blue-l:focus {
+    stroke: #96ccff; }
+  .hover-stroke-lightest-blue-l:hover,
+  .hover-stroke-lightest-blue-l:focus {
+    stroke: #cdecff; }
+  .hover-stroke-washed-blue-l:hover,
+  .hover-stroke-washed-blue-l:focus {
+    stroke: #f6fffe; }
+  .hover-stroke-washed-green-l:hover,
+  .hover-stroke-washed-green-l:focus {
+    stroke: #e8fdf5; }
+  .hover-stroke-washed-yellow-l:hover,
+  .hover-stroke-washed-yellow-l:focus {
+    stroke: #fffceb; }
+  .hover-stroke-washed-red-l:hover,
+  .hover-stroke-washed-red-l:focus {
+    stroke: #ffdfdf; } }
+
+/* Stroke widths */
+.hover-sw0:hover,
+.hover-sw0:focus {
+  stroke-width: 0; }
+
+.hover-sw1:hover,
+.hover-sw1:focus {
+  stroke-width: 0.25rem; }
+
+.hover-sw2:hover,
+.hover-sw2:focus {
+  stroke-width: 0.5rem; }
+
+.hover-sw3:hover,
+.hover-sw3:focus {
+  stroke-width: 1rem; }
+
+.hover-sw4:hover,
+.hover-sw4:focus {
+  stroke-width: 2rem; }
+
+.hover-sw5:hover,
+.hover-sw5:focus {
+  stroke-width: 4rem; }
+
+.hover-sw6:hover,
+.hover-sw6:focus {
+  stroke-width: 8rem; }
+
+.hover-sw7:hover,
+.hover-sw7:focus {
+  stroke-width: 16rem; }
+
+.hover-swa:hover,
+.hover-swa:focus {
+  stroke-width: auto; }
+
+@media screen and (min-width: 30em) {
+  .hover-sw0-ns:hover,
+  .hover-sw0-ns:focus {
+    stroke-width: 0; }
+  .hover-sw1-ns:hover,
+  .hover-sw1-ns:focus {
+    stroke-width: 0.25rem; }
+  .hover-sw2-ns:hover,
+  .hover-sw2-ns:focus {
+    stroke-width: 0.5rem; }
+  .hover-sw3-ns:hover,
+  .hover-sw3-ns:focus {
+    stroke-width: 1rem; }
+  .hover-sw4-ns:hover,
+  .hover-sw4-ns:focus {
+    stroke-width: 2rem; }
+  .hover-sw5-ns:hover,
+  .hover-sw5-ns:focus {
+    stroke-width: 4rem; }
+  .hover-sw6-ns:hover,
+  .hover-sw6-ns:focus {
+    stroke-width: 8rem; }
+  .hover-sw7-ns:hover,
+  .hover-sw7-ns:focus {
+    stroke-width: 16rem; }
+  .hover-swa-ns:hover,
+  .hover-swa-ns:focus {
+    stroke-width: auto; } }
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .hover-sw0-m:hover,
+  .hover-sw0-m:focus {
+    stroke-width: 0; }
+  .hover-sw1-m:hover,
+  .hover-sw1-m:focus {
+    stroke-width: 0.25rem; }
+  .hover-sw2-m:hover,
+  .hover-sw2-m:focus {
+    stroke-width: 0.5rem; }
+  .hover-sw3-m:hover,
+  .hover-sw3-m:focus {
+    stroke-width: 1rem; }
+  .hover-sw4-m:hover,
+  .hover-sw4-m:focus {
+    stroke-width: 2rem; }
+  .hover-sw5-m:hover,
+  .hover-sw5-m:focus {
+    stroke-width: 4rem; }
+  .hover-sw6-m:hover,
+  .hover-sw6-m:focus {
+    stroke-width: 8rem; }
+  .hover-sw7-m:hover,
+  .hover-sw7-m:focus {
+    stroke-width: 16rem; }
+  .hover-swa-m:hover,
+  .hover-swa-m:focus {
+    stroke-width: auto; } }
+
+@media screen and (min-width: 60em) {
+  .hover-sw0-l:hover,
+  .hover-sw0-l:focus {
+    stroke-width: 0; }
+  .hover-sw1-l:hover,
+  .hover-sw1-l:focus {
+    stroke-width: 0.25rem; }
+  .hover-sw2-l:hover,
+  .hover-sw2-l:focus {
+    stroke-width: 0.5rem; }
+  .hover-sw3-l:hover,
+  .hover-sw3-l:focus {
+    stroke-width: 1rem; }
+  .hover-sw4-l:hover,
+  .hover-sw4-l:focus {
+    stroke-width: 2rem; }
+  .hover-sw5-l:hover,
+  .hover-sw5-l:focus {
+    stroke-width: 4rem; }
+  .hover-sw6-l:hover,
+  .hover-sw6-l:focus {
+    stroke-width: 8rem; }
+  .hover-sw7-l:hover,
+  .hover-sw7-l:focus {
+    stroke-width: 16rem; }
+  .hover-swa-l:hover,
+  .hover-swa-l:focus {
+    stroke-width: auto; } }

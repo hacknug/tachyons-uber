@@ -1,0 +1,33 @@
+/*
+
+  TABLES
+  Docs: http://tachyons.io/docs/elements/tables/
+
+*/
+/* Variables */
+/*
+
+    VARIABLES
+
+*/
+.collapse {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.striped--light-silver:nth-child(odd) {
+  background-color: #aaa; }
+
+.striped--moon-gray:nth-child(odd) {
+  background-color: #ccc; }
+
+.striped--light-gray:nth-child(odd) {
+  background-color: #eee; }
+
+.striped--near-white:nth-child(odd) {
+  background-color: #f4f4f4; }
+
+.stripe-light:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.1); }
+
+.stripe-dark:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.1); }

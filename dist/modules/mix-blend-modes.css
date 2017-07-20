@@ -1,0 +1,192 @@
+/*
+
+  MIX BLEND MODES
+
+  Media Query Extensions:
+   -ns = not-small
+   -m  = medium
+   -l  = large
+
+ */
+/* Variables */
+/*
+
+    VARIABLES
+
+*/
+.mbm-inherit {
+  mix-blend-mode: inherit; }
+
+.mbm-initial {
+  mix-blend-mode: initial; }
+
+.mbm-unset {
+  mix-blend-mode: unset; }
+
+.mbm-normal {
+  mix-blend-mode: normal; }
+
+.mbm-multiply {
+  mix-blend-mode: multiply; }
+
+.mbm-screen {
+  mix-blend-mode: screen; }
+
+.mbm-overlay {
+  mix-blend-mode: overlay; }
+
+.mbm-darken {
+  mix-blend-mode: darken; }
+
+.mbm-lighten {
+  mix-blend-mode: lighten; }
+
+.mbm-color-dodge {
+  mix-blend-mode: color-dodge; }
+
+.mbm-color-burn {
+  mix-blend-mode: color-burn; }
+
+.mbm-hard-light {
+  mix-blend-mode: hard-light; }
+
+.mbm-soft-light {
+  mix-blend-mode: soft-light; }
+
+.mbm-difference {
+  mix-blend-mode: difference; }
+
+.mbm-exclusion {
+  mix-blend-mode: exclusion; }
+
+.mbm-hue {
+  mix-blend-mode: hue; }
+
+.mbm-saturation {
+  mix-blend-mode: saturation; }
+
+.mbm-color {
+  mix-blend-mode: color; }
+
+.mbm-luminosity {
+  mix-blend-mode: luminosity; }
+
+@media screen and (min-width: 30em) {
+  .mbm-inherit-ns {
+    mix-blend-mode: inherit; }
+  .mbm-initial-ns {
+    mix-blend-mode: initial; }
+  .mbm-unset-ns {
+    mix-blend-mode: unset; }
+  .mbm-normal-ns {
+    mix-blend-mode: normal; }
+  .mbm-multiply-ns {
+    mix-blend-mode: multiply; }
+  .mbm-screen-ns {
+    mix-blend-mode: screen; }
+  .mbm-overlay-ns {
+    mix-blend-mode: overlay; }
+  .mbm-darken-ns {
+    mix-blend-mode: darken; }
+  .mbm-lighten-ns {
+    mix-blend-mode: lighten; }
+  .mbm-color-dodge-ns {
+    mix-blend-mode: color-dodge; }
+  .mbm-color-burn-ns {
+    mix-blend-mode: color-burn; }
+  .mbm-hard-light-ns {
+    mix-blend-mode: hard-light; }
+  .mbm-soft-light-ns {
+    mix-blend-mode: soft-light; }
+  .mbm-difference-ns {
+    mix-blend-mode: difference; }
+  .mbm-exclusion-ns {
+    mix-blend-mode: exclusion; }
+  .mbm-hue-ns {
+    mix-blend-mode: hue; }
+  .mbm-saturation-ns {
+    mix-blend-mode: saturation; }
+  .mbm-color-ns {
+    mix-blend-mode: color; }
+  .mbm-luminosity-ns {
+    mix-blend-mode: luminosity; } }
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .mbm-inherit-m {
+    mix-blend-mode: inherit; }
+  .mbm-initial-m {
+    mix-blend-mode: initial; }
+  .mbm-unset-m {
+    mix-blend-mode: unset; }
+  .mbm-normal-m {
+    mix-blend-mode: normal; }
+  .mbm-multiply-m {
+    mix-blend-mode: multiply; }
+  .mbm-screen-m {
+    mix-blend-mode: screen; }
+  .mbm-overlay-m {
+    mix-blend-mode: overlay; }
+  .mbm-darken-m {
+    mix-blend-mode: darken; }
+  .mbm-lighten-m {
+    mix-blend-mode: lighten; }
+  .mbm-color-dodge-m {
+    mix-blend-mode: color-dodge; }
+  .mbm-color-burn-m {
+    mix-blend-mode: color-burn; }
+  .mbm-hard-light-m {
+    mix-blend-mode: hard-light; }
+  .mbm-soft-light-m {
+    mix-blend-mode: soft-light; }
+  .mbm-difference-m {
+    mix-blend-mode: difference; }
+  .mbm-exclusion-m {
+    mix-blend-mode: exclusion; }
+  .mbm-hue-m {
+    mix-blend-mode: hue; }
+  .mbm-saturation-m {
+    mix-blend-mode: saturation; }
+  .mbm-color-m {
+    mix-blend-mode: color; }
+  .mbm-luminosity-m {
+    mix-blend-mode: luminosity; } }
+
+@media screen and (min-width: 60em) {
+  .mbm-inherit-l {
+    mix-blend-mode: inherit; }
+  .mbm-initial-l {
+    mix-blend-mode: initial; }
+  .mbm-unset-l {
+    mix-blend-mode: unset; }
+  .mbm-normal-l {
+    mix-blend-mode: normal; }
+  .mbm-multiply-l {
+    mix-blend-mode: multiply; }
+  .mbm-screen-l {
+    mix-blend-mode: screen; }
+  .mbm-overlay-l {
+    mix-blend-mode: overlay; }
+  .mbm-darken-l {
+    mix-blend-mode: darken; }
+  .mbm-lighten-l {
+    mix-blend-mode: lighten; }
+  .mbm-color-dodge-l {
+    mix-blend-mode: color-dodge; }
+  .mbm-color-burn-l {
+    mix-blend-mode: color-burn; }
+  .mbm-hard-light-l {
+    mix-blend-mode: hard-light; }
+  .mbm-soft-light-l {
+    mix-blend-mode: soft-light; }
+  .mbm-difference-l {
+    mix-blend-mode: difference; }
+  .mbm-exclusion-l {
+    mix-blend-mode: exclusion; }
+  .mbm-hue-l {
+    mix-blend-mode: hue; }
+  .mbm-saturation-l {
+    mix-blend-mode: saturation; }
+  .mbm-color-l {
+    mix-blend-mode: color; }
+  .mbm-luminosity-l {
+    mix-blend-mode: luminosity; } }
