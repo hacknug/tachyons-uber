@@ -7,11 +7,11 @@
    -m  = medium
    -l  = large
 
- */
+*/
 
- /* Variables */
- @import '_variables';
- 
+/* Variables */
+@import '../_variables';
+
 
  @each $name, $value in $mix-blend-modes {
    .mbm-#{$name} { mix-blend-mode: $value; }

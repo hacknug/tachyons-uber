@@ -17,11 +17,11 @@
       -m  = medium
       -l  = large
 
- */
+*/
 
- /* Variables */
- @import '_variables';
- 
+/* Variables */
+@import '../_variables';
+
 
  @each $name, $value in $bg-positions {
    .bg-#{$name} {

@@ -13,7 +13,7 @@
 */
 
 /* Variables */
-@import '_variables';
+@import '../_variables';
 
 
 @each $name, $value in $pointer-events {

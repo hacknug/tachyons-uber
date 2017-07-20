@@ -27,7 +27,7 @@
 */
 
 /* Variables */
-@import '_variables';
+@import '../_variables';
 
 
 @each $name, $properties in $margins {
