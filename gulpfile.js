@@ -8,7 +8,7 @@ var sass = require('gulp-sass'),
 
 
 gulp.task('styles', function(){
-  gulp.src(['src/styles/**/*.scss'])
+  gulp.src(['src/**/*.scss'])
     .pipe(plumber({
       errorHandler: function (error) {
         console.log(error.message);
@@ -17,7 +17,7 @@ gulp.task('styles', function(){
     .pipe(sass({
       precision: 3,
     }))
-    .pipe(gulp.dest('dist/styles/'))
+    .pipe(gulp.dest('dist/'))
     .pipe(combineMq({
   		beautify: true
   	}))
@@ -30,7 +30,7 @@ gulp.task('styles', function(){
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('dist/styles/'))
+    .pipe(gulp.dest('dist/min/'))
 });
 
 
