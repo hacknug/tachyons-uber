@@ -17,14 +17,18 @@ gulp.task('styles', function(){
     .pipe(sass({
       precision: 3,
     }))
+    .pipe(gulp.dest('dist/styles/'))
     .pipe(combineMq({
   		beautify: true
   	}))
     .pipe(cleanCss({
-      
+
     }))
     .pipe(csso({
       debug: true
+    }))
+    .pipe(rename({
+      suffix: '.min'
     }))
     .pipe(gulp.dest('dist/styles/'))
 });
