@@ -27,11 +27,13 @@ $aspect-ratios: (
 // Use color variables
 $bg-overlays: (
   darken: (
+    0: rgba(0,0,0,0),
     25: rgba(0,0,0,.25),
     50: rgba(0,0,0,.50),
     75: rgba(0,0,0,.75),
   ),
   lighten: (
+    0: rgba(0,0,0,0),
     25: rgba(255,255,255,.25),
     50: rgba(255,255,255,.50),
     75: rgba(255,255,255,.75),
