@@ -419,6 +419,9 @@ $object-positions: (
 );
 
 $overflows: (
+  inherit: inherit,
+  initial: initial,
+  unset: unset,
   visible: visible,
   hidden: hidden,
   scroll: scroll,
@@ -426,6 +429,9 @@ $overflows: (
 );
 
 $positions: (
+  inherit: inherit,
+  initial: initial,
+  unset: unset,
   static: static,
   relative: relative,
   absolute: absolute,
