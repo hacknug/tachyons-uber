@@ -429,6 +429,7 @@ $positions: (
   relative: relative,
   absolute: absolute,
   fixed: fixed,
+  sticky: sticky,
 );
 
 // full name keeps the leading 0's, otherwise removed by SASS?
