@@ -17,12 +17,6 @@
    --color-name = each color variable name is also a border color name
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .b--inherit {
   border-color: inherit; }
 

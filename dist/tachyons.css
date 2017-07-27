@@ -393,22 +393,10 @@ template {
 [hidden] {
   display: none; }
 
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 /* Modules */
 /*
 
   BOX SIZING
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 html,
@@ -464,12 +452,6 @@ input[type="url"],
  * </div>
  *
  * */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .aspect-ratio {
   height: 0;
   position: relative; }
@@ -631,12 +613,6 @@ input[type="url"],
    Docs: http://tachyons.io/docs/elements/images/
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 /* Responsive images! */
 img {
   max-width: 100%; }
@@ -660,12 +636,6 @@ img {
     -ns = not-small
     -m  = medium
     -l  = large
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .bg-darken-0 {
@@ -760,12 +730,6 @@ img {
    on an html element.
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .cover {
   background-size: cover; }
 
@@ -808,12 +772,6 @@ img {
       -ns = not-small
       -m  = medium
       -l  = large
-
- */
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .bg-center {
@@ -899,12 +857,6 @@ img {
    Often used in combination with background image set as an inline style
    on an html element.
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .bg-repeat-r {
   background-repeat: repeat; }
 
@@ -975,12 +927,6 @@ img {
      -l  = large
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .outline {
   outline: 1px solid; }
 
@@ -1034,12 +980,6 @@ img {
      -ns = not-small
      -m  = medium
      -l  = large
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .bn {
@@ -1143,12 +1083,6 @@ img {
 
    Modifiers:
    --color-name = each color variable name is also a border color name
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .b--inherit {
@@ -1790,12 +1724,6 @@ img {
      -m  = medium
      -l  = large
 
- */
-/* Variables */
-/*
-
-    VARIABLES
-
 */
 .b--dotted {
   border-style: dotted; }
@@ -1859,12 +1787,6 @@ img {
      -ns = not-small
      -m  = medium
      -l  = large
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .bw0 {
@@ -1987,12 +1909,6 @@ img {
      -ns = not-small
      -m  = medium
      -l  = large
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .br0 {
@@ -2126,12 +2042,6 @@ img {
    -m  = medium
    -l  = large
 
- */
-/* Variables */
-/*
-
-    VARIABLES
-
 */
 .shadow-1 {
   box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2); }
@@ -2189,12 +2099,6 @@ img {
    CODE
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .pre {
   overflow-x: auto;
   overflow-y: hidden;
@@ -2223,12 +2127,6 @@ img {
      -ns = not-small
      -m  = medium
      -l  = large
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .cc1 {
@@ -2369,12 +2267,6 @@ img {
      -ns = not-small
      -m  = medium
      -l  = large
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .top-0 {
@@ -2593,12 +2485,6 @@ img {
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .cf:before,
 .cf:after {
   content: " ";
@@ -2677,12 +2563,6 @@ img {
      -ns = not-small
      -m  = medium
      -l  = large
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .dn {
@@ -2832,12 +2712,6 @@ img {
      -l  = large
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .fr {
   float: right; }
 
@@ -2875,12 +2749,6 @@ img {
 
    FONT FAMILY GROUPS
    Docs: http://tachyons.io/docs/typography/font-family/
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .sans-serif {
@@ -3035,12 +2903,6 @@ img {
      -l  = large
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .i {
   font-style: italic; }
 
@@ -3116,12 +2978,6 @@ img {
      -ns = not-small
      -m  = medium
      -l  = large
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .normal {
@@ -3243,12 +3099,6 @@ img {
    FORMS
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .input-reset {
   -webkit-appearance: none;
   -moz-appearance: none; }
@@ -3288,12 +3138,6 @@ img {
      -ns = not-small
      -m  = medium
      -l  = large
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .h1 {
@@ -3847,12 +3691,6 @@ img {
    IMAGE RENDERING
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .ir-inherit {
   image-rendering: inherit; }
 
@@ -3924,12 +3762,6 @@ img {
      -l  = large
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .tracked {
   letter-spacing: 0.1em; }
 
@@ -3972,12 +3804,6 @@ img {
      -ns = not-small
      -m  = medium
      -l  = large
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .lh-inherit {
@@ -4037,12 +3863,6 @@ img {
    Docs: http://tachyons.io/docs/elements/links/
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .link {
   text-decoration: none;
   transition: color .15s ease-in; }
@@ -4065,12 +3885,6 @@ img {
 
    LISTS
    http://tachyons.io/docs/elements/lists/
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .list {
@@ -4115,12 +3929,6 @@ img {
      -ns = not-small
      -m  = medium
      -l  = large
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .w1 {
@@ -5002,12 +4810,6 @@ img {
    -m  = medium
    -l  = large
 
- */
-/* Variables */
-/*
-
-    VARIABLES
-
 */
 .mbm-inherit {
   mix-blend-mode: inherit; }
@@ -5191,12 +4993,6 @@ img {
    OBJECT FIT
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .of-inherit {
   object-fit: inherit; }
 
@@ -5278,12 +5074,6 @@ img {
 /*
 
    OBJECT POSITION
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .op-inherit {
@@ -5374,12 +5164,33 @@ img {
       -l  = large
 
 */
-/* Variables */
-/*
+.overflow-inherit {
+  overflow: inherit; }
 
-    VARIABLES
+.overflow-x-inherit {
+  overflow-x: inherit; }
 
-*/
+.overflow-y-inherit {
+  overflow-y: inherit; }
+
+.overflow-initial {
+  overflow: initial; }
+
+.overflow-x-initial {
+  overflow-x: initial; }
+
+.overflow-y-initial {
+  overflow-y: initial; }
+
+.overflow-unset {
+  overflow: unset; }
+
+.overflow-x-unset {
+  overflow-x: unset; }
+
+.overflow-y-unset {
+  overflow-y: unset; }
+
 .overflow-visible {
   overflow: visible; }
 
@@ -5417,6 +5228,24 @@ img {
   overflow-y: auto; }
 
 @media screen and (min-width: 30em) {
+  .overflow-inherit-ns {
+    overflow: inherit; }
+  .overflow-x-inherit-ns {
+    overflow-x: inherit; }
+  .overflow-y-inherit-ns {
+    overflow-y: inherit; }
+  .overflow-initial-ns {
+    overflow: initial; }
+  .overflow-x-initial-ns {
+    overflow-x: initial; }
+  .overflow-y-initial-ns {
+    overflow-y: initial; }
+  .overflow-unset-ns {
+    overflow: unset; }
+  .overflow-x-unset-ns {
+    overflow-x: unset; }
+  .overflow-y-unset-ns {
+    overflow-y: unset; }
   .overflow-visible-ns {
     overflow: visible; }
   .overflow-x-visible-ns {
@@ -5443,6 +5272,24 @@ img {
     overflow-y: auto; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
+  .overflow-inherit-m {
+    overflow: inherit; }
+  .overflow-x-inherit-m {
+    overflow-x: inherit; }
+  .overflow-y-inherit-m {
+    overflow-y: inherit; }
+  .overflow-initial-m {
+    overflow: initial; }
+  .overflow-x-initial-m {
+    overflow-x: initial; }
+  .overflow-y-initial-m {
+    overflow-y: initial; }
+  .overflow-unset-m {
+    overflow: unset; }
+  .overflow-x-unset-m {
+    overflow-x: unset; }
+  .overflow-y-unset-m {
+    overflow-y: unset; }
   .overflow-visible-m {
     overflow: visible; }
   .overflow-x-visible-m {
@@ -5469,6 +5316,24 @@ img {
     overflow-y: auto; } }
 
 @media screen and (min-width: 60em) {
+  .overflow-inherit-l {
+    overflow: inherit; }
+  .overflow-x-inherit-l {
+    overflow-x: inherit; }
+  .overflow-y-inherit-l {
+    overflow-y: inherit; }
+  .overflow-initial-l {
+    overflow: initial; }
+  .overflow-x-initial-l {
+    overflow-x: initial; }
+  .overflow-y-initial-l {
+    overflow-y: initial; }
+  .overflow-unset-l {
+    overflow: unset; }
+  .overflow-x-unset-l {
+    overflow-x: unset; }
+  .overflow-y-unset-l {
+    overflow-y: unset; }
   .overflow-visible-l {
     overflow: visible; }
   .overflow-x-visible-l {
@@ -5505,12 +5370,15 @@ img {
      -l  = large
 
 */
-/* Variables */
-/*
+.inherit {
+  position: inherit; }
 
-    VARIABLES
+.initial {
+  position: initial; }
 
-*/
+.unset {
+  position: unset; }
+
 .static {
   position: static; }
 
@@ -5523,7 +5391,16 @@ img {
 .fixed {
   position: fixed; }
 
+.sticky {
+  position: sticky; }
+
 @media screen and (min-width: 30em) {
+  .inherit-ns {
+    position: inherit; }
+  .initial-ns {
+    position: initial; }
+  .unset-ns {
+    position: unset; }
   .static-ns {
     position: static; }
   .relative-ns {
@@ -5531,9 +5408,17 @@ img {
   .absolute-ns {
     position: absolute; }
   .fixed-ns {
-    position: fixed; } }
+    position: fixed; }
+  .sticky-ns {
+    position: sticky; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
+  .inherit-m {
+    position: inherit; }
+  .initial-m {
+    position: initial; }
+  .unset-m {
+    position: unset; }
   .static-m {
     position: static; }
   .relative-m {
@@ -5541,9 +5426,17 @@ img {
   .absolute-m {
     position: absolute; }
   .fixed-m {
-    position: fixed; } }
+    position: fixed; }
+  .sticky-m {
+    position: sticky; } }
 
 @media screen and (min-width: 60em) {
+  .inherit-l {
+    position: inherit; }
+  .initial-l {
+    position: initial; }
+  .unset-l {
+    position: unset; }
   .static-l {
     position: static; }
   .relative-l {
@@ -5551,18 +5444,14 @@ img {
   .absolute-l {
     position: absolute; }
   .fixed-l {
-    position: fixed; } }
+    position: fixed; }
+  .sticky-l {
+    position: sticky; } }
 
 /*
 
     OPACITY
     Docs: http://tachyons.io/docs/themes/opacity/
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .o-100 {
@@ -5697,12 +5586,6 @@ img {
    -m  = medium
    -l  = large
 
- */
-/* Variables */
-/*
-
-    VARIABLES
-
 */
 .cursor-inherit {
   cursor: inherit; }
@@ -5834,12 +5717,6 @@ img {
      -l  = large
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .pe-inherit {
   pointer-events: inherit; }
 
@@ -5968,12 +5845,6 @@ img {
    ROTATIONS
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .rotate-45 {
   transform: rotate(45deg); }
 
@@ -6051,12 +5922,6 @@ img {
    Classes for setting foreground and background colors on elements.
    If you haven't declared a border color, but set border on an element, it will
    be set to the current text color.
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 /* Text colors */
@@ -7303,12 +7168,6 @@ img {
 
    Customize the color of an element when
    it is focused or hovered over.
-
- */
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 /* Text colors */
@@ -9117,12 +8976,6 @@ img {
      -m  = medium
      -l  = large
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 /* Fill colors */
 .fill-inherit {
   fill: inherit; }
@@ -10472,12 +10325,6 @@ img {
      -ns = not-small
      -m  = medium
      -l  = large
-*/
-/* Variables */
-/*
-
-    VARIABLES
-
 */
 /* Fill colors */
 .hover-fill-inherit:hover,
@@ -12420,12 +12267,6 @@ img {
      -l  = large
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 /* Paddings */
 .pa0 {
   padding: 0; }
@@ -13745,12 +13586,6 @@ img {
      -l  = large
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .na1 {
   margin: -0.25rem; }
 
@@ -14260,12 +14095,6 @@ img {
   Docs: http://tachyons.io/docs/elements/tables/
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .collapse {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -14298,12 +14127,6 @@ img {
      -ns = not-small
      -m  = medium
      -l  = large
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .strike {
@@ -14356,12 +14179,6 @@ img {
     -ns = not-small
     -m  = medium
     -l  = large
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .tr {
@@ -14424,12 +14241,6 @@ img {
      -ns = not-small
      -m  = medium
      -l  = large
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .ttc {
@@ -14496,97 +14307,127 @@ img {
      -m  = medium
      -l  = large
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .f1 {
+  font-size: 48px;
   font-size: 3rem; }
 
 .f2 {
+  font-size: 36px;
   font-size: 2.25rem; }
 
 .f3 {
+  font-size: 24px;
   font-size: 1.5rem; }
 
 .f4 {
+  font-size: 20px;
   font-size: 1.25rem; }
 
 .f5 {
+  font-size: 16px;
   font-size: 1rem; }
 
 .f6 {
+  font-size: 14px;
   font-size: 0.875rem; }
 
 .f7 {
+  font-size: 12px;
   font-size: 0.75rem; }
 
 .f-headline {
+  font-size: 96px;
   font-size: 6rem; }
 
 .f-subheadline {
+  font-size: 80px;
   font-size: 5rem; }
 
 @media screen and (min-width: 30em) {
   .f1-ns {
+    font-size: 48px;
     font-size: 3rem; }
   .f2-ns {
+    font-size: 36px;
     font-size: 2.25rem; }
   .f3-ns {
+    font-size: 24px;
     font-size: 1.5rem; }
   .f4-ns {
+    font-size: 20px;
     font-size: 1.25rem; }
   .f5-ns {
+    font-size: 16px;
     font-size: 1rem; }
   .f6-ns {
+    font-size: 14px;
     font-size: 0.875rem; }
   .f7-ns {
+    font-size: 12px;
     font-size: 0.75rem; }
   .f-headline-ns {
+    font-size: 96px;
     font-size: 6rem; }
   .f-subheadline-ns {
+    font-size: 80px;
     font-size: 5rem; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .f1-m {
+    font-size: 48px;
     font-size: 3rem; }
   .f2-m {
+    font-size: 36px;
     font-size: 2.25rem; }
   .f3-m {
+    font-size: 24px;
     font-size: 1.5rem; }
   .f4-m {
+    font-size: 20px;
     font-size: 1.25rem; }
   .f5-m {
+    font-size: 16px;
     font-size: 1rem; }
   .f6-m {
+    font-size: 14px;
     font-size: 0.875rem; }
   .f7-m {
+    font-size: 12px;
     font-size: 0.75rem; }
   .f-headline-m {
+    font-size: 96px;
     font-size: 6rem; }
   .f-subheadline-m {
+    font-size: 80px;
     font-size: 5rem; } }
 
 @media screen and (min-width: 60em) {
   .f1-l {
+    font-size: 48px;
     font-size: 3rem; }
   .f2-l {
+    font-size: 36px;
     font-size: 2.25rem; }
   .f3-l {
+    font-size: 24px;
     font-size: 1.5rem; }
   .f4-l {
+    font-size: 20px;
     font-size: 1.25rem; }
   .f5-l {
+    font-size: 16px;
     font-size: 1rem; }
   .f6-l {
+    font-size: 14px;
     font-size: 0.875rem; }
   .f7-l {
+    font-size: 12px;
     font-size: 0.75rem; }
   .f-headline-l {
+    font-size: 96px;
     font-size: 6rem; }
   .f-subheadline-l {
+    font-size: 80px;
     font-size: 5rem; } }
 
 /*
@@ -14598,12 +14439,6 @@ img {
      -ns = not-small
      -m  = medium
      -l  = large
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .measure {
@@ -14694,12 +14529,6 @@ img {
      -l  = large
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 /* Equivalent to .overflow-y-scroll */
 .overflow-container {
   overflow-y: scroll; }
@@ -14734,12 +14563,6 @@ img {
 
    Text that is hidden but accessible
    Ref: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-*/
-/* Variables */
-/*
-
-    VARIABLES
-
 */
 .clip {
   position: fixed !important;
@@ -14777,12 +14600,6 @@ img {
      -ns = not-small
      -m  = medium
      -l  = large
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .ws-normal {
@@ -14829,12 +14646,6 @@ img {
      -ns = not-small
      -m  = medium
      -l  = large
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .word-normal {
@@ -14887,12 +14698,6 @@ img {
      -ns = not-small
      -m  = medium
      -l  = large
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .v-base {
@@ -14949,12 +14754,6 @@ img {
     - Grow
     - Pointer
     - Shadow
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 /*
@@ -15116,12 +14915,6 @@ img {
   adjust these values to suit your needs.
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .z-inherit {
   z-index: inherit; }
 
@@ -15180,12 +14973,6 @@ img {
     that are generated by a cms.
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .nested-copy-line-height p,
 .nested-copy-line-height ul,
 .nested-copy-line-height ol {
@@ -15234,12 +15021,6 @@ img {
   Add custom styles here.
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 /* Debugging */
 /*
 
@@ -15248,12 +15029,6 @@ img {
 
   Just add the debug class to any element to see outlines on its
   children.
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .debug * {
@@ -15273,12 +15048,6 @@ img {
    Can be useful for debugging layout issues
    or helping to make sure things line up perfectly.
    Just tack one of these classes onto a parent element.
-
-*/
-/* Variables */
-/*
-
-    VARIABLES
 
 */
 .debug-grid {

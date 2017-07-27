@@ -4,12 +4,6 @@
    Docs: http://tachyons.io/docs/elements/links/
 
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .link {
   text-decoration: none;
   transition: color .15s ease-in; }

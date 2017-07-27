@@ -10,12 +10,6 @@
    Often used in combination with background image set as an inline style
    on an html element.
 */
-/* Variables */
-/*
-
-    VARIABLES
-
-*/
 .bg-repeat-r {
   background-repeat: repeat; }
 

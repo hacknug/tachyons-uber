@@ -9,12 +9,15 @@
      -l  = large
 
 */
-/* Variables */
-/*
+.inherit {
+  position: inherit; }
 
-    VARIABLES
+.initial {
+  position: initial; }
 
-*/
+.unset {
+  position: unset; }
+
 .static {
   position: static; }
 
@@ -27,7 +30,16 @@
 .fixed {
   position: fixed; }
 
+.sticky {
+  position: sticky; }
+
 @media screen and (min-width: 30em) {
+  .inherit-ns {
+    position: inherit; }
+  .initial-ns {
+    position: initial; }
+  .unset-ns {
+    position: unset; }
   .static-ns {
     position: static; }
   .relative-ns {
@@ -35,9 +47,17 @@
   .absolute-ns {
     position: absolute; }
   .fixed-ns {
-    position: fixed; } }
+    position: fixed; }
+  .sticky-ns {
+    position: sticky; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
+  .inherit-m {
+    position: inherit; }
+  .initial-m {
+    position: initial; }
+  .unset-m {
+    position: unset; }
   .static-m {
     position: static; }
   .relative-m {
@@ -45,9 +65,17 @@
   .absolute-m {
     position: absolute; }
   .fixed-m {
-    position: fixed; } }
+    position: fixed; }
+  .sticky-m {
+    position: sticky; } }
 
 @media screen and (min-width: 60em) {
+  .inherit-l {
+    position: inherit; }
+  .initial-l {
+    position: initial; }
+  .unset-l {
+    position: unset; }
   .static-l {
     position: static; }
   .relative-l {
@@ -55,4 +83,6 @@
   .absolute-l {
     position: absolute; }
   .fixed-l {
-    position: fixed; } }
+    position: fixed; }
+  .sticky-l {
+    position: sticky; } }
