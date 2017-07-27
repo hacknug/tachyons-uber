@@ -1,9 +1,12 @@
-/*
+//
+//
+//  VARIABLES
+//  https://github.com/hacknug/tachyons-uber/
+//
+//
 
-    VARIABLES
-    https://github.com/hacknug/tachyons-uber/
 
-*/
+// Breakpoint Settings
 
 $breakpoints: (
   ns: 'screen and (min-width: 30em)',
@@ -11,63 +14,288 @@ $breakpoints: (
   l:  'screen and (min-width: 60em)',
 );
 
-$aspect-ratios: (
-  16x9: percentage(9 / 16),
-  9x16: percentage(16 / 9),
-  4x3: percentage(3 / 4),
-  3x4: percentage(4 / 3),
-  6x4: percentage(4 / 6),
-  4x6: percentage(6 / 4),
-  8x5: percentage(5 / 8),
-  5x8: percentage(8 / 5),
-  7x5: percentage(5 / 7),
-  5x7: percentage(7 / 5),
-  1x1: percentage(1 / 1),
+
+// Typography Settings
+
+$font-families: (
+  sans-serif: '-apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif',
+  serif: 'georgia, serif',
+  system-sans-serif: 'sans-serif',
+  system-serif: 'serif',
+
+  code: 'consolas, monaco, monospace',
+  courier: '"courier next", courier, monospace',
+
+  helvetica: '"helvetica neue", helvetica, sans-serif',
+  avenir: '"avenir next", avenir, sans-serif',
+
+  athelas: 'athelas, georgia, serif',
+  georgia: 'georgia, serif',
+  times: 'times, serif',
+  bodoni: '"bodoni mt", serif',
+  calisto: '"Calisto MT", serif',
+  garamond: 'garamond, serif',
+  baskerville: 'baskerville, serif',
 );
 
-// Use color variables
-$bg-overlays: (
-  darken: (
-    0: rgba(0,0,0,0),
-    25: rgba(0,0,0,.25),
-    50: rgba(0,0,0,.50),
-    75: rgba(0,0,0,.75),
-  ),
-  lighten: (
-    0: rgba(0,0,0,0),
-    25: rgba(255,255,255,.25),
-    50: rgba(255,255,255,.50),
-    75: rgba(255,255,255,.75),
-  ),
+$font-sizes: (
+  1: 48px 3rem,
+  2: 36px 2.25rem,
+  3: 24px 1.5rem,
+  4: 20px 1.25rem,
+  5: 16px 1rem,
+  6: 14px .875rem,
+  7: 12px .75rem,
+  -headline: 96px 6rem,
+  -subheadline: 80px 5rem,
 );
 
-$bg-sizes: (
-  cover: cover,
-  contain: contain,
+$line-heights: (
+  inherit: inherit,
+  initial: initial,
+  solid: 1,
+  title: 1.175,
+  copy: 1.35,
 );
 
-$bg-positions: (
-  center: center center,
-  top: top center,
-  right: center right,
-  bottom: bottom center,
-  left: center left,
+$letter-spacings: (
+  tracked: .1em,
+  tracked-mega: .25em,
+  tracked-tight: -.05em,
 );
 
-$bg-repeats: (
-  r: repeat,
-  rx: repeat-x,
-  ry: repeat-y,
-  space: space,
-  round: round,
-  nr: no-repeat,
+$measures: (
+  measure: 30em,
+  measure-wide: 34em,
+  measure-narrow: 20em,
 );
 
-$outlines: (
-  outline: 1px solid,
-  outline-transparent: 1px solid transparent,
-  outline-0: 0,
+$font-weights: (
+  i: inherit,
+  1: 100,
+  2: 200,
+  3: 300,
+  4: 400,
+  5: 500,
+  6: 600,
+  7: 700,
+  8: 800,
+  9: 900,
 );
+
+$font-styles: (
+  inherit: inherit,
+  normal: normal,
+  italic: italic,
+  oblique: oblique,
+);
+
+$vertical-aligns: (
+  base: baseline,
+  mid: middle,
+  top: top,
+  btm: bottom,
+);
+
+$text-decorations: (
+  strike: line-through,
+  underline: underline,
+  no-underline: none,
+);
+
+$text-aligns: (
+  r: right,
+  l: left,
+  c: center,
+  j: justify,
+  // ja: justify-all,
+  // s: start,
+  // e: end,
+  // mp: match-parent,
+);
+
+$text-transforms: (
+  c: capitalize,
+  l: lowercase,
+  u: uppercase,
+  n: none,
+);
+
+$white-spaces: (
+  ws-normal: normal,
+  nowrap: nowrap,
+  pre: pre,
+);
+
+
+// Layout Settings */
+
+$spacings: (
+  0: 0,
+  1: .25rem,
+  2: .5rem,
+  3: 1rem,
+  4: 2rem,
+  5: 4rem,
+  6: 8rem,
+  7: 16rem,
+  a: auto,
+);
+
+$displays: (
+  n: none,
+  i: inline,
+  b: block,
+  ib: inline-block,
+  it: inline-table,
+  t: table,
+  tc: table-cell,
+  t-row: table-row,
+  t-row-group: table-row-group,
+  t-column: table-column,
+  t-column-group: table-column-group,
+);
+
+$clears: (
+  r: right,
+  l: left,
+  b: both,
+  n: none,
+);
+
+$floats: (
+  r: right,
+  l: left,
+  n: none,
+);
+
+$paddings: (
+  a: padding,
+  t: padding-top,
+  r: padding-right,
+  b: padding-bottom,
+  l: padding-left,
+  v: padding-top padding-bottom,
+  h: padding-right padding-left,
+);
+
+$margins: (
+  a: margin,
+  t: margin-top,
+  r: margin-right,
+  b: margin-bottom,
+  l: margin-left,
+  v: margin-top margin-bottom,
+  h: margin-right margin-left,
+);
+
+// Use spacing variables
+$widths: (
+/* Width Scale */
+  w1: 1rem,
+  w2: 2rem,
+  w3: 4rem,
+  w4: 8rem,
+  w5: 16rem,
+  w6: 32rem,
+  w7: 48rem,
+  w8: 64rem,
+  w9: 96rem,
+
+/* Width Percentages - Based off of width of parent */
+  w-10: 10%,
+  w-20: 20%,
+  w-25: 25%,
+  w-30: 30%,
+  w-33: 33%,
+  w-34: 34%,
+  w-40: 40%,
+  w-50: 50%,
+  w-60: 60%,
+  w-70: 70%,
+  w-75: 75%,
+  w-80: 80%,
+  w-90: 90%,
+  w-100: 100%,
+
+/* Screen Width Percentage */
+  vw-25: 25vw,
+  vw-50: 50vw,
+  vw-75: 75vw,
+  vw-100: 100vw,
+
+/* String Properties */
+  w-third: calc(100% / 3),
+  w-two-thirds: calc(100% / 1.5),
+
+  w-auto: auto,
+  w-inherit: inherit,
+  w-none: none,
+);
+
+// Use spacing variables
+$heights: (
+/* Height Scale */
+  h1: 1rem,
+  h2: 2rem,
+  h3: 4rem,
+  h4: 8rem,
+  h5: 16rem,
+  h6: 32rem,
+  h7: 48rem,
+  h8: 64rem,
+  h9: 96rem,
+
+/* Height Percentages - Based off of height of parent */
+  h-25: 25%,
+  h-50: 50%,
+  h-75: 75%,
+  h-100: 100%,
+
+/* Screen Height Percentage */
+  vh-25: 25vh,
+  vh-50: 50vh,
+  vh-75: 75vh,
+  vh-100: 100vh,
+
+/* String Properties */
+  h-auto: auto,
+  h-inherit: inherit,
+  h-none: none,
+);
+
+$positions: (
+  inherit: inherit,
+  initial: initial,
+  unset: unset,
+  static: static,
+  relative: relative,
+  absolute: absolute,
+  fixed: fixed,
+  sticky: sticky,
+);
+
+$column-counts: (
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+  6: 6,
+);
+
+// Use spacing variables
+$column-gaps: (
+  0: 0,
+  1: .25rem,
+  2: .5rem,
+  3: 1rem,
+  4: 2rem,
+  5: 4rem,
+);
+
+
+// Theming Settings
 
 $colors: (
   inherit: inherit,
@@ -145,6 +373,52 @@ $colors: (
   washed-red: #ffdfdf,
 );
 
+$bg-sizes: (
+  cover: cover,
+  contain: contain,
+);
+
+$bg-positions: (
+  center: center center,
+  top: top center,
+  right: center right,
+  bottom: bottom center,
+  left: center left,
+);
+
+$bg-repeats: (
+  r: repeat,
+  rx: repeat-x,
+  ry: repeat-y,
+  space: space,
+  round: round,
+  nr: no-repeat,
+);
+
+// Use color variables
+$bg-overlays: (
+  darken: (
+    0: rgba(0,0,0,0),
+    25: rgba(0,0,0,.25),
+    50: rgba(0,0,0,.50),
+    75: rgba(0,0,0,.75),
+  ),
+  lighten: (
+    0: rgba(0,0,0,0),
+    25: rgba(255,255,255,.25),
+    50: rgba(255,255,255,.50),
+    75: rgba(255,255,255,.75),
+  ),
+);
+
+$box-shadows: (
+  1: 0   0   4px 2px rgba(0,0,0,.2),
+  2: 0   0   8px 2px rgba(0,0,0,.2),
+  3: 2px 2px 4px 2px rgba(0,0,0,.2),
+  4: 2px 2px 8px 0   rgba(0,0,0,.2),
+  5: 4px 4px 8px 0   rgba(0,0,0,.2),
+);
+
 $border-styles: (
   dotted: dotted,
   dashed: dashed,
@@ -173,227 +447,38 @@ $border-radius: (
   -pill: 9999px,
 );
 
-$box-shadows: (
-  1: 0   0   4px 2px rgba(0,0,0,.2),
-  2: 0   0   8px 2px rgba(0,0,0,.2),
-  3: 2px 2px 4px 2px rgba(0,0,0,.2),
-  4: 2px 2px 8px 0   rgba(0,0,0,.2),
-  5: 4px 4px 8px 0   rgba(0,0,0,.2),
+// full name keeps the leading 0's, otherwise removed by SASS?
+$opacities: (
+  o-100: 1,
+  o-90: .9,
+  o-80: .8,
+  o-70: .7,
+  o-60: .6,
+  o-50: .5,
+  o-40: .4,
+  o-30: .3,
+  o-20: .2,
+  o-10: .1,
+  o-05: .05,
+  o-025: .025,
+  o-0: 0,
 );
 
-$column-counts: (
-  1: 1,
-  2: 2,
-  3: 3,
-  4: 4,
-  5: 5,
-  6: 6,
-);
 
-// Use spacing variables
-$column-gaps: (
-  0: 0,
-  1: .25rem,
-  2: .5rem,
-  3: 1rem,
-  4: 2rem,
-  5: 4rem,
-);
+// Element Settings
 
-$coordinates: (
-  0: 0,
-  1: 1rem,
-  2: 2rem,
-  -1: -1rem,
-  -2: -2rem,
-);
-
-$clears: (
-  r: right,
-  l: left,
-  b: both,
-  n: none,
-);
-
-$displays: (
-  n: none,
-  i: inline,
-  b: block,
-  ib: inline-block,
-  it: inline-table,
-  t: table,
-  tc: table-cell,
-  t-row: table-row,
-  t-row-group: table-row-group,
-  t-column: table-column,
-  t-column-group: table-column-group,
-);
-
-$floats: (
-  r: right,
-  l: left,
-  n: none,
-);
-
-$font-families: (
-  sans-serif: '-apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif',
-  serif: 'georgia, serif',
-  system-sans-serif: 'sans-serif',
-  system-serif: 'serif',
-
-  code: 'consolas, monaco, monospace',
-  courier: '"courier next", courier, monospace',
-
-  helvetica: '"helvetica neue", helvetica, sans-serif',
-  avenir: '"avenir next", avenir, sans-serif',
-
-  athelas: 'athelas, georgia, serif',
-  georgia: 'georgia, serif',
-  times: 'times, serif',
-  bodoni: '"bodoni mt", serif',
-  calisto: '"Calisto MT", serif',
-  garamond: 'garamond, serif',
-  baskerville: 'baskerville, serif',
-);
-
-$font-styles: (
-  inherit: inherit,
-  normal: normal,
-  italic: italic,
-  oblique: oblique,
-);
-
-$font-weights: (
-  i: inherit,
-  1: 100,
-  2: 200,
-  3: 300,
-  4: 400,
-  5: 500,
-  6: 600,
-  7: 700,
-  8: 800,
-  9: 900,
-);
-
-// Use spacing variables
-$heights: (
-/* Height Scale */
-  h1: 1rem,
-  h2: 2rem,
-  h3: 4rem,
-  h4: 8rem,
-  h5: 16rem,
-  h6: 32rem,
-  h7: 48rem,
-  h8: 64rem,
-  h9: 96rem,
-
-/* Height Percentages - Based off of height of parent */
-  h-25: 25%,
-  h-50: 50%,
-  h-75: 75%,
-  h-100: 100%,
-
-/* Screen Height Percentage */
-  vh-25: 25vh,
-  vh-50: 50vh,
-  vh-75: 75vh,
-  vh-100: 100vh,
-
-/* String Properties */
-  h-auto: auto,
-  h-inherit: inherit,
-  h-none: none,
-);
-
-$image-renderings: (
-  inherit: inherit,
-  initial: initial,
-  unset: unset,
-  auto: auto,
-  crisp-edges: crisp-edges,
-  pixelated: pixelated,
-);
-
-$letter-spacings: (
-  tracked: .1em,
-  tracked-mega: .25em,
-  tracked-tight: -.05em,
-);
-
-$line-heights: (
-  inherit: inherit,
-  initial: initial,
-  solid: 1,
-  title: 1.175,
-  copy: 1.35,
-);
-
-// Use spacing variables
-$widths: (
-/* Width Scale */
-  w1: 1rem,
-  w2: 2rem,
-  w3: 4rem,
-  w4: 8rem,
-  w5: 16rem,
-  w6: 32rem,
-  w7: 48rem,
-  w8: 64rem,
-  w9: 96rem,
-
-/* Width Percentages - Based off of width of parent */
-  w-10: 10%,
-  w-20: 20%,
-  w-25: 25%,
-  w-30: 30%,
-  w-33: 33%,
-  w-34: 34%,
-  w-40: 40%,
-  w-50: 50%,
-  w-60: 60%,
-  w-70: 70%,
-  w-75: 75%,
-  w-80: 80%,
-  w-90: 90%,
-  w-100: 100%,
-
-/* Screen Width Percentage */
-  vw-25: 25vw,
-  vw-50: 50vw,
-  vw-75: 75vw,
-  vw-100: 100vw,
-
-/* String Properties */
-  w-third: calc(100% / 3),
-  w-two-thirds: calc(100% / 1.5),
-
-  w-auto: auto,
-  w-inherit: inherit,
-  w-none: none,
-);
-
-$mix-blend-modes: (
-  inherit: inherit,
-  initial: initial,
-  unset: unset,
-  normal: normal,
-  multiply: multiply,
-  screen: screen,
-  overlay: overlay,
-  darken: darken,
-  lighten: lighten,
-  color-dodge: color-dodge,
-  color-burn: color-burn,
-  hard-light: hard-light,
-  soft-light: soft-light,
-  difference: difference,
-  exclusion: exclusion,
-  hue: hue,
-  saturation: saturation,
-  color: color,
-  luminosity: luminosity,
+$aspect-ratios: (
+  16x9: percentage(9 / 16),
+  9x16: percentage(16 / 9),
+  4x3: percentage(3 / 4),
+  3x4: percentage(4 / 3),
+  6x4: percentage(4 / 6),
+  4x6: percentage(6 / 4),
+  8x5: percentage(5 / 8),
+  5x8: percentage(8 / 5),
+  7x5: percentage(5 / 7),
+  5x7: percentage(7 / 5),
+  1x1: percentage(1 / 1),
 );
 
 $object-fits: (
@@ -418,188 +503,17 @@ $object-positions: (
   left: left,
 );
 
-$overflows: (
-  inherit: inherit,
-  initial: initial,
-  unset: unset,
-  visible: visible,
-  hidden: hidden,
-  scroll: scroll,
-  auto: auto,
-);
-
-$positions: (
-  inherit: inherit,
-  initial: initial,
-  unset: unset,
-  static: static,
-  relative: relative,
-  absolute: absolute,
-  fixed: fixed,
-  sticky: sticky,
-);
-
-// full name keeps the leading 0's, otherwise removed by SASS?
-$opacities: (
-  o-100: 1,
-  o-90: .9,
-  o-80: .8,
-  o-70: .7,
-  o-60: .6,
-  o-50: .5,
-  o-40: .4,
-  o-30: .3,
-  o-20: .2,
-  o-10: .1,
-  o-05: .05,
-  o-025: .025,
-  o-0: 0,
-);
-
-$pointer-events: (
+$image-renderings: (
   inherit: inherit,
   initial: initial,
   unset: unset,
   auto: auto,
-  none: none,
-  visiblePainted: visiblePainted,
-  visibleFill: visibleFill,
-  visibleStroke: visibleStroke,
-  visible: visible,
-  painted: painted,
-  fill: fill,
-  stroke: stroke,
-  all: all,
+  crisp-edges: crisp-edges,
+  pixelated: pixelated,
 );
 
-$rotations: (
-  45: 45deg,
-  90: 90deg,
-  135: 135deg,
-  180: 180deg,
-  225: 225deg,
-  270: 270deg,
-  315: 315deg,
-);
 
-$paddings: (
-  a: padding,
-  t: padding-top,
-  r: padding-right,
-  b: padding-bottom,
-  l: padding-left,
-  v: padding-top padding-bottom,
-  h: padding-right padding-left,
-);
-
-$margins: (
-  a: margin,
-  t: margin-top,
-  r: margin-right,
-  b: margin-bottom,
-  l: margin-left,
-  v: margin-top margin-bottom,
-  h: margin-right margin-left,
-);
-
-$spacings: (
-  0: 0,
-  1: .25rem,
-  2: .5rem,
-  3: 1rem,
-  4: 2rem,
-  5: 4rem,
-  6: 8rem,
-  7: 16rem,
-  a: auto,
-);
-
-$text-decorations: (
-  strike: line-through,
-  underline: underline,
-  no-underline: none,
-);
-
-$text-aligns: (
-  r: right,
-  l: left,
-  c: center,
-  j: justify,
-  // ja: justify-all,
-  // s: start,
-  // e: end,
-  // mp: match-parent,
-);
-
-$text-transforms: (
-  c: capitalize,
-  l: lowercase,
-  u: uppercase,
-  n: none,
-);
-
-$font-sizes: (
-  1: 3rem,
-  2: 2.25rem,
-  3: 1.5rem,
-  4: 1.25rem,
-  5: 1rem,
-  6: .875rem,
-  7: .75rem,
-  -headline: 6rem,
-  -subheadline: 5rem,
-);
-
-$measures: (
-  measure: 30em,
-  measure-wide: 34em,
-  measure-narrow: 20em,
-);
-
-$white-spaces: (
-  ws-normal: normal,
-  nowrap: nowrap,
-  pre: pre,
-);
-
-$word-breaks: (
-  normal: normal,
-  wrap: break-all,
-  nowrap: keep-all,
-
-/* Non standard for WebKit */
-  break: break-word,
-);
-
-$vertical-aligns: (
-  base: baseline,
-  mid: middle,
-  top: top,
-  btm: bottom,
-);
-
-$z-indexes: (
-  inherit: inherit,
-  initial: initial,
-  unset: unset,
-
-  0: 0,
-  1: 1,
-  2: 2,
-  3: 3,
-  4: 4,
-  5: 5,
-
-  n1: -1,
-  n2: -2,
-  n3: -3,
-  n4: -4,
-  n5: -5,
-
-  999: 999,
-  9999: 9999,
-  max: 2147483647,
-);
+// Other Settings
 
 $cursors: (
   inherit: inherit,
@@ -641,4 +555,111 @@ $cursors: (
   zoom-out: zoom-out,
   grab: grab,
   grabbing: grabbing,
+);
+
+$pointer-events: (
+  inherit: inherit,
+  initial: initial,
+  unset: unset,
+  auto: auto,
+  none: none,
+  visiblePainted: visiblePainted,
+  visibleFill: visibleFill,
+  visibleStroke: visibleStroke,
+  visible: visible,
+  painted: painted,
+  fill: fill,
+  stroke: stroke,
+  all: all,
+);
+
+
+// Things Waiting To Be Sorted
+
+$outlines: (
+  outline: 1px solid,
+  outline-transparent: 1px solid transparent,
+  outline-0: 0,
+);
+
+$coordinates: (
+  0: 0,
+  1: 1rem,
+  2: 2rem,
+  -1: -1rem,
+  -2: -2rem,
+);
+
+$mix-blend-modes: (
+  inherit: inherit,
+  initial: initial,
+  unset: unset,
+  normal: normal,
+  multiply: multiply,
+  screen: screen,
+  overlay: overlay,
+  darken: darken,
+  lighten: lighten,
+  color-dodge: color-dodge,
+  color-burn: color-burn,
+  hard-light: hard-light,
+  soft-light: soft-light,
+  difference: difference,
+  exclusion: exclusion,
+  hue: hue,
+  saturation: saturation,
+  color: color,
+  luminosity: luminosity,
+);
+
+$overflows: (
+  inherit: inherit,
+  initial: initial,
+  unset: unset,
+  visible: visible,
+  hidden: hidden,
+  scroll: scroll,
+  auto: auto,
+);
+
+$rotations: (
+  45: 45deg,
+  90: 90deg,
+  135: 135deg,
+  180: 180deg,
+  225: 225deg,
+  270: 270deg,
+  315: 315deg,
+);
+
+$word-breaks: (
+  normal: normal,
+  wrap: break-all,
+  nowrap: keep-all,
+
+/* Non standard for WebKit */
+  break: break-word,
+);
+
+$z-indexes: (
+  inherit: inherit,
+  initial: initial,
+  unset: unset,
+
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+
+  n1: -1,
+  n2: -2,
+  n3: -3,
+  n4: -4,
+  n5: -5,
+
+  999: 999,
+  9999: 9999,
+  max: 2147483647,
 );
