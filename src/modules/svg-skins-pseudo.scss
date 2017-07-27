@@ -58,16 +58,20 @@
 }
 
 /* Stroke widths */
-@each $name, $value in $spacings {
+@each $name, $values in $spacings {
   .hover-sw#{$name}:hover,
-  .hover-sw#{$name}:focus { stroke-width: $value; }
+  .hover-sw#{$name}:focus {
+    @each $value in $values { stroke-width: $value; }
+  }
 }
 
 @each $suffix, $value in $breakpoints {
   @media #{$value} {
-    @each $name, $value in $spacings {
+    @each $name, $values in $spacings {
       .hover-sw#{$name}-#{$suffix}:hover,
-      .hover-sw#{$name}-#{$suffix}:focus { stroke-width: $value; }
+      .hover-sw#{$name}-#{$suffix}:focus {
+        @each $value in $values { stroke-width: $value; }
+      }
     }
   }
 }

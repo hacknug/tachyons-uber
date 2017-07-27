@@ -31,10 +31,12 @@
 
 
 @each $name, $properties in $margins {
-  @each $step, $value in $spacings {
-    @if $value != 0 and $value != "auto" {
+  @each $step, $values in $spacings {
+    @if $values != 0 and $values != "auto" {
       .n#{$name}#{$step} {
-        @each $property in $properties { #{$property}: -#{$value}; }
+        @each $property in $properties {
+          @each $value in $values { #{$property}: -#{$value}; }
+        }
       }
     }
   }
@@ -43,10 +45,12 @@
 @each $suffix, $value in $breakpoints {
   @media #{$value} {
     @each $name, $properties in $margins {
-      @each $step, $value in $spacings {
-        @if $value != 0 and $value != "auto" {
+      @each $step, $values in $spacings {
+        @if $values != 0 and $values != "auto" {
           .n#{$name}#{$step}-#{$suffix} {
-            @each $property in $properties { #{$property}: -#{$value}; }
+            @each $property in $properties {
+              @each $value in $values { #{$property}: -#{$value}; }
+            }
           }
         }
       }
