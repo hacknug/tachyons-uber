@@ -21,18 +21,22 @@
      -l  = large
 */
 
-/* Variables */
+// Variables
 @import '../_variables';
 
 
-@each $name, $value in $font-sizes {
-  .f#{$name} { font-size: $value; }
+@each $name, $values in $font-sizes {
+  .f#{$name} {
+    @each $value in $values { font-size: $value; }
+  }
 }
 
 @each $suffix, $value in $breakpoints {
   @media #{$value} {
-    @each $name, $value in $font-sizes {
-      .f#{$name}-#{$suffix} { font-size: $value; }
+    @each $name, $values in $font-sizes {
+      .f#{$name}-#{$suffix} {
+        @each $value in $values { font-size: $value; }
+      }
     }
   }
 }
