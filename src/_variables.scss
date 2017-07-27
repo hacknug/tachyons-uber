@@ -132,13 +132,13 @@ $white-spaces: (
 
 $spacings: (
   0: 0,
-  1: .25rem,
-  2: .5rem,
-  3: 1rem,
-  4: 2rem,
-  5: 4rem,
-  6: 8rem,
-  7: 16rem,
+  1: 4px .25rem,
+  2: 8px .5rem,
+  3: 16px 1rem,
+  4: 32px 2rem,
+  5: 64px 4rem,
+  6: 128px 8rem,
+  7: 256px 16rem,
   a: auto,
 );
 

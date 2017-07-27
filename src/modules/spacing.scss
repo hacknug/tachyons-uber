@@ -40,9 +40,11 @@
 
 /* Paddings */
 @each $name, $properties in $paddings {
-  @each $step, $value in $spacings {
+  @each $step, $values in $spacings {
     .p#{$name}#{$step} {
-      @each $property in $properties { #{$property}: $value; }
+      @each $property in $properties {
+        @each $value in $values { #{$property}: $value; }
+      }
     }
   }
 }
@@ -50,9 +52,11 @@
 @each $suffix, $value in $breakpoints {
   @media #{$value} {
     @each $name, $properties in $paddings {
-      @each $step, $value in $spacings {
+      @each $step, $values in $spacings {
         .p#{$name}#{$step}-#{$suffix} {
-          @each $property in $properties { #{$property}: $value; }
+          @each $property in $properties {
+            @each $value in $values { #{$property}: $value; }
+          }
         }
       }
     }
@@ -61,9 +65,11 @@
 
 /* Margins */
 @each $name, $properties in $margins {
-  @each $step, $value in $spacings {
+  @each $step, $values in $spacings {
     .m#{$name}#{$step} {
-      @each $property in $properties { #{$property}: $value; }
+      @each $property in $properties {
+        @each $value in $values { #{$property}: $value; }
+      }
     }
   }
 }
@@ -71,9 +77,11 @@
 @each $suffix, $value in $breakpoints {
   @media #{$value} {
     @each $name, $properties in $margins {
-      @each $step, $value in $spacings {
+      @each $step, $values in $spacings {
         .m#{$name}#{$step}-#{$suffix} {
-          @each $property in $properties { #{$property}: $value; }
+          @each $property in $properties {
+            @each $value in $values { #{$property}: $value; }
+          }
         }
       }
     }
