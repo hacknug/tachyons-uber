@@ -171,6 +171,7 @@ $flex-wraps: (
   flex-wrap-reverse: wrap-reverse,
 );
 
+// https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
 $flex-justify-contents: (
   justify-start: flex-start,
   justify-end: flex-end,
@@ -179,6 +180,7 @@ $flex-justify-contents: (
   justify-around: space-around,
 );
 
+// https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
 $flex-align-items: (
   items-start: flex-start,
   items-end: flex-end,
@@ -187,6 +189,7 @@ $flex-align-items: (
   items-stretch: stretch,
 );
 
+// https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
 $flex-align-contents: (
   content-start: flex-start,
   content-end: flex-end,
@@ -196,6 +199,7 @@ $flex-align-contents: (
   content-stretch: stretch,
 );
 
+// https://developer.mozilla.org/en-US/docs/Web/CSS/align-self
 $flex-align-selfs: (
   self-start: flex-start,
   self-end: flex-end,
@@ -224,6 +228,11 @@ $flex-orders: (
   order-1: 1,
   order-2: 2,
   order-3: 3,
+  order-4: 4,
+  order-5: 5,
+  order-6: 6,
+  order-7: 7,
+  order-8: 8,
   order-last: 99999,
 );
 
