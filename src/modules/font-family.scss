@@ -10,13 +10,13 @@
 
 
 @each $name, $value in $font-families {
-  .#{$name} { font-family: $value; }
+  .#{$name} { font-family: unquote($value); }
 }
 
 @each $suffix, $value in $breakpoints {
   @media #{$value} {
     @each $name, $value in $font-families {
-      .#{$name}-#{$suffix} { font-family: $value; }
+      .#{$name}-#{$suffix} { font-family: unquote($value); }
     }
   }
 }
