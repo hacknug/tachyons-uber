@@ -4,7 +4,8 @@ var gulp = require('gulp'),
 var sass = require('gulp-sass'),
     combineMq = require('gulp-combine-mq'),
     csso = require('gulp-csso'),
-    cleanCss = require('gulp-clean-css');
+    cleanCss = require('gulp-clean-css'),
+    autoprefixer = require('gulp-autoprefixer');
 
 
 gulp.task('styles', function(){
@@ -17,15 +18,18 @@ gulp.task('styles', function(){
     .pipe(sass({
       precision: 3,
     }))
+    .pipe(autoprefixer({
+        browsers: ['>= 0%'],
+    }))
     .pipe(gulp.dest('dist/'))
     .pipe(combineMq({
-  		beautify: true
+  		beautify: true,
   	}))
     .pipe(cleanCss({
 
     }))
     .pipe(csso({
-      debug: true
+      debug: true,
     }))
     .pipe(rename({
       suffix: '.min'
