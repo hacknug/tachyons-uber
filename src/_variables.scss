@@ -146,7 +146,9 @@ $displays: (
   n: none,
   i: inline,
   b: block,
+  f: flex,
   ib: inline-block,
+  if: inline-flex,
   it: inline-table,
   t: table,
   tc: table-cell,
@@ -154,6 +156,75 @@ $displays: (
   t-row-group: table-row-group,
   t-column: table-column,
   t-column-group: table-column-group,
+);
+
+$flex-directions: (
+  flex-row: row,
+  flex-row-reverse: row-reverse,
+  flex-column: column,
+  flex-column-reverse: column-reverse,
+);
+
+$flex-wraps: (
+  flex-nowrap: nowrap,
+  flex-wrap: wrap,
+  flex-wrap-reverse: wrap-reverse,
+);
+
+$flex-justify-contents: (
+  justify-start: flex-start,
+  justify-end: flex-end,
+  justify-center: center,
+  justify-between: space-between,
+  justify-around: space-around,
+);
+
+$flex-align-items: (
+  items-start: flex-start,
+  items-end: flex-end,
+  items-center: center,
+  items-baseline: baseline,
+  items-stretch: stretch,
+);
+
+$flex-align-contents: (
+  content-start: flex-start,
+  content-end: flex-end,
+  content-center: center,
+  content-between: space-between,
+  content-around: space-around,
+  content-stretch: stretch,
+);
+
+$flex-align-selfs: (
+  self-start: flex-start,
+  self-end: flex-end,
+  self-center: center,
+  self-baseline: baseline,
+  self-stretch: stretch,
+);
+
+$flex-grow-factors: (
+  grow: (
+    flex-grow-0: 0,
+    flex-grow-1: 1,
+    flex-grow-2: 2,
+    flex-grow-3: 3,
+  ),
+  shrink: (
+    flex-shrink-0: 0,
+    flex-shrink-1: 1,
+    flex-shrink-2: 2,
+    flex-shrink-3: 3,
+  ),
+);
+
+$flex-orders: (
+  order-0: 0,
+  order-1: 1,
+  order-2: 2,
+  order-3: 3,
+  order-last: 99999,
 );
 
 $clears: (

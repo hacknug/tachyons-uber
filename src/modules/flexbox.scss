@@ -12,6 +12,8 @@
 // Variables
 @import '../_variables';
 
+
+/* General */
 .flex { display: flex; }
 .inline-flex { display: inline-flex; }
 
@@ -25,57 +27,129 @@
 
 .flex-none { flex: none; }
 
-.flex-row            { flex-direction: row; }
-.flex-row-reverse    { flex-direction: row-reverse; }
-.flex-column         { flex-direction: column; }
-.flex-column-reverse { flex-direction: column-reverse; }
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+  	.flex-#{$suffix} { display: flex; }
+  	.inline-flex-#{$suffix} { display: inline-flex; }
+  	.flex-auto-#{$suffix} { flex: 1 1 auto; min-width: 0; min-height: 0; }
+  	.flex-none-#{$suffix} { flex: none; }
+  }
+}
 
-.flex-nowrap       { flex-wrap: nowrap; }
-.flex-wrap         { flex-wrap: wrap; }
-.flex-wrap-reverse { flex-wrap: wrap-reverse; }
 
-.justify-start   { justify-content: flex-start; }
-.justify-end     { justify-content: flex-end; }
-.justify-center  { justify-content: center; }
-.justify-between { justify-content: space-between; }
-.justify-around  { justify-content: space-around; }
+/* Flex Directions */
+@each $name, $value in $flex-directions {
+  .#{$name} { flex-direction: $value; }
+}
 
-.items-start    { align-items: flex-start; }
-.items-end      { align-items: flex-end; }
-.items-center   { align-items: center; }
-.items-baseline { align-items: baseline; }
-.items-stretch  { align-items: stretch; }
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $flex-directions {
+      .#{$name}-#{$suffix} { flex-direction: $value; }
+    }
+  }
+}
 
-.content-start   { align-content: flex-start; }
-.content-end     { align-content: flex-end; }
-.content-center  { align-content: center; }
-.content-between { align-content: space-between; }
-.content-around  { align-content: space-around; }
-.content-stretch { align-content: stretch; }
 
-.self-start    { align-self: flex-start; }
-.self-end      { align-self: flex-end; }
-.self-center   { align-self: center; }
-.self-baseline { align-self: baseline; }
-.self-stretch  { align-self: stretch; }
+/* Flex Wraps */
+@each $name, $value in $flex-wraps {
+  .#{$name} { flex-wrap: $value; }
+}
 
-.flex-grow-0 { flex-grow: 0; }
-.flex-grow-1 { flex-grow: 1; }
-.flex-grow-2 { flex-grow: 2; }
-.flex-grow-3 { flex-grow: 3; }
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $flex-wraps {
+      .#{$name}-#{$suffix} { flex-wrap: $value; }
+    }
+  }
+}
 
-.flex-shrink-0 { flex-shrink: 0; }
-.flex-shrink-1 { flex-shrink: 1; }
-.flex-shrink-2 { flex-shrink: 2; }
-.flex-shrink-3 { flex-shrink: 3; }
 
-.order-0 { order: 0; }
-.order-1 { order: 1; }
-.order-2 { order: 2; }
-.order-3 { order: 3; }
-.order-4 { order: 4; }
-.order-5 { order: 5; }
-.order-6 { order: 6; }
-.order-7 { order: 7; }
-.order-8 { order: 8; }
-.order-last { order: 99999; }
+/* Justify Contents */
+@each $name, $value in $flex-justify-contents {
+  .#{$name} { justify-content: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $flex-justify-contents {
+      .#{$name}-#{$suffix} { justify-content: $value; }
+    }
+  }
+}
+
+
+/* Align Items */
+@each $name, $value in $flex-align-items {
+  .#{$name} { align-items: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $flex-align-items {
+      .#{$name}-#{$suffix} { align-items: $value; }
+    }
+  }
+}
+
+
+/* Align Contents */
+@each $name, $value in $flex-align-contents {
+  .#{$name} { align-content: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $flex-align-contents {
+      .#{$name}-#{$suffix} { align-content: $value; }
+    }
+  }
+}
+
+
+/* Align Selfs */
+@each $name, $value in $flex-align-selfs {
+  .#{$name} { align-self: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $flex-align-selfs {
+      .#{$name}-#{$suffix} { align-self: $value; }
+    }
+  }
+}
+
+
+/* Flex Grows & Shrinks */
+@each $group, $values in $flex-grow-factors {
+  @each $name, $value in $values {
+    .#{$name} { flex-#{$group}: $value; }
+  }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+
+    @each $group, $values in $flex-grow-factors {
+      @each $name, $value in $values {
+        .#{$name} { flex-#{$group}: $value; }
+      }
+    }
+
+  }
+}
+
+
+/* Orders */
+@each $name, $value in $flex-orders {
+  .#{$name} { order: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $flex-orders {
+      .#{$name}-#{$suffix} { order: $value; }
+    }
+  }
+}
