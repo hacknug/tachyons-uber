@@ -34,8 +34,22 @@
 .db {
   display: block; }
 
+.df {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .dib {
   display: inline-block; }
+
+.dif {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
 
 .dit {
   display: inline-table; }
@@ -73,8 +87,20 @@
     display: inline; }
   .db-ns {
     display: block; }
+  .df-ns {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; }
   .dib-ns {
     display: inline-block; }
+  .dif-ns {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
   .dit-ns {
     display: inline-table; }
   .dt-ns {
@@ -100,8 +126,20 @@
     display: inline; }
   .db-m {
     display: block; }
+  .df-m {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; }
   .dib-m {
     display: inline-block; }
+  .dif-m {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
   .dit-m {
     display: inline-table; }
   .dt-m {
@@ -127,8 +165,20 @@
     display: inline; }
   .db-l {
     display: block; }
+  .df-l {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; }
   .dib-l {
     display: inline-block; }
+  .dif-l {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
   .dit-l {
     display: inline-table; }
   .dt-l {

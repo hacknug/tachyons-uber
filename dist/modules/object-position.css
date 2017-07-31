@@ -4,79 +4,111 @@
 
 */
 .op-inherit {
-  object-position: inherit; }
+  -o-object-position: inherit;
+     object-position: inherit; }
 
 .op-initial {
-  object-position: initial; }
+  -o-object-position: initial;
+     object-position: initial; }
 
 .op-unset {
-  object-position: unset; }
+  -o-object-position: unset;
+     object-position: unset; }
 
 .op-center {
-  object-position: center; }
+  -o-object-position: center;
+     object-position: center; }
 
 .op-top {
-  object-position: top; }
+  -o-object-position: top;
+     object-position: top; }
 
 .op-right {
-  object-position: right; }
+  -o-object-position: right;
+     object-position: right; }
 
 .op-bottom {
-  object-position: bottom; }
+  -o-object-position: bottom;
+     object-position: bottom; }
 
 .op-left {
-  object-position: left; }
+  -o-object-position: left;
+     object-position: left; }
 
 @media screen and (min-width: 30em) {
   .op-inherit-ns {
-    object-position: inherit; }
+    -o-object-position: inherit;
+       object-position: inherit; }
   .op-initial-ns {
-    object-position: initial; }
+    -o-object-position: initial;
+       object-position: initial; }
   .op-unset-ns {
-    object-position: unset; }
+    -o-object-position: unset;
+       object-position: unset; }
   .op-center-ns {
-    object-position: center; }
+    -o-object-position: center;
+       object-position: center; }
   .op-top-ns {
-    object-position: top; }
+    -o-object-position: top;
+       object-position: top; }
   .op-right-ns {
-    object-position: right; }
+    -o-object-position: right;
+       object-position: right; }
   .op-bottom-ns {
-    object-position: bottom; }
+    -o-object-position: bottom;
+       object-position: bottom; }
   .op-left-ns {
-    object-position: left; } }
+    -o-object-position: left;
+       object-position: left; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .op-inherit-m {
-    object-position: inherit; }
+    -o-object-position: inherit;
+       object-position: inherit; }
   .op-initial-m {
-    object-position: initial; }
+    -o-object-position: initial;
+       object-position: initial; }
   .op-unset-m {
-    object-position: unset; }
+    -o-object-position: unset;
+       object-position: unset; }
   .op-center-m {
-    object-position: center; }
+    -o-object-position: center;
+       object-position: center; }
   .op-top-m {
-    object-position: top; }
+    -o-object-position: top;
+       object-position: top; }
   .op-right-m {
-    object-position: right; }
+    -o-object-position: right;
+       object-position: right; }
   .op-bottom-m {
-    object-position: bottom; }
+    -o-object-position: bottom;
+       object-position: bottom; }
   .op-left-m {
-    object-position: left; } }
+    -o-object-position: left;
+       object-position: left; } }
 
 @media screen and (min-width: 60em) {
   .op-inherit-l {
-    object-position: inherit; }
+    -o-object-position: inherit;
+       object-position: inherit; }
   .op-initial-l {
-    object-position: initial; }
+    -o-object-position: initial;
+       object-position: initial; }
   .op-unset-l {
-    object-position: unset; }
+    -o-object-position: unset;
+       object-position: unset; }
   .op-center-l {
-    object-position: center; }
+    -o-object-position: center;
+       object-position: center; }
   .op-top-l {
-    object-position: top; }
+    -o-object-position: top;
+       object-position: top; }
   .op-right-l {
-    object-position: right; }
+    -o-object-position: right;
+       object-position: right; }
   .op-bottom-l {
-    object-position: bottom; }
+    -o-object-position: bottom;
+       object-position: bottom; }
   .op-left-l {
-    object-position: left; } }
+    -o-object-position: left;
+       object-position: left; } }

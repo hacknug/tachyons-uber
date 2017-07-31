@@ -19,15 +19,24 @@
 */
 .dim {
   opacity: 1;
+  -webkit-transition: opacity .15s ease-in;
+  -o-transition: opacity .15s ease-in;
+  -moz-transition: opacity .15s ease-in;
   transition: opacity .15s ease-in; }
 
 .dim:hover,
 .dim:focus {
   opacity: .5;
+  -webkit-transition: opacity .15s ease-in;
+  -o-transition: opacity .15s ease-in;
+  -moz-transition: opacity .15s ease-in;
   transition: opacity .15s ease-in; }
 
 .dim:active {
   opacity: .8;
+  -webkit-transition: opacity .15s ease-out;
+  -o-transition: opacity .15s ease-out;
+  -moz-transition: opacity .15s ease-out;
   transition: opacity .15s ease-out; }
 
 /*
@@ -36,11 +45,17 @@
 
 */
 .glow {
+  -webkit-transition: opacity .15s ease-in;
+  -o-transition: opacity .15s ease-in;
+  -moz-transition: opacity .15s ease-in;
   transition: opacity .15s ease-in; }
 
 .glow:hover,
 .glow:focus {
   opacity: 1;
+  -webkit-transition: opacity .15s ease-in;
+  -o-transition: opacity .15s ease-in;
+  -moz-transition: opacity .15s ease-in;
   transition: opacity .15s ease-in; }
 
 /*
@@ -59,12 +74,18 @@
 */
 .hide-child .child {
   opacity: 0;
+  -webkit-transition: opacity .15s ease-in;
+  -o-transition: opacity .15s ease-in;
+  -moz-transition: opacity .15s ease-in;
   transition: opacity .15s ease-in; }
 
 .hide-child:hover .child,
 .hide-child:focus .child,
 .hide-child:active .child {
   opacity: 1;
+  -webkit-transition: opacity .15s ease-in;
+  -o-transition: opacity .15s ease-in;
+  -moz-transition: opacity .15s ease-in;
   transition: opacity .15s ease-in; }
 
 .underline-hover:hover,
@@ -75,29 +96,63 @@
  * even if you are using background-size: cover */
 .grow {
   -moz-osx-font-smoothing: grayscale;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  transition: transform 0.25s ease-out; }
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+     -moz-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  -o-transition: -o-transform 0.25s ease-out;
+  -moz-transition: transform 0.25s ease-out, -moz-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out, -moz-transform 0.25s ease-out, -o-transform 0.25s ease-out; }
 
 .grow:hover,
 .grow:focus {
-  transform: scale(1.05); }
+  -webkit-transform: scale(1.05);
+     -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+       -o-transform: scale(1.05);
+          transform: scale(1.05); }
 
 .grow:active {
-  transform: scale(0.9); }
+  -webkit-transform: scale(0.9);
+     -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+       -o-transform: scale(0.9);
+          transform: scale(0.9); }
 
 .grow-large {
   -moz-osx-font-smoothing: grayscale;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  transition: transform .25s ease-in-out; }
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+     -moz-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transition: -webkit-transform .25s ease-in-out;
+  transition: -webkit-transform .25s ease-in-out;
+  -o-transition: -o-transform .25s ease-in-out;
+  -moz-transition: transform .25s ease-in-out, -moz-transform .25s ease-in-out;
+  transition: transform .25s ease-in-out;
+  transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out, -moz-transform .25s ease-in-out, -o-transform .25s ease-in-out; }
 
 .grow-large:hover,
 .grow-large:focus {
-  transform: scale(1.2); }
+  -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+       -o-transform: scale(1.2);
+          transform: scale(1.2); }
 
 .grow-large:active {
-  transform: scale(0.95); }
+  -webkit-transform: scale(0.95);
+     -moz-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+       -o-transform: scale(0.95);
+          transform: scale(0.95); }
 
 /* Add pointer on hover */
 .pointer:hover {
@@ -112,11 +167,16 @@
 .shadow-hover {
   cursor: pointer;
   position: relative;
+  -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
 
 .shadow-hover::after {
   content: '';
-  box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.2);
   opacity: 0;
   position: absolute;
   top: 0;
@@ -124,6 +184,9 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+  -webkit-transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
 
 .shadow-hover:hover::after,
@@ -135,4 +198,7 @@
 .bg-animate,
 .bg-animate:hover,
 .bg-animate:focus {
+  -webkit-transition: background-color .15s ease-in-out;
+  -o-transition: background-color .15s ease-in-out;
+  -moz-transition: background-color .15s ease-in-out;
   transition: background-color .15s ease-in-out; }

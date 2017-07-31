@@ -19,7 +19,11 @@
   image-rendering: crisp-edges; }
 
 .ir-pixelated {
-  image-rendering: pixelated; }
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated; }
 
 @media screen and (min-width: 30em) {
   .ir-inherit-ns {
@@ -33,7 +37,11 @@
   .ir-crisp-edges-ns {
     image-rendering: crisp-edges; }
   .ir-pixelated-ns {
-    image-rendering: pixelated; } }
+    -ms-interpolation-mode: nearest-neighbor;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-pixelated;
+        image-rendering: pixelated; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .ir-inherit-m {
@@ -47,7 +55,11 @@
   .ir-crisp-edges-m {
     image-rendering: crisp-edges; }
   .ir-pixelated-m {
-    image-rendering: pixelated; } }
+    -ms-interpolation-mode: nearest-neighbor;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-pixelated;
+        image-rendering: pixelated; } }
 
 @media screen and (min-width: 60em) {
   .ir-inherit-l {
@@ -61,4 +73,8 @@
   .ir-crisp-edges-l {
     image-rendering: crisp-edges; }
   .ir-pixelated-l {
-    image-rendering: pixelated; } }
+    -ms-interpolation-mode: nearest-neighbor;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -o-pixelated;
+        image-rendering: pixelated; } }

@@ -31,7 +31,8 @@
 .truncate {
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis; }
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis; }
 
 @media screen and (min-width: 30em) {
   .measure-ns {
@@ -49,7 +50,8 @@
   .truncate-ns {
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; } }
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .measure-m {
@@ -67,7 +69,8 @@
   .truncate-m {
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; } }
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis; } }
 
 @media screen and (min-width: 60em) {
   .measure-l {
@@ -85,4 +88,5 @@
   .truncate-l {
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; } }
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis; } }

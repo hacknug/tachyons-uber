@@ -114,13 +114,21 @@
   cursor: all-scroll; }
 
 .cursor-zoom-in {
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
   cursor: zoom-in; }
 
 .cursor-zoom-out {
+  cursor: -webkit-zoom-out;
+  cursor: -moz-zoom-out;
   cursor: zoom-out; }
 
 .cursor-grab {
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
   cursor: grab; }
 
 .cursor-grabbing {
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
   cursor: grabbing; }

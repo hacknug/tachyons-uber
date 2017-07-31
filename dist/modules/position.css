@@ -31,6 +31,7 @@
   position: fixed; }
 
 .sticky {
+  position: -webkit-sticky;
   position: sticky; }
 
 @media screen and (min-width: 30em) {
@@ -49,6 +50,7 @@
   .fixed-ns {
     position: fixed; }
   .sticky-ns {
+    position: -webkit-sticky;
     position: sticky; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
@@ -67,6 +69,7 @@
   .fixed-m {
     position: fixed; }
   .sticky-m {
+    position: -webkit-sticky;
     position: sticky; } }
 
 @media screen and (min-width: 60em) {
@@ -85,4 +88,5 @@
   .fixed-l {
     position: fixed; }
   .sticky-l {
+    position: -webkit-sticky;
     position: sticky; } }

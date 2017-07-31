@@ -283,21 +283,33 @@
   max-width: 100vw; }
 
 .w-third {
+  width: -webkit-calc(100% / 3);
+  width: -moz-calc(100% / 3);
   width: calc(100% / 3); }
 
 .min-w-third {
+  min-width: -webkit-calc(100% / 3);
+  min-width: -moz-calc(100% / 3);
   min-width: calc(100% / 3); }
 
 .max-w-third {
+  max-width: -webkit-calc(100% / 3);
+  max-width: -moz-calc(100% / 3);
   max-width: calc(100% / 3); }
 
 .w-two-thirds {
+  width: -webkit-calc(100% / 1.5);
+  width: -moz-calc(100% / 1.5);
   width: calc(100% / 1.5); }
 
 .min-w-two-thirds {
+  min-width: -webkit-calc(100% / 1.5);
+  min-width: -moz-calc(100% / 1.5);
   min-width: calc(100% / 1.5); }
 
 .max-w-two-thirds {
+  max-width: -webkit-calc(100% / 1.5);
+  max-width: -moz-calc(100% / 1.5);
   max-width: calc(100% / 1.5); }
 
 .w-auto {
@@ -491,16 +503,28 @@
   .max-vw-100-ns {
     max-width: 100vw; }
   .w-third-ns {
+    width: -webkit-calc(100% / 3);
+    width: -moz-calc(100% / 3);
     width: calc(100% / 3); }
   .min-w-third-ns {
+    min-width: -webkit-calc(100% / 3);
+    min-width: -moz-calc(100% / 3);
     min-width: calc(100% / 3); }
   .max-w-third-ns {
+    max-width: -webkit-calc(100% / 3);
+    max-width: -moz-calc(100% / 3);
     max-width: calc(100% / 3); }
   .w-two-thirds-ns {
+    width: -webkit-calc(100% / 1.5);
+    width: -moz-calc(100% / 1.5);
     width: calc(100% / 1.5); }
   .min-w-two-thirds-ns {
+    min-width: -webkit-calc(100% / 1.5);
+    min-width: -moz-calc(100% / 1.5);
     min-width: calc(100% / 1.5); }
   .max-w-two-thirds-ns {
+    max-width: -webkit-calc(100% / 1.5);
+    max-width: -moz-calc(100% / 1.5);
     max-width: calc(100% / 1.5); }
   .w-auto-ns {
     width: auto; }
@@ -685,16 +709,28 @@
   .max-vw-100-m {
     max-width: 100vw; }
   .w-third-m {
+    width: -webkit-calc(100% / 3);
+    width: -moz-calc(100% / 3);
     width: calc(100% / 3); }
   .min-w-third-m {
+    min-width: -webkit-calc(100% / 3);
+    min-width: -moz-calc(100% / 3);
     min-width: calc(100% / 3); }
   .max-w-third-m {
+    max-width: -webkit-calc(100% / 3);
+    max-width: -moz-calc(100% / 3);
     max-width: calc(100% / 3); }
   .w-two-thirds-m {
+    width: -webkit-calc(100% / 1.5);
+    width: -moz-calc(100% / 1.5);
     width: calc(100% / 1.5); }
   .min-w-two-thirds-m {
+    min-width: -webkit-calc(100% / 1.5);
+    min-width: -moz-calc(100% / 1.5);
     min-width: calc(100% / 1.5); }
   .max-w-two-thirds-m {
+    max-width: -webkit-calc(100% / 1.5);
+    max-width: -moz-calc(100% / 1.5);
     max-width: calc(100% / 1.5); }
   .w-auto-m {
     width: auto; }
@@ -879,16 +915,28 @@
   .max-vw-100-l {
     max-width: 100vw; }
   .w-third-l {
+    width: -webkit-calc(100% / 3);
+    width: -moz-calc(100% / 3);
     width: calc(100% / 3); }
   .min-w-third-l {
+    min-width: -webkit-calc(100% / 3);
+    min-width: -moz-calc(100% / 3);
     min-width: calc(100% / 3); }
   .max-w-third-l {
+    max-width: -webkit-calc(100% / 3);
+    max-width: -moz-calc(100% / 3);
     max-width: calc(100% / 3); }
   .w-two-thirds-l {
+    width: -webkit-calc(100% / 1.5);
+    width: -moz-calc(100% / 1.5);
     width: calc(100% / 1.5); }
   .min-w-two-thirds-l {
+    min-width: -webkit-calc(100% / 1.5);
+    min-width: -moz-calc(100% / 1.5);
     min-width: calc(100% / 1.5); }
   .max-w-two-thirds-l {
+    max-width: -webkit-calc(100% / 1.5);
+    max-width: -moz-calc(100% / 1.5);
     max-width: calc(100% / 1.5); }
   .w-auto-l {
     width: auto; }

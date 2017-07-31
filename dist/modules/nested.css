@@ -39,9 +39,15 @@
 
 .nested-links a {
   color: #357edd;
+  -webkit-transition: color .15s ease-in;
+  -o-transition: color .15s ease-in;
+  -moz-transition: color .15s ease-in;
   transition: color .15s ease-in; }
 
 .nested-links a:hover,
 .nested-links a:focus {
   color: #96ccff;
+  -webkit-transition: color .15s ease-in;
+  -o-transition: color .15s ease-in;
+  -moz-transition: color .15s ease-in;
   transition: color .15s ease-in; }

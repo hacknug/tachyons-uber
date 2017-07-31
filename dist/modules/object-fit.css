@@ -4,79 +4,111 @@
 
 */
 .of-inherit {
-  object-fit: inherit; }
+  -o-object-fit: inherit;
+     object-fit: inherit; }
 
 .of-initial {
-  object-fit: initial; }
+  -o-object-fit: initial;
+     object-fit: initial; }
 
 .of-unset {
-  object-fit: unset; }
+  -o-object-fit: unset;
+     object-fit: unset; }
 
 .of-fill {
-  object-fit: fill; }
+  -o-object-fit: fill;
+     object-fit: fill; }
 
 .of-contain {
-  object-fit: contain; }
+  -o-object-fit: contain;
+     object-fit: contain; }
 
 .of-cover {
-  object-fit: cover; }
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .of-none {
-  object-fit: none; }
+  -o-object-fit: none;
+     object-fit: none; }
 
 .of-scale-down {
-  object-fit: scale-down; }
+  -o-object-fit: scale-down;
+     object-fit: scale-down; }
 
 @media screen and (min-width: 30em) {
   .of-inherit-ns {
-    object-fit: inherit; }
+    -o-object-fit: inherit;
+       object-fit: inherit; }
   .of-initial-ns {
-    object-fit: initial; }
+    -o-object-fit: initial;
+       object-fit: initial; }
   .of-unset-ns {
-    object-fit: unset; }
+    -o-object-fit: unset;
+       object-fit: unset; }
   .of-fill-ns {
-    object-fit: fill; }
+    -o-object-fit: fill;
+       object-fit: fill; }
   .of-contain-ns {
-    object-fit: contain; }
+    -o-object-fit: contain;
+       object-fit: contain; }
   .of-cover-ns {
-    object-fit: cover; }
+    -o-object-fit: cover;
+       object-fit: cover; }
   .of-none-ns {
-    object-fit: none; }
+    -o-object-fit: none;
+       object-fit: none; }
   .of-scale-down-ns {
-    object-fit: scale-down; } }
+    -o-object-fit: scale-down;
+       object-fit: scale-down; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .of-inherit-m {
-    object-fit: inherit; }
+    -o-object-fit: inherit;
+       object-fit: inherit; }
   .of-initial-m {
-    object-fit: initial; }
+    -o-object-fit: initial;
+       object-fit: initial; }
   .of-unset-m {
-    object-fit: unset; }
+    -o-object-fit: unset;
+       object-fit: unset; }
   .of-fill-m {
-    object-fit: fill; }
+    -o-object-fit: fill;
+       object-fit: fill; }
   .of-contain-m {
-    object-fit: contain; }
+    -o-object-fit: contain;
+       object-fit: contain; }
   .of-cover-m {
-    object-fit: cover; }
+    -o-object-fit: cover;
+       object-fit: cover; }
   .of-none-m {
-    object-fit: none; }
+    -o-object-fit: none;
+       object-fit: none; }
   .of-scale-down-m {
-    object-fit: scale-down; } }
+    -o-object-fit: scale-down;
+       object-fit: scale-down; } }
 
 @media screen and (min-width: 60em) {
   .of-inherit-l {
-    object-fit: inherit; }
+    -o-object-fit: inherit;
+       object-fit: inherit; }
   .of-initial-l {
-    object-fit: initial; }
+    -o-object-fit: initial;
+       object-fit: initial; }
   .of-unset-l {
-    object-fit: unset; }
+    -o-object-fit: unset;
+       object-fit: unset; }
   .of-fill-l {
-    object-fit: fill; }
+    -o-object-fit: fill;
+       object-fit: fill; }
   .of-contain-l {
-    object-fit: contain; }
+    -o-object-fit: contain;
+       object-fit: contain; }
   .of-cover-l {
-    object-fit: cover; }
+    -o-object-fit: cover;
+       object-fit: cover; }
   .of-none-l {
-    object-fit: none; }
+    -o-object-fit: none;
+       object-fit: none; }
   .of-scale-down-l {
-    object-fit: scale-down; } }
+    -o-object-fit: scale-down;
+       object-fit: scale-down; } }
