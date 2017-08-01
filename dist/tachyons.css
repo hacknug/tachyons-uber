@@ -1,4 +1,4 @@
-/*! TACHYONS v4.7.9 | http://tachyons.io */
+/*! TACHYONS v4.7.10 | http://tachyons.io */
 /*
  *
  *      ________            ______
@@ -415,6 +415,7 @@ section,
 main,
 footer,
 header,
+figure,
 form,
 fieldset,
 legend,
@@ -689,103 +690,103 @@ img {
           box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.75); }
 
 @media screen and (min-width: 30em) {
-  .bg-darken-0 {
+  .bg-darken-0-ns {
     -webkit-box-shadow: inset 0 0 0 9999px transparent;
        -moz-box-shadow: inset 0 0 0 9999px transparent;
             box-shadow: inset 0 0 0 9999px transparent; }
-  .bg-darken-25 {
+  .bg-darken-25-ns {
     -webkit-box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.25);
        -moz-box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.25);
             box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.25); }
-  .bg-darken-50 {
+  .bg-darken-50-ns {
     -webkit-box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.5);
        -moz-box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.5);
             box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.5); }
-  .bg-darken-75 {
+  .bg-darken-75-ns {
     -webkit-box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.75);
        -moz-box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.75);
             box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.75); }
-  .bg-lighten-0 {
+  .bg-lighten-0-ns {
     -webkit-box-shadow: inset 0 0 0 9999px transparent;
        -moz-box-shadow: inset 0 0 0 9999px transparent;
             box-shadow: inset 0 0 0 9999px transparent; }
-  .bg-lighten-25 {
+  .bg-lighten-25-ns {
     -webkit-box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.25);
        -moz-box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.25);
             box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.25); }
-  .bg-lighten-50 {
+  .bg-lighten-50-ns {
     -webkit-box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.5);
        -moz-box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.5);
             box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.5); }
-  .bg-lighten-75 {
+  .bg-lighten-75-ns {
     -webkit-box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.75);
        -moz-box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.75);
             box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.75); } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
-  .bg-darken-0 {
+  .bg-darken-0-m {
     -webkit-box-shadow: inset 0 0 0 9999px transparent;
        -moz-box-shadow: inset 0 0 0 9999px transparent;
             box-shadow: inset 0 0 0 9999px transparent; }
-  .bg-darken-25 {
+  .bg-darken-25-m {
     -webkit-box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.25);
        -moz-box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.25);
             box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.25); }
-  .bg-darken-50 {
+  .bg-darken-50-m {
     -webkit-box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.5);
        -moz-box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.5);
             box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.5); }
-  .bg-darken-75 {
+  .bg-darken-75-m {
     -webkit-box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.75);
        -moz-box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.75);
             box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.75); }
-  .bg-lighten-0 {
+  .bg-lighten-0-m {
     -webkit-box-shadow: inset 0 0 0 9999px transparent;
        -moz-box-shadow: inset 0 0 0 9999px transparent;
             box-shadow: inset 0 0 0 9999px transparent; }
-  .bg-lighten-25 {
+  .bg-lighten-25-m {
     -webkit-box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.25);
        -moz-box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.25);
             box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.25); }
-  .bg-lighten-50 {
+  .bg-lighten-50-m {
     -webkit-box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.5);
        -moz-box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.5);
             box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.5); }
-  .bg-lighten-75 {
+  .bg-lighten-75-m {
     -webkit-box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.75);
        -moz-box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.75);
             box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.75); } }
 
 @media screen and (min-width: 60em) {
-  .bg-darken-0 {
+  .bg-darken-0-l {
     -webkit-box-shadow: inset 0 0 0 9999px transparent;
        -moz-box-shadow: inset 0 0 0 9999px transparent;
             box-shadow: inset 0 0 0 9999px transparent; }
-  .bg-darken-25 {
+  .bg-darken-25-l {
     -webkit-box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.25);
        -moz-box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.25);
             box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.25); }
-  .bg-darken-50 {
+  .bg-darken-50-l {
     -webkit-box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.5);
        -moz-box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.5);
             box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.5); }
-  .bg-darken-75 {
+  .bg-darken-75-l {
     -webkit-box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.75);
        -moz-box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.75);
             box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.75); }
-  .bg-lighten-0 {
+  .bg-lighten-0-l {
     -webkit-box-shadow: inset 0 0 0 9999px transparent;
        -moz-box-shadow: inset 0 0 0 9999px transparent;
             box-shadow: inset 0 0 0 9999px transparent; }
-  .bg-lighten-25 {
+  .bg-lighten-25-l {
     -webkit-box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.25);
        -moz-box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.25);
             box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.25); }
-  .bg-lighten-50 {
+  .bg-lighten-50-l {
     -webkit-box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.5);
        -moz-box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.5);
             box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.5); }
-  .bg-lighten-75 {
+  .bg-lighten-75-l {
     -webkit-box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.75);
        -moz-box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.75);
             box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.75); } }
@@ -1919,17 +1920,17 @@ img {
   border-left-width: 0; }
 
 @media screen and (min-width: 30em) {
-  .br0-ns {
+  .bw0-ns {
     border-width: 0; }
-  .br1-ns {
+  .bw1-ns {
     border-width: 0.125rem; }
-  .br2-ns {
+  .bw2-ns {
     border-width: 0.25rem; }
-  .br3-ns {
+  .bw3-ns {
     border-width: 0.5rem; }
-  .br4-ns {
+  .bw4-ns {
     border-width: 1rem; }
-  .br5-ns {
+  .bw5-ns {
     border-width: 2rem; }
   .bt-0-ns {
     border-top-width: 0; }
@@ -1941,17 +1942,17 @@ img {
     border-left-width: 0; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
-  .br0-m {
+  .bw0-m {
     border-width: 0; }
-  .br1-m {
+  .bw1-m {
     border-width: 0.125rem; }
-  .br2-m {
+  .bw2-m {
     border-width: 0.25rem; }
-  .br3-m {
+  .bw3-m {
     border-width: 0.5rem; }
-  .br4-m {
+  .bw4-m {
     border-width: 1rem; }
-  .br5-m {
+  .bw5-m {
     border-width: 2rem; }
   .bt-0-m {
     border-top-width: 0; }
@@ -1963,17 +1964,17 @@ img {
     border-left-width: 0; } }
 
 @media screen and (min-width: 60em) {
-  .br0-l {
+  .bw0-l {
     border-width: 0; }
-  .br1-l {
+  .bw1-l {
     border-width: 0.125rem; }
-  .br2-l {
+  .bw2-l {
     border-width: 0.25rem; }
-  .br3-l {
+  .bw3-l {
     border-width: 0.5rem; }
-  .br4-l {
+  .bw4-l {
     border-width: 1rem; }
-  .br5-l {
+  .bw5-l {
     border-width: 2rem; }
   .bt-0-l {
     border-top-width: 0; }
@@ -3924,127 +3925,127 @@ img {
           flex-shrink: 3; }
 
 @media screen and (min-width: 30em) {
-  .flex-grow-0 {
+  .flex-grow-0-ns {
     -webkit-box-flex: 0;
     -webkit-flex-grow: 0;
        -moz-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0; }
-  .flex-grow-1 {
+  .flex-grow-1-ns {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
        -moz-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; }
-  .flex-grow-2 {
+  .flex-grow-2-ns {
     -webkit-box-flex: 2;
     -webkit-flex-grow: 2;
        -moz-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2; }
-  .flex-grow-3 {
+  .flex-grow-3-ns {
     -webkit-box-flex: 3;
     -webkit-flex-grow: 3;
        -moz-box-flex: 3;
         -ms-flex-positive: 3;
             flex-grow: 3; }
-  .flex-shrink-0 {
+  .flex-shrink-0-ns {
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
             flex-shrink: 0; }
-  .flex-shrink-1 {
+  .flex-shrink-1-ns {
     -webkit-flex-shrink: 1;
         -ms-flex-negative: 1;
             flex-shrink: 1; }
-  .flex-shrink-2 {
+  .flex-shrink-2-ns {
     -webkit-flex-shrink: 2;
         -ms-flex-negative: 2;
             flex-shrink: 2; }
-  .flex-shrink-3 {
+  .flex-shrink-3-ns {
     -webkit-flex-shrink: 3;
         -ms-flex-negative: 3;
             flex-shrink: 3; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
-  .flex-grow-0 {
+  .flex-grow-0-m {
     -webkit-box-flex: 0;
     -webkit-flex-grow: 0;
        -moz-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0; }
-  .flex-grow-1 {
+  .flex-grow-1-m {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
        -moz-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; }
-  .flex-grow-2 {
+  .flex-grow-2-m {
     -webkit-box-flex: 2;
     -webkit-flex-grow: 2;
        -moz-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2; }
-  .flex-grow-3 {
+  .flex-grow-3-m {
     -webkit-box-flex: 3;
     -webkit-flex-grow: 3;
        -moz-box-flex: 3;
         -ms-flex-positive: 3;
             flex-grow: 3; }
-  .flex-shrink-0 {
+  .flex-shrink-0-m {
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
             flex-shrink: 0; }
-  .flex-shrink-1 {
+  .flex-shrink-1-m {
     -webkit-flex-shrink: 1;
         -ms-flex-negative: 1;
             flex-shrink: 1; }
-  .flex-shrink-2 {
+  .flex-shrink-2-m {
     -webkit-flex-shrink: 2;
         -ms-flex-negative: 2;
             flex-shrink: 2; }
-  .flex-shrink-3 {
+  .flex-shrink-3-m {
     -webkit-flex-shrink: 3;
         -ms-flex-negative: 3;
             flex-shrink: 3; } }
 
 @media screen and (min-width: 60em) {
-  .flex-grow-0 {
+  .flex-grow-0-l {
     -webkit-box-flex: 0;
     -webkit-flex-grow: 0;
        -moz-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0; }
-  .flex-grow-1 {
+  .flex-grow-1-l {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
        -moz-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; }
-  .flex-grow-2 {
+  .flex-grow-2-l {
     -webkit-box-flex: 2;
     -webkit-flex-grow: 2;
        -moz-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2; }
-  .flex-grow-3 {
+  .flex-grow-3-l {
     -webkit-box-flex: 3;
     -webkit-flex-grow: 3;
        -moz-box-flex: 3;
         -ms-flex-positive: 3;
             flex-grow: 3; }
-  .flex-shrink-0 {
+  .flex-shrink-0-l {
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
             flex-shrink: 0; }
-  .flex-shrink-1 {
+  .flex-shrink-1-l {
     -webkit-flex-shrink: 1;
         -ms-flex-negative: 1;
             flex-shrink: 1; }
-  .flex-shrink-2 {
+  .flex-shrink-2-l {
     -webkit-flex-shrink: 2;
         -ms-flex-negative: 2;
             flex-shrink: 2; }
-  .flex-shrink-3 {
+  .flex-shrink-3-l {
     -webkit-flex-shrink: 3;
         -ms-flex-negative: 3;
             flex-shrink: 3; } }
@@ -4078,6 +4079,41 @@ img {
       -ms-flex-order: 3;
           order: 3; }
 
+.order-4 {
+  -webkit-box-ordinal-group: 5;
+  -webkit-order: 4;
+     -moz-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4; }
+
+.order-5 {
+  -webkit-box-ordinal-group: 6;
+  -webkit-order: 5;
+     -moz-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5; }
+
+.order-6 {
+  -webkit-box-ordinal-group: 7;
+  -webkit-order: 6;
+     -moz-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+          order: 6; }
+
+.order-7 {
+  -webkit-box-ordinal-group: 8;
+  -webkit-order: 7;
+     -moz-box-ordinal-group: 8;
+      -ms-flex-order: 7;
+          order: 7; }
+
+.order-8 {
+  -webkit-box-ordinal-group: 9;
+  -webkit-order: 8;
+     -moz-box-ordinal-group: 9;
+      -ms-flex-order: 8;
+          order: 8; }
+
 .order-last {
   -webkit-box-ordinal-group: 100000;
   -webkit-order: 99999;
@@ -4110,6 +4146,36 @@ img {
        -moz-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3; }
+  .order-4-ns {
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+       -moz-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4; }
+  .order-5-ns {
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+       -moz-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5; }
+  .order-6-ns {
+    -webkit-box-ordinal-group: 7;
+    -webkit-order: 6;
+       -moz-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6; }
+  .order-7-ns {
+    -webkit-box-ordinal-group: 8;
+    -webkit-order: 7;
+       -moz-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7; }
+  .order-8-ns {
+    -webkit-box-ordinal-group: 9;
+    -webkit-order: 8;
+       -moz-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8; }
   .order-last-ns {
     -webkit-box-ordinal-group: 100000;
     -webkit-order: 99999;
@@ -4142,6 +4208,36 @@ img {
        -moz-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3; }
+  .order-4-m {
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+       -moz-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4; }
+  .order-5-m {
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+       -moz-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5; }
+  .order-6-m {
+    -webkit-box-ordinal-group: 7;
+    -webkit-order: 6;
+       -moz-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6; }
+  .order-7-m {
+    -webkit-box-ordinal-group: 8;
+    -webkit-order: 7;
+       -moz-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7; }
+  .order-8-m {
+    -webkit-box-ordinal-group: 9;
+    -webkit-order: 8;
+       -moz-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8; }
   .order-last-m {
     -webkit-box-ordinal-group: 100000;
     -webkit-order: 99999;
@@ -4174,6 +4270,36 @@ img {
        -moz-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3; }
+  .order-4-l {
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+       -moz-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4; }
+  .order-5-l {
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+       -moz-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5; }
+  .order-6-l {
+    -webkit-box-ordinal-group: 7;
+    -webkit-order: 6;
+       -moz-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6; }
+  .order-7-l {
+    -webkit-box-ordinal-group: 8;
+    -webkit-order: 7;
+       -moz-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7; }
+  .order-8-l {
+    -webkit-box-ordinal-group: 9;
+    -webkit-order: 8;
+       -moz-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8; }
   .order-last-l {
     -webkit-box-ordinal-group: 100000;
     -webkit-order: 99999;
@@ -4246,145 +4372,145 @@ img {
 
 */
 .sans-serif {
-  font-family: '-apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif'; }
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; }
 
 .serif {
-  font-family: "georgia, serif"; }
+  font-family: georgia, serif; }
 
 .system-sans-serif {
-  font-family: "sans-serif"; }
+  font-family: sans-serif; }
 
 .system-serif {
-  font-family: "serif"; }
+  font-family: serif; }
 
 .code {
-  font-family: "consolas, monaco, monospace"; }
+  font-family: consolas, monaco, monospace; }
 
 .courier {
-  font-family: '"courier next", courier, monospace'; }
+  font-family: "courier next", courier, monospace; }
 
 .helvetica {
-  font-family: '"helvetica neue", helvetica, sans-serif'; }
+  font-family: "helvetica neue", helvetica, sans-serif; }
 
 .avenir {
-  font-family: '"avenir next", avenir, sans-serif'; }
+  font-family: "avenir next", avenir, sans-serif; }
 
 .athelas {
-  font-family: "athelas, georgia, serif"; }
+  font-family: athelas, georgia, serif; }
 
 .georgia {
-  font-family: "georgia, serif"; }
+  font-family: georgia, serif; }
 
 .times {
-  font-family: "times, serif"; }
+  font-family: times, serif; }
 
 .bodoni {
-  font-family: '"bodoni mt", serif'; }
+  font-family: "bodoni mt", serif; }
 
 .calisto {
-  font-family: '"Calisto MT", serif'; }
+  font-family: "Calisto MT", serif; }
 
 .garamond {
-  font-family: "garamond, serif"; }
+  font-family: garamond, serif; }
 
 .baskerville {
-  font-family: "baskerville, serif"; }
+  font-family: baskerville, serif; }
 
 @media screen and (min-width: 30em) {
   .sans-serif-ns {
-    font-family: '-apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif'; }
+    font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; }
   .serif-ns {
-    font-family: "georgia, serif"; }
+    font-family: georgia, serif; }
   .system-sans-serif-ns {
-    font-family: "sans-serif"; }
+    font-family: sans-serif; }
   .system-serif-ns {
-    font-family: "serif"; }
+    font-family: serif; }
   .code-ns {
-    font-family: "consolas, monaco, monospace"; }
+    font-family: consolas, monaco, monospace; }
   .courier-ns {
-    font-family: '"courier next", courier, monospace'; }
+    font-family: "courier next", courier, monospace; }
   .helvetica-ns {
-    font-family: '"helvetica neue", helvetica, sans-serif'; }
+    font-family: "helvetica neue", helvetica, sans-serif; }
   .avenir-ns {
-    font-family: '"avenir next", avenir, sans-serif'; }
+    font-family: "avenir next", avenir, sans-serif; }
   .athelas-ns {
-    font-family: "athelas, georgia, serif"; }
+    font-family: athelas, georgia, serif; }
   .georgia-ns {
-    font-family: "georgia, serif"; }
+    font-family: georgia, serif; }
   .times-ns {
-    font-family: "times, serif"; }
+    font-family: times, serif; }
   .bodoni-ns {
-    font-family: '"bodoni mt", serif'; }
+    font-family: "bodoni mt", serif; }
   .calisto-ns {
-    font-family: '"Calisto MT", serif'; }
+    font-family: "Calisto MT", serif; }
   .garamond-ns {
-    font-family: "garamond, serif"; }
+    font-family: garamond, serif; }
   .baskerville-ns {
-    font-family: "baskerville, serif"; } }
+    font-family: baskerville, serif; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
   .sans-serif-m {
-    font-family: '-apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif'; }
+    font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; }
   .serif-m {
-    font-family: "georgia, serif"; }
+    font-family: georgia, serif; }
   .system-sans-serif-m {
-    font-family: "sans-serif"; }
+    font-family: sans-serif; }
   .system-serif-m {
-    font-family: "serif"; }
+    font-family: serif; }
   .code-m {
-    font-family: "consolas, monaco, monospace"; }
+    font-family: consolas, monaco, monospace; }
   .courier-m {
-    font-family: '"courier next", courier, monospace'; }
+    font-family: "courier next", courier, monospace; }
   .helvetica-m {
-    font-family: '"helvetica neue", helvetica, sans-serif'; }
+    font-family: "helvetica neue", helvetica, sans-serif; }
   .avenir-m {
-    font-family: '"avenir next", avenir, sans-serif'; }
+    font-family: "avenir next", avenir, sans-serif; }
   .athelas-m {
-    font-family: "athelas, georgia, serif"; }
+    font-family: athelas, georgia, serif; }
   .georgia-m {
-    font-family: "georgia, serif"; }
+    font-family: georgia, serif; }
   .times-m {
-    font-family: "times, serif"; }
+    font-family: times, serif; }
   .bodoni-m {
-    font-family: '"bodoni mt", serif'; }
+    font-family: "bodoni mt", serif; }
   .calisto-m {
-    font-family: '"Calisto MT", serif'; }
+    font-family: "Calisto MT", serif; }
   .garamond-m {
-    font-family: "garamond, serif"; }
+    font-family: garamond, serif; }
   .baskerville-m {
-    font-family: "baskerville, serif"; } }
+    font-family: baskerville, serif; } }
 
 @media screen and (min-width: 60em) {
   .sans-serif-l {
-    font-family: '-apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif'; }
+    font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; }
   .serif-l {
-    font-family: "georgia, serif"; }
+    font-family: georgia, serif; }
   .system-sans-serif-l {
-    font-family: "sans-serif"; }
+    font-family: sans-serif; }
   .system-serif-l {
-    font-family: "serif"; }
+    font-family: serif; }
   .code-l {
-    font-family: "consolas, monaco, monospace"; }
+    font-family: consolas, monaco, monospace; }
   .courier-l {
-    font-family: '"courier next", courier, monospace'; }
+    font-family: "courier next", courier, monospace; }
   .helvetica-l {
-    font-family: '"helvetica neue", helvetica, sans-serif'; }
+    font-family: "helvetica neue", helvetica, sans-serif; }
   .avenir-l {
-    font-family: '"avenir next", avenir, sans-serif'; }
+    font-family: "avenir next", avenir, sans-serif; }
   .athelas-l {
-    font-family: "athelas, georgia, serif"; }
+    font-family: athelas, georgia, serif; }
   .georgia-l {
-    font-family: "georgia, serif"; }
+    font-family: georgia, serif; }
   .times-l {
-    font-family: "times, serif"; }
+    font-family: times, serif; }
   .bodoni-l {
-    font-family: '"bodoni mt", serif'; }
+    font-family: "bodoni mt", serif; }
   .calisto-l {
-    font-family: '"Calisto MT", serif'; }
+    font-family: "Calisto MT", serif; }
   .garamond-l {
-    font-family: "garamond, serif"; }
+    font-family: garamond, serif; }
   .baskerville-l {
-    font-family: "baskerville, serif"; } }
+    font-family: baskerville, serif; } }
 
 /*
 

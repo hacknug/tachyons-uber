@@ -52,17 +52,17 @@
   border-left-width: 0; }
 
 @media screen and (min-width: 30em) {
-  .br0-ns {
+  .bw0-ns {
     border-width: 0; }
-  .br1-ns {
+  .bw1-ns {
     border-width: 0.125rem; }
-  .br2-ns {
+  .bw2-ns {
     border-width: 0.25rem; }
-  .br3-ns {
+  .bw3-ns {
     border-width: 0.5rem; }
-  .br4-ns {
+  .bw4-ns {
     border-width: 1rem; }
-  .br5-ns {
+  .bw5-ns {
     border-width: 2rem; }
   .bt-0-ns {
     border-top-width: 0; }
@@ -74,17 +74,17 @@
     border-left-width: 0; } }
 
 @media screen and (min-width: 30em) and (max-width: 60em) {
-  .br0-m {
+  .bw0-m {
     border-width: 0; }
-  .br1-m {
+  .bw1-m {
     border-width: 0.125rem; }
-  .br2-m {
+  .bw2-m {
     border-width: 0.25rem; }
-  .br3-m {
+  .bw3-m {
     border-width: 0.5rem; }
-  .br4-m {
+  .bw4-m {
     border-width: 1rem; }
-  .br5-m {
+  .bw5-m {
     border-width: 2rem; }
   .bt-0-m {
     border-top-width: 0; }
@@ -96,17 +96,17 @@
     border-left-width: 0; } }
 
 @media screen and (min-width: 60em) {
-  .br0-l {
+  .bw0-l {
     border-width: 0; }
-  .br1-l {
+  .bw1-l {
     border-width: 0.125rem; }
-  .br2-l {
+  .bw2-l {
     border-width: 0.25rem; }
-  .br3-l {
+  .bw3-l {
     border-width: 0.5rem; }
-  .br4-l {
+  .bw4-l {
     border-width: 1rem; }
-  .br5-l {
+  .bw5-l {
     border-width: 2rem; }
   .bt-0-l {
     border-top-width: 0; }
