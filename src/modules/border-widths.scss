@@ -38,7 +38,7 @@
 @each $suffix, $value in $breakpoints {
   @media #{$value} {
     @each $name, $value in $border-widths {
-      .br#{$name}-#{$suffix} { border-width: $value; }
+      .bw#{$name}-#{$suffix} { border-width: $value; }
     }
     .bt-0-#{$suffix} { border-top-width: 0 }
     .br-0-#{$suffix} { border-right-width: 0 }
