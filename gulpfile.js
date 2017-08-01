@@ -6,7 +6,29 @@ var sass = require('gulp-sass'),
     csso = require('gulp-csso'),
     cleanCss = require('gulp-clean-css'),
     autoprefixer = require('gulp-autoprefixer');
+var postcss = require('gulp-postcss'),
+    importCss = require('postcss-import'),
+    reporter = require('postcss-reporter'),
+    immutableCss = require('immutable-css');
 
+gulp.task('immutable', function () {
+  var processors = [
+    importCss,
+    immutableCss({
+      strict: true,
+      // verbose: true,
+      ignoredClasses: ['.cf', '.input-reset', '.link']
+    }),
+    reporter({
+      clearMessages: true,
+      throwError: false,
+    })
+  ]
+
+  gulp.src('dist/tachyons.css')
+    .pipe(postcss(processors))
+    // .pipe(gulp.dest('dist/immutable'))
+})
 
 gulp.task('styles', function(){
   gulp.src(['src/**/*.scss'])
