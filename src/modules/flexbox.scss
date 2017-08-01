@@ -133,7 +133,7 @@
 
     @each $group, $values in $flex-grow-factors {
       @each $name, $value in $values {
-        .#{$name} { flex-#{$group}: $value; }
+        .#{$name}-#{$suffix} { flex-#{$group}: $value; }
       }
     }
 
