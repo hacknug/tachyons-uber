@@ -29,11 +29,19 @@
 @import '../_variables';
 
 
-@each $name, $value in $coordinates {
-  .top-#{$name} { top: $value; }
-  .right-#{$name} { right: $value; }
-  .bottom-#{$name} { bottom: $value; }
-  .left-#{$name} { left: $value; }
+@each $name, $values in $spacings {
+  .top-#{$name} {
+    @each $value in $values { top: $value; }
+  }
+  .right-#{$name} {
+    @each $value in $values { right: $value; }
+  }
+  .bottom-#{$name} {
+    @each $value in $values { bottom: $value; }
+  }
+  .left-#{$name} {
+    @each $value in $values { left: $value; }
+  }
 }
 
 .absolute--fill {
@@ -45,11 +53,19 @@
 
 @each $suffix, $value in $breakpoints {
   @media #{$value} {
-    @each $name, $value in $coordinates {
-      .top-#{$name}-#{$suffix} { top: $value; }
-      .right-#{$name}-#{$suffix} { right: $value; }
-      .bottom-#{$name}-#{$suffix} { bottom: $value; }
-      .left-#{$name}-#{$suffix} { left: $value; }
+    @each $name, $values in $spacings {
+      .top-#{$name}-#{$suffix} {
+        @each $value in $values { top: $value; }
+      }
+      .right-#{$name}-#{$suffix} {
+        @each $value in $values { right: $value; }
+      }
+      .bottom-#{$name}-#{$suffix} {
+        @each $value in $values { bottom: $value; }
+      }
+      .left-#{$name}-#{$suffix} {
+        @each $value in $values { left: $value; }
+      }
     }
     .absolute--fill-#{$suffix} {
       top: 0;
