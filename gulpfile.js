@@ -38,7 +38,7 @@ gulp.task('styles', function(){
         this.emit('end');
     }}))
     .pipe(sass({
-      precision: 3,
+      precision: 4,
     }))
     .pipe(autoprefixer({
         browsers: ['>= 0%'],
