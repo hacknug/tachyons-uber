@@ -8,16 +8,13 @@
 @import '../_variables';
 
 
-html,
-body,
+html,body,
 div,
-article,
-section,
+article,section,
 aside,
 main,
 nav,
-footer,
-header,
+header,footer,
 figure,
 form,
 fieldset,
@@ -27,17 +24,9 @@ code,
 a,
 h1,h2,h3,h4,h5,h6,
 p,
-ul,
-ol,
-li,
-dl,
-dt,
-dd,
+ul,ol,li,dl,dt,dd,
 textarea,
-table,
-td,
-th,
-tr,
+table,td,th,tr,
 input[type="email"],
 input[type="number"],
 input[type="password"],
@@ -46,4 +35,8 @@ input[type="text"],
 input[type="url"],
 .border-box {
   box-sizing: border-box;
+}
+
+.content-box {
+  box-sizing: content-box;
 }
