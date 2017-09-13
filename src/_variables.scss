@@ -729,6 +729,12 @@ $word-breaks: (
   break: break-word,
 );
 
+$hyphens: (
+  none: none,
+  manual: manual,
+  auto: auto,
+);
+
 $z-indexes: (
   inherit: inherit,
   initial: initial,

@@ -1,0 +1,29 @@
+/*
+
+  HYPHENS
+
+  Base:
+    hyphen = hyphens
+
+  Media Query Extensions:
+    -ns = not-small
+    -m  = medium
+    -l  = large
+
+*/
+
+// Variables
+@import '../_variables';
+
+
+@each $name, $value in $hyphens {
+  .hyphen-#{$name} { hyphens: $value; }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $hyphens {
+      .hyphen-#{$name}-#{$suffix} { hyphens: $value; }
+    }
+  }
+}
