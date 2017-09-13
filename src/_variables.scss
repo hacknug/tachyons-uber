@@ -702,6 +702,14 @@ $overflows: (
   auto: auto,
 );
 
+$overflow-wraps: (
+  inherit: inherit,
+  initial: initial,
+  unset: unset,
+  normal: normal,
+  break: break-word,
+);
+
 $rotations: (
   45: 45deg,
   90: 90deg,

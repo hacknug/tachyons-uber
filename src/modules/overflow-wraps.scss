@@ -1,0 +1,32 @@
+/*
+
+    OVERFLOW WRAPS
+
+    Media Query Extensions:
+      -ns = not-small
+      -m  = medium
+      -l  = large
+
+*/
+
+// Variables
+@import '../_variables';
+
+
+@each $name, $value in $overflow-wraps {
+  .ow-#{$name} {
+    word-wrap: $value;
+    overflow-wrap: $value;
+  }
+}
+
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $overflow-wraps {
+      .ow-#{$name}-#{$suffix} {
+        word-wrap: $value;
+        overflow: $value;
+      }
+    }
+  }
+}
