@@ -7,6 +7,7 @@ var sass = require('gulp-sass'),
     cleanCss = require('gulp-clean-css'),
     autoprefixer = require('gulp-autoprefixer');
 var postcss = require('gulp-postcss'),
+    uncss = require('uncss').postcssPlugin,
     importCss = require('postcss-import'),
     reporter = require('postcss-reporter'),
     immutableCss = require('immutable-css');
@@ -41,7 +42,7 @@ gulp.task('styles', function(){
       precision: 4,
     }))
     .pipe(autoprefixer({
-        browsers: ['>= 0%'],
+      browsers: ['>= 0%'],
     }))
     .pipe(gulp.dest('dist/'))
     .pipe(combineMq({
