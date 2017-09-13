@@ -31,8 +31,10 @@
 @each $name, $value in $column-counts {
   .cc#{$name} { column-count: $value; }
 }
-@each $name, $value in $column-gaps {
-  .cg#{$name} { column-gap: $value; }
+@each $name, $values in $column-gaps {
+  .cg#{$name} {
+    @each $value in $values { column-gap: $value; }
+  }
 }
 
 @each $suffix, $value in $breakpoints {
@@ -40,8 +42,10 @@
     @each $name, $value in $column-counts {
       .cc#{$name}-#{$suffix} { column-count: $value; }
     }
-    @each $name, $value in $column-gaps {
-      .cg#{$name}-#{$suffix} { column-gap: $value; }
+    @each $name, $values in $column-gaps {
+      .cg#{$name}-#{$suffix} {
+        @each $value in $values { column-gap: $value; }
+      }
     }
   }
 }
