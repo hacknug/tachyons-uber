@@ -41,10 +41,10 @@
   .z-#{$name} { z-index: $value; }
 }
 
-// @each $suffix, $value in $breakpoints {
-//   @media #{$value} {
-//     @each $name, $value in $z-indexes {
-//       .z-#{$name}-#{$suffix} { z-index: $value; }
-//     }
-//   }
-// }
+@each $suffix, $value in $breakpoints {
+  @media #{$value} {
+    @each $name, $value in $z-indexes {
+      .z-#{$name}-#{$suffix} { z-index: $value; }
+    }
+  }
+}
