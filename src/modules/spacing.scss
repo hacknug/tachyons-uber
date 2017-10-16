@@ -70,6 +70,10 @@
       @each $property in $properties {
         @each $value in $values { #{$property}: $value; }
       }
+    } .n#{$name}#{$step} {
+      @each $property in $properties {
+        @each $value in $values { #{$property}: -$value; }
+      }
     }
   }
 }
@@ -81,6 +85,10 @@
         .m#{$name}#{$step}-#{$suffix} {
           @each $property in $properties {
             @each $value in $values { #{$property}: $value; }
+          }
+        } .n#{$name}#{$step}-#{$suffix} {
+          @each $property in $properties {
+            @each $value in $values { #{$property}: -$value; }
           }
         }
       }
