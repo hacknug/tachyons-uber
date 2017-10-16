@@ -44,18 +44,26 @@
 @import '../_variables';
 
 
-@each $name, $value in $widths {
-  .#{$name} { width: $value; }
-  .min-#{$name} { min-width: $value; }
-  .max-#{$name} { max-width: $value; }
+@each $name, $values in $widths {
+  .#{$name} {
+    @each $value in $values { width: $value; }
+  } .min-#{$name} {
+    @each $value in $values { min-width: $value; }
+  } .max-#{$name} {
+    @each $value in $values { max-width: $value; }
+  }
 }
 
 @each $suffix, $value in $breakpoints {
   @media #{$value} {
-    @each $name, $value in $widths {
-      .#{$name}-#{$suffix} { width: $value; }
-      .min-#{$name}-#{$suffix} { min-width: $value; }
-      .max-#{$name}-#{$suffix} { max-width: $value; }
+    @each $name, $values in $widths {
+      .#{$name}-#{$suffix} {
+        @each $value in $values { width: $value; }
+      } .min-#{$name}-#{$suffix} {
+        @each $value in $values { min-width: $value; }
+      } .max-#{$name}-#{$suffix} {
+        @each $value in $values { max-width: $value; }
+      }
     }
   }
 }

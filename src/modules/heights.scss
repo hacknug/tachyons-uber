@@ -35,18 +35,26 @@
 @import '../_variables';
 
 
-@each $name, $value in $heights {
-  .#{$name} { height: $value; }
-  .min-#{$name} { min-height: $value; }
-  .max-#{$name} { max-height: $value; }
+@each $name, $values in $heights {
+  .#{$name} {
+    @each $value in $values { height: $value; }
+  } .min-#{$name} {
+    @each $value in $values { min-height: $value; }
+  } .max-#{$name} {
+    @each $value in $values { max-height: $value; }
+  }
 }
 
 @each $suffix, $value in $breakpoints {
   @media #{$value} {
-    @each $name, $value in $heights {
-      .#{$name}-#{$suffix} { height: $value; }
-      .min-#{$name}-#{$suffix} { min-height: $value; }
-      .max-#{$name}-#{$suffix} { max-height: $value; }
+    @each $name, $values in $heights {
+      .#{$name}-#{$suffix} {
+        @each $value in $values { height: $value; }
+      } .min-#{$name}-#{$suffix} {
+        @each $value in $values { min-height: $value; }
+      } .max-#{$name}-#{$suffix} {
+        @each $value in $values { max-height: $value; }
+      }
     }
   }
 }
